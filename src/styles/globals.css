@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent-green: var(--accent-green);
+  --color-accent-blue: var(--accent-blue);
+  --color-accent-red: var(--accent-red);
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-text: var(--text-dark);
+  --color-muted: var(--muted);
+
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-plus-jakarta);
+
+  --radius-xl: 1.5rem;
+  --radius-lg: 1rem;
+  --radius-md: 0.75rem;
+  --radius-sm: 0.5rem;
+
+  --shadow-soft: 0 10px 40px -10px rgba(0,0,0,0.08);
+  --shadow-float: 0 20px 40px -10px rgba(124, 58, 237, 0.15);
+}
+
+@layer base {
+  :root {
+    --primary: #7C3AED; /* Playful Purple */
+    --secondary: #FBBF24; /* Sunny Yellow */
+    --accent-green: #34D399; /* Friendly Green */
+    --accent-blue: #60A5FA; /* Sky Blue */
+    --accent-red: #F87171; /* Coral Red */
+    
+    --background: #FFFCF5; /* Warm Cream */
+    --surface: #FFFFFF; /* White */
+    --text-dark: #1E293B; /* Slate 800 */
+    --muted: #64748B; /* Slate 500 */
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--text-dark);
+    font-family: var(--font-sans), sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading), sans-serif;
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
