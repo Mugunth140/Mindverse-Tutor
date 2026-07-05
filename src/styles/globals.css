@@ -7,6 +7,7 @@
   --color-accent-blue: var(--accent-blue);
   --color-accent-red: var(--accent-red);
   --color-background: var(--background);
+  --color-background-alt: var(--background-alt);
   --color-surface: var(--surface);
   --color-text: var(--text-dark);
   --color-muted: var(--muted);
@@ -19,19 +20,21 @@
   --radius-md: 0.75rem;
   --radius-sm: 0.5rem;
 
-  --shadow-soft: 0 10px 40px -10px rgba(0,0,0,0.08);
-  --shadow-float: 0 20px 40px -10px rgba(124, 58, 237, 0.15);
+  --shadow-soft: 0 10px 40px -10px rgba(0,0,0,0.05);
+  --shadow-float: 0 20px 40px -10px rgba(0,0,0,0.08);
+  --shadow-card: 0 4px 20px -2px rgba(0,0,0,0.03);
 }
 
 @layer base {
   :root {
-    --primary: #7C3AED; /* Playful Purple */
-    --secondary: #FBBF24; /* Sunny Yellow */
-    --accent-green: #34D399; /* Friendly Green */
-    --accent-blue: #60A5FA; /* Sky Blue */
-    --accent-red: #F87171; /* Coral Red */
+    --primary: #7C3AED; /* Purple - Use sparingly for CTAs/Links */
+    --secondary: #FBBF24; /* Yellow - Highlights, active areas */
+    --accent-green: #34D399; /* Green - Success, growth */
+    --accent-blue: #60A5FA; /* Blue - Trust, information */
+    --accent-red: #F87171; /* Red - Small accents */
     
-    --background: #FFFCF5; /* Warm Cream */
+    --background: #FFFDF8; /* Warm Cream */
+    --background-alt: #FCFAF5; /* Slightly cooler cream */
     --surface: #FFFFFF; /* White */
     --text-dark: #1E293B; /* Slate 800 */
     --muted: #64748B; /* Slate 500 */
@@ -42,6 +45,7 @@
     color: var(--text-dark);
     font-family: var(--font-sans), sans-serif;
     -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -53,5 +57,9 @@
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+  .bg-dot-pattern {
+    background-image: radial-gradient(rgba(0, 0, 0, 0.05) 2px, transparent 2px);
+    background-size: 30px 30px;
   }
 }

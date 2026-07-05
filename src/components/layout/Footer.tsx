@@ -1,13 +1,41 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "motion/react";
 
 export function Footer() {
+  const text = "mindverse";
+  
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.06,
+        delayChildren: 0.01,
+      }
+    }
+  };
+
+  const item: any = {
+    hidden: { opacity: 0, y: 40 },
+    show: { 
+      opacity: 1, 
+      y: 0,
+      transition: {
+        duration: 0.4,
+        ease: [0.39, 0.24, 0.3, 1]
+      }
+    }
+  };
+
   return (
-    <footer className="bg-white border-t border-muted/10 pt-24 pb-12 overflow-hidden relative">
-      <div className="absolute top-0 right-10 w-96 h-96 bg-accent-green/5 rounded-full blur-3xl pointer-events-none" />
+    <footer className="relative border-t border-muted/10 pt-24 overflow-hidden bg-linear-to-b from-background to-secondary/15">
+      
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid md:grid-cols-4 gap-16 mb-20">
-          <div className="md:col-span-1">
+        <div className="grid md:grid-cols-5 gap-16 mb-20">
+          <div className="md:col-span-2">
             <Link href="/" className="inline-block mb-8 hover:scale-105 transition-transform">
               <Image 
                 src="/logos/logo.png" 
@@ -46,14 +74,36 @@ export function Footer() {
             </ul>
           </div>
         </div>
-        <div className="pt-8 border-t border-muted/10 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-muted text-sm font-medium">&copy; {new Date().getFullYear()} MindVerse Tutor. All rights reserved.</p>
-          <div className="flex gap-6 text-sm font-medium text-muted">
-            <Link href="#" className="hover:text-primary transition-colors">Privacy Policy</Link>
-            <Link href="#" className="hover:text-primary transition-colors">Terms of Service</Link>
-          </div>
+        
+        {/* Pushed high up with pb-[16vw] so it sits perfectly above the giant text */}
+        <div className="flex flex-col md:flex-row items-center justify-between gap-4 pb-[16vw] md:pb-[15vw] z-20 relative text-sm font-medium text-muted/80">
+          <Link href="#" className="hover:text-primary transition-colors">Terms and conditions</Link>
+          <p>&copy; {new Date().getFullYear()} MindVerse Tutor. All Rights Reserved</p>
+          <Link href="#" className="hover:text-primary transition-colors">Privacy Policy</Link>
         </div>
       </div>
+
+      {/* 
+        Massive Animated Background Text 
+      */}
+      <motion.div 
+        variants={container}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, margin: "0px 0px -50px 0px" }}
+        className="absolute bottom-[-5vw] left-0 w-full flex justify-center pointer-events-none select-none z-0"
+      >
+        {text.split("").map((char, index) => (
+          <motion.span 
+            key={index} 
+            variants={item}
+            className="font-heading font-black text-[18.5vw] leading-none text-secondary/10 tracking-tighter"
+          >
+            {char}
+          </motion.span>
+        ))}
+      </motion.div>
+
     </footer>
   );
 }

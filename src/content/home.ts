@@ -1,68 +1,67 @@
 export const homeContent = {
   hero: {
-    badge: "🌟 Welcome to MindVerse Tutor",
-    title: "Where Learning Feels Like an Adventure",
-    subtitle: "We help students build confidence, master core subjects, and discover the joy of learning with personalized, engaging tutoring.",
-    ctaPrimary: "Start Free Assessment",
-    ctaSecondary: "Explore Programs",
+    badge: "👋 Welcome to MindVerse",
+    title: "Building Strong Foundations for Lifelong Learning.",
+    subtitle: "Personalized online tutoring for Grades 1–10. We help children master core subjects, build unshakeable confidence, and discover the joy of learning.",
+    ctaPrimary: "Book a Call",
+    ctaSecondary: "Free Math Assessment",
   },
-  stats: [
-    { value: "500+", label: "Happy Students" },
-    { value: "98%", label: "Improved Grades" },
-    { value: "50+", label: "Expert Tutors" },
-    { value: "4.9/5", label: "Parent Rating" },
-  ],
+  global: {
+    title: "Learning Beyond Borders",
+    subtitle: "Supporting confident learners across multiple time zones.",
+    countries: ["USA", "Canada", "Australia", "Singapore", "India", "UAE (Coming Soon)"]
+  },
   programs: {
-    title: "Programs designed for every learner",
-    subtitle: "Whether catching up or jumping ahead, we have a path for your child.",
+    title: "Programs tailored for every curious mind",
+    subtitle: "From mastering daily math to competitive English, we offer comprehensive support.",
     items: [
       {
-        title: "Mathematics",
-        description: "From basic arithmetic to advanced calculus, making math make sense.",
-        color: "bg-accent-blue",
-        icon: "📐",
+        title: "Mathematics & Science",
+        description: "Core concepts explained simply. Building problem-solving skills for Grades 1-10.",
+        tags: ["Grades 1-10", "Foundation"],
+        color: "bg-accent-blue/10",
+        textColor: "text-accent-blue",
+        borderColor: "border-accent-blue/20",
+        character: "/characters/Blue-Writing.png",
       },
       {
-        title: "After School",
-        description: "Daily support, homework help, and enrichment activities.",
-        color: "bg-secondary",
-        icon: "🎒",
+        title: "Competitive English",
+        description: "Reading, writing, and comprehension strategies to excel in school and beyond.",
+        tags: ["Grades 3-10", "Advanced"],
+        color: "bg-secondary/10",
+        textColor: "text-amber-500",
+        borderColor: "border-secondary/30",
+        character: "/characters/Purple-Taking in mic.png",
       },
       {
-        title: "Summer Camps",
-        description: "Keep the momentum going with fun, engaging summer learning.",
-        color: "bg-accent-green",
-        icon: "☀️",
+        title: "Digital & Summer Camps",
+        description: "Engaging Math Bootcamps and digital resources to keep learning active all year.",
+        tags: ["All Ages", "Interactive"],
+        color: "bg-accent-green/10",
+        textColor: "text-accent-green",
+        borderColor: "border-accent-green/20",
+        character: "/characters/Red-Using laptop.png",
       },
     ]
   },
   whyChooseUs: {
-    title: "Why parents trust MindVerse",
+    title: "Why parents worldwide choose MindVerse",
     features: [
       {
-        title: "Personalized Approach",
-        description: "No cookie-cutter lessons. We adapt to how your child learns best.",
+        title: "Expert Mentorship",
+        description: "Professional teaching that adapts to how your child naturally learns.",
+        color: "text-secondary"
       },
       {
-        title: "Engaging & Fun",
-        description: "We believe learning should spark joy, not dread.",
+        title: "Confidence First",
+        description: "We don't just teach subjects; we teach students how to believe in themselves.",
+        color: "text-accent-green"
       },
       {
-        title: "Proven Results",
-        description: "Watch their confidence soar along with their grades.",
+        title: "Joyful Experience",
+        description: "Interactive sessions designed to make education feel like an adventure, not a chore.",
+        color: "text-accent-blue"
       },
     ]
   },
-  testimonials: [
-    {
-      quote: "MindVerse completely changed how my son sees math. He used to cry over homework, and now he looks forward to his sessions!",
-      author: "Sarah J.",
-      role: "Parent of 5th Grader"
-    },
-    {
-      quote: "The tutors are incredibly patient and know exactly how to make complex topics simple and fun.",
-      author: "David M.",
-      role: "Parent of 8th Grader"
-    }
-  ]
 };
