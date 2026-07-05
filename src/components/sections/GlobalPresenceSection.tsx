@@ -4,27 +4,27 @@ import { homeContent } from "@/content/home";
 
 export function GlobalPresenceSection() {
   return (
-    <section className="py-20 bg-white relative z-20 border-y border-muted/5">
+    <section className="py-16 md:py-20 bg-white relative z-20 border-y border-muted/5">
       <Container>
-        <div className="flex flex-col md:flex-row items-center justify-between gap-10">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-8 md:gap-10">
           
           {/* Left: Text */}
-          <div className="md:w-1/3 text-center md:text-left">
+          <div className="w-full lg:w-1/3 text-center lg:text-left">
             <FadeUp>
-              <h2 className="text-2xl md:text-3xl font-extrabold text-text-dark mb-3">
+              <h2 className="text-xl md:text-2xl lg:text-3xl font-extrabold text-text-dark mb-2 md:mb-3">
                 {homeContent.global.title}
               </h2>
-              <p className="text-muted text-lg">
+              <p className="text-muted text-base md:text-lg">
                 {homeContent.global.subtitle}
               </p>
             </FadeUp>
           </div>
 
-          {/* Right: Badges layout instead of raw stats */}
-          <div className="md:w-2/3 flex flex-wrap justify-center md:justify-end gap-3 md:gap-4">
+          {/* Right: Badges layout */}
+          <div className="w-full lg:w-2/3 flex flex-wrap justify-center lg:justify-end gap-2.5 md:gap-3 lg:gap-4">
             {homeContent.global.countries.map((country, i) => (
               <FadeUp key={i} delay={i * 0.1}>
-                <div className="bg-background-alt border border-muted/10 text-text-dark font-bold px-6 py-3 rounded-full shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
+                <div className="bg-background-alt border border-muted/10 text-text-dark font-bold px-4 md:px-6 py-2 md:py-3 rounded-full shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 text-sm md:text-base">
                   {country.includes('UAE') ? (
                     <span className="text-muted/60">{country}</span>
                   ) : (

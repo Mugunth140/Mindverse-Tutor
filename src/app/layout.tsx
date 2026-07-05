@@ -16,8 +16,8 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | MindVerse Tutor",
-    default: "MindVerse Tutor - Educational Excellence",
+    template: "%s | Mindverse Tutor",
+    default: "Mindverse Tutor - Educational Excellence",
   },
   description: "Playful, modern, and trustworthy educational programs.",
   keywords: ["Tutor", "Mathematics", "Education", "Summer Programs"],
@@ -35,7 +35,7 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} ${plusJakartaSans.variable}`}>
       <body className="antialiased flex flex-col min-h-screen">
         <Navbar />
-        <main className="flex-grow">{children}</main>
+        <main className="grow">{children}</main>
         <Footer />
       </body>
     </html>

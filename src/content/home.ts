@@ -1,6 +1,6 @@
 export const homeContent = {
   hero: {
-    badge: "👋 Welcome to MindVerse",
+    badge: "👋 Welcome to Mindverse",
     title: "Building Strong Foundations for Lifelong Learning.",
     subtitle: "Personalized online tutoring for Grades 1–10. We help children master core subjects, build unshakeable confidence, and discover the joy of learning.",
     ctaPrimary: "Book a Call",
@@ -45,7 +45,7 @@ export const homeContent = {
     ]
   },
   whyChooseUs: {
-    title: "Why parents worldwide choose MindVerse",
+    title: "Why parents worldwide choose Mindverse",
     features: [
       {
         title: "Expert Mentorship",

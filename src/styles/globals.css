@@ -9,7 +9,7 @@
   --color-background: var(--background);
   --color-background-alt: var(--background-alt);
   --color-surface: var(--surface);
-  --color-text: var(--text-dark);
+  --color-text-dark: var(--text-dark);
   --color-muted: var(--muted);
 
   --font-sans: var(--font-inter);
@@ -61,5 +61,20 @@
   .bg-dot-pattern {
     background-image: radial-gradient(rgba(0, 0, 0, 0.05) 2px, transparent 2px);
     background-size: 30px 30px;
+  }
+}
+
+@layer utilities {
+  .text-fluid-h1 {
+    font-size: clamp(2.5rem, 5vw + 1rem, 4.5rem);
+    line-height: 1.1;
+  }
+  .text-fluid-h2 {
+    font-size: clamp(2rem, 4vw + 0.5rem, 3.5rem);
+    line-height: 1.15;
+  }
+  .text-fluid-h3 {
+    font-size: clamp(1.5rem, 2.5vw + 0.5rem, 2.25rem);
+    line-height: 1.2;
   }
 }
