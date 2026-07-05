@@ -31,18 +31,18 @@ export function Footer() {
   };
 
   return (
-    <footer className="relative border-t border-muted/10 pt-24 overflow-hidden bg-linear-to-b from-background to-secondary/15">
+    <footer className="relative border-t border-muted/10 pt-8 overflow-hidden bg-linear-to-b from-background to-secondary/15">
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid md:grid-cols-5 gap-16 mb-20">
           <div className="md:col-span-2">
-            <Link href="/" className="inline-block mb-8 hover:scale-105 transition-transform">
+            <Link href="/" className="inline-block mb-2 hover:scale-105 transition-transform">
               <Image 
-                src="/logos/logo.png" 
+                src="/logos/logo-full.png" 
                 alt="MindVerse Tutor Logo" 
-                width={180} 
+                width={125} 
                 height={54} 
-                className="object-contain w-auto h-14"
+                className="object-contain w-auto h-20"
               />
             </Link>
             <p className="text-muted text-base leading-relaxed mb-6 font-medium">
@@ -91,7 +91,7 @@ export function Footer() {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, margin: "0px 0px -50px 0px" }}
-        className="absolute bottom-[-5vw] left-0 w-full flex justify-center pointer-events-none select-none z-0"
+        className="absolute bottom-[-3vw] left-0 w-full flex justify-center pointer-events-none select-none z-0"
       >
         {text.split("").map((char, index) => (
           <motion.span 
