@@ -36,8 +36,8 @@ export default function AboutPage() {
         </Container>
 
         {/* Mascot Integration */}
-        <FadeIn delay={0.3} className="absolute bottom-0 left-[5%] md:left-[15%] w-40 md:w-56 h-40 md:h-56 z-20 pointer-events-none">
-          <Image src="/characters/Green-Painting.png" alt="Creative Learning" fill className="object-contain object-bottom" priority />
+        <FadeIn delay={0.3} className="absolute bottom-0 left-[2%] md:left-[10%] w-48 md:w-72 h-48 md:h-72 z-20 pointer-events-none">
+          <Image src="/characters/Yellow-Reading-Book.png" alt="Curious Learning" fill className="object-contain object-bottom" priority />
         </FadeIn>
       </section>
 
@@ -154,9 +154,14 @@ export default function AboutPage() {
       </section>
 
       {/* SECTION 4: TEACHING PHILOSOPHY (Horizontal Process) */}
-      <section className="py-24 md:py-32 bg-white">
+      <section className="py-24 md:py-32 bg-white overflow-hidden relative">
         <Container>
-          <FadeUp className="text-center mb-16 md:mb-24">
+          <FadeUp className="text-center mb-16 md:mb-24 relative z-10 flex flex-col items-center">
+            {/* New Character Integration - Centered above text to prevent overlap */}
+            <div className="relative w-32 h-32 md:w-40 md:h-40 mb-6 z-10 pointer-events-none animate-[float_6s_ease-in-out_infinite]">
+               <Image src="/characters/Blue-Searching-Book.png" alt="Observe and Understand" fill className="object-contain" />
+            </div>
+            
             <h2 className="text-fluid-h2 font-extrabold text-text-dark">Our Teaching Philosophy</h2>
             <p className="text-lg text-muted mt-4">A proven framework to transform frustration into mastery.</p>
           </FadeUp>
@@ -248,11 +253,12 @@ export default function AboutPage() {
       </section>
 
       {/* SECTION 7: CALL TO ACTION */}
-      <section className="py-24 md:py-32 bg-background-alt relative overflow-hidden border-t border-muted/5 text-center">
-        {/* Abstract Mascot Peek */}
-        <div className="absolute -top-10 right-[10%] w-32 h-32 opacity-50 pointer-events-none rotate-12">
-          <Image src="/characters/Blue-Writing.png" alt="Student" fill className="object-contain" />
-        </div>
+      <section className="py-12 md:py-16 bg-background-alt relative overflow-hidden border-t border-muted/5 text-center">
+        
+        {/* Full Scene Mascot Integration */}
+        {/* <div className="absolute bottom-0 right-[2%] md:right-[5%] lg:right-[15%] w-48 md:w-64 lg:w-80 h-48 md:h-64 lg:h-80 z-0 pointer-events-none hidden md:block opacity-90 hover:scale-105 transition-transform duration-700 origin-bottom animate-[float_8s_ease-in-out_infinite_reverse]">
+          <Image src="/characters/Characters-viewing-laptop.png" alt="Students Learning Online" fill className="object-contain object-bottom" />
+        </div> */}
 
         <Container className="relative z-10 max-w-3xl mx-auto">
           <FadeUp>
