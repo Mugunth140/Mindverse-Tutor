@@ -10,7 +10,7 @@ export default function ProgramsPage() {
     <div className="overflow-hidden bg-background">
       
       {/* SECTION 1: HERO */}
-      <section className="relative pt-24 pb-20 md:pt-32 md:pb-24 lg:pt-40 lg:pb-32 min-h-[70vh] flex flex-col justify-center items-center">
+      <section className="relative pt-12 pb-10 md:pt-16 md:pb-12 lg:pt-20 lg:pb-16 min-h-[80vh] flex flex-col justify-center items-center">
         <div className="absolute inset-0 bg-dot-pattern opacity-40 mix-blend-multiply pointer-events-none"></div>
         
         {/* Soft background accents */}
@@ -23,7 +23,7 @@ export default function ProgramsPage() {
               Programs Designed Around <br className="hidden sm:block" />
               <span className="text-accent-blue relative inline-block mt-2">
                 Every Child.
-                <svg className="absolute w-[105%] h-3 -bottom-1 -left-[2%] text-secondary" viewBox="0 0 100 10" preserveAspectRatio="none">
+                <svg className="absolute w-[105%] h-3 -bottom-1 left-[-2%] text-secondary" viewBox="0 0 100 10" preserveAspectRatio="none">
                   <path d="M0 5 Q 50 10 100 5" stroke="currentColor" strokeWidth="4" fill="transparent" strokeLinecap="round" />
                 </svg>
               </span>
@@ -39,12 +39,12 @@ export default function ProgramsPage() {
       </section>
 
       {/* SECTION 2: HOW WE HELP STUDENTS (Journey) */}
-      <section className="py-24 md:py-32 bg-white relative border-y border-muted/5 overflow-hidden">
+      <section className="py-12 md:py-16 bg-white relative border-y border-muted/5 overflow-hidden">
         {/* Subtle background decoration */}
         <div className="absolute inset-0 bg-dot-pattern opacity-20 pointer-events-none"></div>
         
         <Container>
-          <div className="text-center mb-16 md:mb-24 relative z-10">
+          <div className="text-center mb-8 md:mb-12 relative z-10">
             <FadeUp>
               <span className="inline-block text-secondary font-extrabold text-xs md:text-sm uppercase tracking-[0.2em] mb-4">
                 The Mindverse Approach
@@ -58,12 +58,12 @@ export default function ProgramsPage() {
           <div className="max-w-6xl mx-auto relative">
             
             {/* Desktop connecting path */}
-            <div className="hidden md:block absolute top-[48px] left-[5%] right-[5%] border-t-[3px] border-dashed border-muted/10 z-0"></div>
+            <div className="hidden md:block absolute top-12 left-[5%] right-[5%] border-t-[3px] border-dashed border-muted/10 z-0"></div>
             
             {/* Mobile connecting path */}
-            <div className="md:hidden absolute top-[10%] bottom-[10%] left-[48px] border-l-[3px] border-dashed border-muted/10 z-0"></div>
+            <div className="md:hidden absolute top-[10%] bottom-[10%] left-[33%] border-l-[3px] border-dashed border-muted/10 z-0"></div>
 
-            <div className="flex flex-col md:flex-row justify-between items-start md:items-start relative z-10 gap-12 md:gap-4 lg:gap-0">
+            <div className="flex flex-col md:flex-row justify-between items-start relative z-10 gap-12 md:gap-4 lg:gap-0">
               {[
                 { label: "Discover", sub: "Potential", colorBg: "bg-accent-blue/15", colorBorder: "border-accent-blue/30", colorText: "text-accent-blue" },
                 { label: "Strengthen", sub: "Foundations", colorBg: "bg-secondary/20", colorBorder: "border-secondary/40", colorText: "text-yellow-600" },
@@ -71,12 +71,12 @@ export default function ProgramsPage() {
                 { label: "Grow", sub: "Confidence", colorBg: "bg-accent-green/15", colorBorder: "border-accent-green/30", colorText: "text-accent-green" },
                 { label: "Succeed", sub: "Beyond Grades", colorBg: "bg-primary/10", colorBorder: "border-primary/20", colorText: "text-primary" }
               ].map((step, i) => (
-                <FadeUp key={i} delay={i * 0.1} className="flex flex-row md:flex-col items-center gap-6 md:gap-8 w-full md:w-auto group">
+                <FadeUp key={i} delay={i * 0.1} className="flex flex-row md:flex-col items-center justify-center gap-6 md:gap-8 w-full md:w-auto group">
                   
                   {/* Journey Node */}
                   <div className="relative w-24 h-24 shrink-0 flex items-center justify-center">
                     {/* Animated Outer Shape */}
-                    <div className={`absolute inset-0 rounded-[2rem] ${step.colorBg} border ${step.colorBorder} -rotate-6 group-hover:rotate-12 group-hover:scale-110 transition-all duration-500`}></div>
+                    <div className={`absolute inset-0 rounded-4xl ${step.colorBg} border ${step.colorBorder} -rotate-6 group-hover:rotate-12 group-hover:scale-110 transition-all duration-500`}></div>
                     
                     {/* Inner Number Circle */}
                     <div className="absolute inset-3 bg-white rounded-full shadow-sm flex items-center justify-center">
@@ -87,7 +87,7 @@ export default function ProgramsPage() {
                   {/* Text Content */}
                   <div className="text-left md:text-center pt-2 md:pt-0">
                     <h3 className="font-extrabold text-xl md:text-2xl text-text-dark mb-1">{step.label}</h3>
-                    <p className={`text-xs md:text-sm font-bold uppercase tracking-widest ${step.colorText} opacity-80`}>{step.sub}</p>
+                    <p className={`text-xs md:text-sm font-bold  tracking-widest ${step.colorText} opacity-80`}>{step.sub}</p>
                   </div>
 
                 </FadeUp>
@@ -98,144 +98,175 @@ export default function ProgramsPage() {
       </section>
 
       {/* SECTION 3: PROGRAMS (Main Section) */}
-      <section className="py-24 md:py-32 bg-background-alt overflow-hidden">
-        <Container className="space-y-32 md:space-y-40">
+      <section className="py-12 md:py-16 bg-background-alt overflow-hidden">
+        <Container className="space-y-32 md:space-y-48">
           
-          {/* Program 1: Image Left, Content Right */}
-          <div className="flex flex-col md:flex-row items-center gap-12 md:gap-20 bg-white rounded-[2rem] md:rounded-tr-[6rem] md:rounded-bl-[6rem] p-8 md:p-16 border border-muted/10 shadow-sm relative group">
-            <div className="w-full md:w-1/2 relative min-h-[300px] md:min-h-[450px] order-2 md:order-1 flex items-center justify-center">
-              <div className="absolute inset-0 bg-secondary/5 rounded-full blur-[80px]"></div>
-              <div className="relative w-[80%] md:w-[90%] h-full z-10 transition-transform duration-700 group-hover:scale-105">
-                <Image src="/characters/Yelllow-Teaching.png" alt="Yellow Teacher" fill className="object-contain object-center" />
-              </div>
-            </div>
-            <div className="w-full md:w-1/2 order-1 md:order-2">
-              <FadeUp>
-                <div className="inline-block px-4 py-1.5 rounded-full bg-secondary/10 text-yellow-700 font-extrabold text-xs uppercase tracking-widest mb-6">
-                  Learning Designed Around Your Child
-                </div>
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-text-dark mb-8 leading-tight">
-                  Personalized One-on-One Tutoring
-                </h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-                  {['Grades K–10', 'Mathematics', 'Science', 'English', 'Personalized Learning Plans', 'Flexible Scheduling', 'Individual Progress Tracking'].map((item, i) => (
-                    <div key={i} className="flex items-start gap-3">
-                      <div className="w-2 h-2 mt-2 rounded-full bg-secondary shrink-0" />
-                      <span className="text-muted font-medium text-sm md:text-base leading-snug">{item}</span>
-                    </div>
-                  ))}
-                </div>
-              </FadeUp>
-            </div>
-          </div>
-
-          {/* Program 2: Content Left, Image Right */}
-          <div className="flex flex-col md:flex-row items-center gap-12 md:gap-20 relative group">
-            <div className="w-full md:w-1/2">
-              <FadeUp>
-                <div className="inline-block px-4 py-1.5 rounded-full bg-accent-blue/10 text-accent-blue font-extrabold text-xs uppercase tracking-widest mb-6">
-                  Daily Learning. Daily Confidence.
-                </div>
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-text-dark mb-8 leading-tight">
-                  After-School Support Programme
-                </h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  {['Homework Support', 'Revision', 'Study Skills', 'Exam Preparation', 'One-on-One', 'Small Cohorts (Max 4)'].map((item, i) => (
-                    <div key={i} className="flex items-start gap-3">
-                      <div className="w-2 h-2 mt-2 rounded-full bg-accent-blue shrink-0" />
-                      <span className="text-muted font-medium text-sm md:text-base leading-snug">{item}</span>
-                    </div>
-                  ))}
-                </div>
-              </FadeUp>
-            </div>
-            <div className="w-full md:w-1/2 relative min-h-[300px] md:min-h-[450px] flex items-center justify-center bg-[url('https://www.transparenttextures.com/patterns/notebook.png')] bg-white rounded-[3rem] border border-muted/10 shadow-sm p-8">
-               <div className="relative w-[90%] h-full z-10 transition-transform duration-700 group-hover:-translate-y-4">
-                 <Image src="/characters/Blue-Writing.png" alt="Blue Student Studying" fill className="object-contain object-bottom" />
-               </div>
-            </div>
-          </div>
-
-          {/* Program 3: Full Width */}
-          <div className="w-full bg-white rounded-[2rem] md:rounded-[4rem] p-8 md:p-16 lg:p-24 border border-muted/10 shadow-sm relative overflow-hidden group">
-            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-accent-red/5 rounded-full blur-[100px] pointer-events-none" />
+          {/* Program 1: Personalized One-on-One (Asymmetrical Breakout) */}
+          <div className="relative w-full max-w-6xl mx-auto">
+            {/* Background Block */}
+            <div className="absolute top-[10%] bottom-[10%] left-0 w-full bg-secondary/10 rounded-[3rem] md:rounded-[4rem] pointer-events-none border border-secondary/20"></div>
             
-            <div className="flex flex-col lg:flex-row items-center gap-16 relative z-10">
-              <div className="w-full lg:w-5/12 text-center lg:text-left">
+            <div className="flex flex-col md:flex-row items-center relative z-10">
+              {/* Image breaking out */}
+              <div className="w-full md:w-1/2 relative h-100 md:h-137 lg:h-162 flex justify-center items-center group">
+                 <div className="absolute inset-0 bg-white/40 blur-2xl rounded-full"></div>
+                 <Image src="/characters/yellow-blue-hifi.png" alt="1-on-1 Tutoring" fill className="object-contain drop-shadow-2xl z-10" priority />
+              </div>
+              
+              {/* Content */}
+              <div className="w-full md:w-1/2 p-8 md:p-12 lg:p-16">
                 <FadeUp>
-                  <div className="inline-block px-4 py-1.5 rounded-full bg-accent-red/10 text-accent-red font-extrabold text-xs uppercase tracking-widest mb-6">
-                    Preparing Students for the Next Step
+                  <div className="inline-block px-4 py-1.5 rounded-full bg-white text-yellow-700 font-extrabold text-xs uppercase tracking-widest mb-6 shadow-sm border border-secondary/20">
+                    Learning Designed Around Your Child
                   </div>
-                  <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-text-dark mb-8 leading-tight">
-                    Middle School Math Readiness Bootcamp
+                  <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-text-dark mb-8 leading-[1.15]">
+                    Personalized <br className="hidden lg:block"/>One-on-One Tutoring
                   </h2>
-                  <div className="flex flex-col gap-4 text-left max-w-sm mx-auto lg:mx-0">
-                    {['Transition to Middle School', 'Confidence Building', 'Strong Math Foundations', 'Interactive Activities'].map((item, i) => (
-                      <div key={i} className="flex items-center gap-4 bg-background-alt px-5 py-3 rounded-2xl border border-muted/5">
-                        <div className="w-2.5 h-2.5 rounded-sm rotate-45 bg-accent-red shrink-0" />
-                        <span className="text-text-dark font-bold text-sm">{item}</span>
+                  <div className="flex flex-col gap-4 mb-8">
+                    {['Grades K–10', 'Mathematics, Science & English', 'Personalized Learning Plans', 'Flexible Scheduling', 'Individual Progress Tracking'].map((item, i) => (
+                      <div key={i} className="flex items-center gap-4 bg-white/80 backdrop-blur-sm px-5 py-3.5 rounded-2xl shadow-sm border border-white">
+                        <div className="w-2 h-2 rounded-full bg-secondary shrink-0" />
+                        <span className="text-text-dark font-bold text-sm md:text-base">{item}</span>
                       </div>
                     ))}
                   </div>
                 </FadeUp>
               </div>
-              
-              <div className="w-full lg:w-7/12 relative min-h-[350px] md:min-h-[500px] flex items-center justify-center">
-                 <div className="relative w-full h-full">
-                    <Image src="/characters/Board.png" alt="Math Board" fill className="object-contain z-10" />
-                    <div className="absolute right-[5%] bottom-[10%] w-[45%] h-[60%] z-20 transition-transform duration-700 group-hover:scale-105 origin-bottom">
-                      <Image src="/characters/Yelllow-Teaching.png" alt="Yellow Teacher" fill className="object-contain" />
-                    </div>
-                 </div>
-              </div>
             </div>
           </div>
 
-          {/* Program 4: Split Layout */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
-            <div className="bg-accent-blue/5 rounded-[2rem] md:rounded-[3rem] p-8 md:p-16 flex flex-col justify-center relative overflow-hidden group">
+          {/* Program 2: After-School Support (Overlapping Cards) */}
+          <div className="relative w-full max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-0">
+            {/* Content Card (Left, overlapping Right) */}
+            <div className="w-full lg:w-7/12 bg-white rounded-[2rem] md:rounded-[3rem] p-8 md:p-12 lg:p-16 shadow-float border border-muted/5 relative z-20">
               <FadeUp>
-                <div className="inline-block px-4 py-1.5 rounded-full bg-white shadow-sm text-accent-blue font-extrabold text-xs uppercase tracking-widest mb-6">
-                  Master Multiplication with Confidence
+                <div className="inline-block px-4 py-1.5 rounded-full bg-accent-blue/10 text-accent-blue font-extrabold text-xs uppercase tracking-widest mb-6">
+                  Daily Learning. Daily Confidence.
                 </div>
-                <h2 className="text-3xl md:text-4xl font-black text-text-dark mb-10 leading-tight">
-                  Multiplication Bootcamp
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-text-dark mb-8 leading-[1.15]">
+                  After-School <br className="hidden lg:block"/>Support Programme
                 </h2>
-                <div className="flex flex-wrap gap-3">
-                  {['Speed', 'Accuracy', 'Patterns', 'Games', 'Problem Solving'].map((item, i) => (
-                    <span key={i} className="px-5 py-2.5 bg-white border border-accent-blue/10 text-text-dark font-bold text-sm rounded-xl shadow-sm hover:-translate-y-1 transition-transform">
-                      {item}
-                    </span>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-5">
+                  {['Homework Support', 'Revision', 'Study Skills', 'Exam Preparation', 'One-on-One', 'Small Cohorts (Max 4)'].map((item, i) => (
+                    <div key={i} className="flex items-center gap-3">
+                      <div className="w-8 h-8 rounded-full bg-accent-blue/10 flex items-center justify-center shrink-0">
+                        <div className="w-2 h-2 rounded-full bg-accent-blue" />
+                      </div>
+                      <span className="text-muted font-bold text-sm md:text-base">{item}</span>
+                    </div>
                   ))}
                 </div>
               </FadeUp>
             </div>
             
-            <div className="bg-white border border-muted/10 shadow-sm rounded-4xl md:rounded-[3rem] min-h-[350px] md:min-h-[450px] relative overflow-hidden flex items-center justify-center p-8 group">
+            {/* Image Card (Right) */}
+            <div className="w-full lg:w-6/12 lg:-ml-24 relative min-h-[400px] md:min-h-[500px] bg-accent-blue/5 rounded-[2rem] md:rounded-[3rem] border border-accent-blue/10 flex justify-center items-center p-8 z-10 overflow-hidden group">
                <div className="absolute inset-0 bg-dot-pattern opacity-20 pointer-events-none"></div>
-               <div className="relative w-[80%] h-full z-10">
-                 <Image src="/characters/Board.png" alt="Board" fill className="object-contain opacity-50 blur-[2px]" />
-               </div>
-               <div className="absolute inset-0 m-auto w-[60%] h-[60%] z-20 transition-transform duration-700 group-hover:scale-110">
-                 <Image src="/characters/Blue-Searching-Book.png" alt="Blue Learner" fill className="object-contain" />
-               </div>
+               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-accent-blue/20 rounded-full blur-3xl group-hover:scale-150 transition-transform duration-700"></div>
+               <Image src="/characters/blue-shows-paper-with-star.png" alt="Blue Student Homework Success" fill className="object-contain z-10 group-hover:scale-110 transition-transform duration-700 drop-shadow-xl" />
             </div>
           </div>
 
-          {/* Program 5: Offset Layout with Timeline */}
-          <div className="flex flex-col lg:flex-row items-start gap-12 md:gap-20 bg-accent-green/5 rounded-4xl md:rounded-[4rem] p-4 md:p-8 lg:p-12 relative overflow-hidden border border-accent-green/10">
-            <div className="w-full lg:w-5/12 order-2 lg:order-1 relative min-h-100 flex items-end">
-              <div className="absolute bottom-0 left-0 w-full h-[120%] z-10">
-                <Image src="/characters/Yellow-Reading-Book.png" alt="Reading Mascot" fill className="object-contain object-bottom" />
+          {/* Program 3: Math Readiness (Floating Banner Scene) */}
+          <div className="w-full max-w-6xl mx-auto bg-accent-red/5 rounded-[2rem] md:rounded-[4rem] pt-12 md:pt-20 px-6 md:px-12 border border-accent-red/10 shadow-sm relative overflow-hidden flex flex-col items-center group">
+            <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-accent-red/10 rounded-full blur-[120px] pointer-events-none" />
+            <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-secondary/10 rounded-full blur-[100px] pointer-events-none" />
+            
+            <FadeUp className="text-center relative z-20 max-w-3xl mx-auto mb-12">
+              <div className="inline-block px-4 py-1.5 rounded-full bg-white shadow-sm text-accent-red font-extrabold text-xs uppercase tracking-widest mb-6">
+                Preparing Students for the Next Step
+              </div>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-text-dark leading-[1.15]">
+                Middle School Math <br className="hidden md:block"/>Readiness Bootcamp
+              </h2>
+            </FadeUp>
+
+            {/* Floating Features Around Image */}
+            <div className="relative w-full min-h-[400px] md:min-h-[500px] lg:min-h-[600px] flex justify-center mt-auto z-20">
+               <Image src="/characters/yellow-blue-puzzle.png" alt="Math Puzzle Foundation" fill className="object-contain object-bottom z-10 group-hover:scale-105 transition-transform duration-700 origin-bottom drop-shadow-2xl" />
+               
+               {/* Feature Badges (Desktop/Tablet) */}
+               <div className="hidden md:flex absolute top-[10%] left-[5%] bg-white/95 backdrop-blur-md px-5 py-3 rounded-2xl shadow-float z-20 items-center gap-3 animate-[float_6s_ease-in-out_infinite]">
+                 <span className="text-xl">🎓</span>
+                 <span className="font-bold text-text-dark text-sm">Transition to Middle School</span>
+               </div>
+               <div className="hidden md:flex absolute top-[25%] right-[5%] bg-white/95 backdrop-blur-md px-5 py-3 rounded-2xl shadow-float z-20 items-center gap-3 animate-[float_7s_ease-in-out_infinite_reverse]">
+                 <span className="text-xl">💪</span>
+                 <span className="font-bold text-text-dark text-sm">Confidence Building</span>
+               </div>
+               <div className="hidden lg:flex absolute bottom-[30%] left-[8%] bg-white/95 backdrop-blur-md px-5 py-3 rounded-2xl shadow-float z-20 items-center gap-3 animate-[float_8s_ease-in-out_infinite]">
+                 <span className="text-xl">🧱</span>
+                 <span className="font-bold text-text-dark text-sm">Strong Foundations</span>
+               </div>
+               <div className="hidden lg:flex absolute bottom-[15%] right-[10%] bg-white/95 backdrop-blur-md px-5 py-3 rounded-2xl shadow-float z-20 items-center gap-3 animate-[float_5s_ease-in-out_infinite_reverse]">
+                 <span className="text-xl">🎲</span>
+                 <span className="font-bold text-text-dark text-sm">Interactive Activities</span>
+               </div>
+            </div>
+            
+            {/* Mobile Features List */}
+            <div className="md:hidden w-full flex flex-col gap-3 pb-8 z-20 relative">
+               {['Transition to Middle School', 'Confidence Building', 'Strong Math Foundations', 'Interactive Activities'].map((item, i) => (
+                 <div key={i} className="bg-white/90 backdrop-blur-sm px-4 py-3 rounded-xl shadow-sm border border-muted/5 font-bold text-text-dark text-sm text-center">
+                   {item}
+                 </div>
+               ))}
+            </div>
+          </div>
+
+          {/* Program 4: Multiplication Bootcamp (Solid Block / Grid List) */}
+          <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-8 md:gap-12">
+            {/* Image Block */}
+            <div className="w-full lg:w-5/12 bg-primary/5 border border-primary/10 rounded-[2rem] md:rounded-[3rem] min-h-[350px] md:min-h-[450px] relative overflow-hidden flex items-center justify-center p-8 group">
+               <div className="absolute inset-0 bg-dot-pattern opacity-10 pointer-events-none"></div>
+               <div className="absolute w-[120%] h-[120%] bg-[radial-gradient(circle_at_center,var(--color-primary)_0%,transparent_50%)] opacity-5 group-hover:opacity-10 transition-opacity duration-700"></div>
+               <div className="relative w-full h-full z-20 transition-transform duration-700 group-hover:scale-110 group-hover:rotate-2">
+                 <Image src="/characters/blue-found-chest.png" alt="Multiplication Treasure" fill className="object-contain drop-shadow-xl" />
+               </div>
+            </div>
+
+            {/* Content Block */}
+            <div className="w-full lg:w-7/12 bg-white rounded-[2rem] md:rounded-[3rem] p-8 md:p-12 lg:p-16 flex flex-col justify-center shadow-sm border border-muted/5">
+              <FadeUp>
+                <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 text-primary font-extrabold text-xs uppercase tracking-widest mb-6">
+                  <span className="text-base">⚡</span> Master with Confidence
+                </div>
+                <h2 className="text-3xl md:text-4xl font-black text-text-dark mb-8 leading-[1.15]">
+                  Multiplication Bootcamp
+                </h2>
+                <div className="flex flex-wrap gap-3 md:gap-4">
+                  {[
+                    { label: 'Speed', icon: '🚀' }, 
+                    { label: 'Accuracy', icon: '🎯' }, 
+                    { label: 'Patterns', icon: '🧩' }, 
+                    { label: 'Games', icon: '🎮' }, 
+                    { label: 'Problem Solving', icon: '🧠' }
+                  ].map((item, i) => (
+                    <span key={i} className="px-5 py-3 bg-background-alt border border-muted/10 text-text-dark font-bold text-sm md:text-base rounded-2xl shadow-sm hover:shadow-md hover:-translate-y-1 transition-all flex items-center gap-2">
+                      <span className="text-lg">{item.icon}</span> {item.label}
+                    </span>
+                  ))}
+                </div>
+              </FadeUp>
+            </div>
+          </div>
+
+          {/* Program 5: Reading Studio (Organic Split) */}
+          <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-12 md:gap-20 bg-accent-green/5 rounded-[2rem] md:rounded-[4rem] p-8 md:p-16 lg:p-24 relative overflow-hidden border border-accent-green/10">
+            <div className="w-full lg:w-1/2 order-2 lg:order-1 relative min-h-[350px] md:min-h-[500px] flex items-end justify-center group">
+              {/* Organic Blob Background */}
+              <div className="absolute inset-0 bg-accent-green/20 rounded-[4rem] rounded-tl-[8rem] rounded-br-[8rem] rotate-6 group-hover:rotate-12 transition-transform duration-700 blur-sm scale-90" />
+              <div className="absolute bottom-0 left-0 w-full h-[110%] md:h-[120%] z-10 transition-transform duration-700 group-hover:scale-105 origin-bottom">
+                <Image src="/characters/Yellow-Reading-Book.png" alt="Reading Mascot" fill className="object-contain object-bottom drop-shadow-2xl" />
               </div>
             </div>
             
-            <div className="w-full lg:w-7/12 order-1 lg:order-2">
+            <div className="w-full lg:w-1/2 order-1 lg:order-2">
               <FadeUp>
-                <div className="inline-block text-accent-green font-extrabold text-xs uppercase tracking-widest mb-6 ">
+                <div className="inline-block px-4 py-1.5 rounded-full bg-white shadow-sm text-accent-green font-extrabold text-xs uppercase tracking-widest mb-6 border border-accent-green/10">
                   Building Lifelong Readers
                 </div>
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-text-dark mb-6 leading-tight">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-text-dark mb-6 leading-[1.15]">
                   Mindverse Reading Studio
                 </h2>
                 <p className="text-muted text-base md:text-lg mb-12">
@@ -243,21 +274,21 @@ export default function ProgramsPage() {
                 </p>
                 
                 {/* Visual Progression */}
-                <div className="pl-6 border-l-2 border-dashed border-accent-green/30 space-y-6 relative">
-                  <div className="relative">
-                    <div className="absolute -left-[35px] top-1 w-4 h-4 bg-white border-4 border-accent-green rounded-full shadow-sm"/>
-                    <h4 className="font-extrabold text-lg text-text-dark mb-1">Level 1: Foundation</h4>
-                    <p className="text-sm text-muted">Phonics, letter recognition, and building the building blocks of language.</p>
+                <div className="pl-6 md:pl-8 border-l-[3px] border-dashed border-accent-green/30 space-y-10 relative">
+                  <div className="relative group">
+                    <div className="absolute -left-[35px] md:-left-[43px] top-0 w-6 h-6 bg-white border-4 border-accent-green rounded-full shadow-sm group-hover:scale-125 transition-transform"/>
+                    <h4 className="font-extrabold text-lg md:text-xl text-text-dark mb-1">Level 1: Foundation</h4>
+                    <p className="text-sm md:text-base text-muted">Phonics, letter recognition, and building the core blocks of language.</p>
                   </div>
-                  <div className="relative">
-                    <div className="absolute -left-[35px] top-1 w-4 h-4 bg-white border-4 border-secondary rounded-full shadow-sm"/>
-                    <h4 className="font-extrabold text-lg text-text-dark mb-1">Level 2: Fluency</h4>
-                    <p className="text-sm text-muted">Blending words, reading simple sentences, and improving reading speed.</p>
+                  <div className="relative group">
+                    <div className="absolute -left-[35px] md:-left-[43px] top-0 w-6 h-6 bg-white border-4 border-secondary rounded-full shadow-sm group-hover:scale-125 transition-transform"/>
+                    <h4 className="font-extrabold text-lg md:text-xl text-text-dark mb-1">Level 2: Fluency</h4>
+                    <p className="text-sm md:text-base text-muted">Blending words, reading simple sentences, and improving reading speed.</p>
                   </div>
-                  <div className="relative">
-                    <div className="absolute -left-[35px] top-1 w-4 h-4 bg-white border-4 border-primary rounded-full shadow-sm"/>
-                    <h4 className="font-extrabold text-lg text-text-dark mb-1">Level 3: Comprehension</h4>
-                    <p className="text-sm text-muted">Independent reading, understanding narratives, and analytical thinking.</p>
+                  <div className="relative group">
+                    <div className="absolute -left-[35px] md:-left-[43px] top-0 w-6 h-6 bg-white border-4 border-primary rounded-full shadow-sm group-hover:scale-125 transition-transform"/>
+                    <h4 className="font-extrabold text-lg md:text-xl text-text-dark mb-1">Level 3: Comprehension</h4>
+                    <p className="text-sm md:text-base text-muted">Independent reading, understanding narratives, and analytical thinking.</p>
                   </div>
                 </div>
               </FadeUp>
