@@ -4,10 +4,13 @@ import { cn } from "@/lib/utils/cn";
 export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: "primary" | "secondary" | "outline" | "ghost" | "accent-green" | "accent-blue";
   size?: "sm" | "md" | "lg" | "xl";
+  href?: string;
+  target?: string;
+  rel?: string;
 }
 
 export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, variant = "primary", size = "md", ...props }, ref) => {
+  ({ className, variant = "primary", size = "md", href, ...props }, ref) => {
     const variants = {
       primary: "bg-primary text-white hover:bg-primary/90 shadow-[0_4px_14px_0_rgba(124,58,237,0.39)] hover:shadow-[0_6px_20px_rgba(124,58,237,0.23)] hover:-translate-y-0.5",
       secondary: "bg-secondary text-text-dark hover:bg-secondary/90 shadow-[0_4px_14px_0_rgba(251,191,36,0.39)] border border-muted/20 text-text-dark hover:border-text-dark/50",
@@ -25,15 +28,25 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       xl: "px-8 md:px-10 py-4 md:py-5 text-lg md:text-xl font-bold rounded-full min-h-[60px]",
     };
 
+    const combinedClassName = cn(
+      "inline-flex items-center justify-center rounded-full font-bold transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background active:scale-95 touch-manipulation",
+      variants[variant],
+      sizes[size],
+      className
+    );
+
+    if (href) {
+      return (
+        <a href={href} className={combinedClassName} {...(props as any)}>
+          {props.children}
+        </a>
+      );
+    }
+
     return (
       <button
         ref={ref}
-        className={cn(
-          "inline-flex items-center justify-center rounded-full font-bold transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background active:scale-95 touch-manipulation",
-          variants[variant],
-          sizes[size],
-          className
-        )}
+        className={combinedClassName}
         {...props}
       />
     );

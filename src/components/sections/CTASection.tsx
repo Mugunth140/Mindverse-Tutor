@@ -47,7 +47,7 @@ export function CTASection() {
               <Button size="xl" className="w-full sm:w-auto bg-primary text-white hover:bg-primary/90 shadow-lg text-base md:text-lg border-2 border-primary">
                 Book a Call
               </Button>
-              <Button size="xl" variant="outline" className="w-full sm:w-auto bg-white border-2 border-text-dark/10 text-text-dark hover:border-text-dark/30 shadow-sm text-base md:text-lg">
+              <Button href="https://assessment.mindversetutor.com" target="_blank" rel="noopener noreferrer" size="xl" variant="outline" className="w-full sm:w-auto bg-white border-2 border-text-dark/10 text-text-dark hover:border-text-dark/30 shadow-sm text-base md:text-lg">
                 Free Assessment
               </Button>
             </FadeUp>

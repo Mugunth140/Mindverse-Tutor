@@ -115,7 +115,7 @@ export function Navbar() {
                 <Link href="/contact" className="block text-2xl font-extrabold text-text-dark hover:text-primary py-2" onClick={() => setIsOpen(false)}>Book a Call</Link>
               </motion.div>
               <motion.div variants={linkVariants} className="w-full pt-6 border-t border-muted/10">
-                <Button size="xl" variant="secondary" className="w-full shadow-lg" onClick={() => setIsOpen(false)}>Free Assessment</Button>
+                <Button href="https://assessment.mindversetutor.com" target="_blank" rel="noopener noreferrer" size="xl" variant="secondary" className="w-full shadow-lg" onClick={() => setIsOpen(false)}>Free Assessment</Button>
               </motion.div>
             </nav>
           </motion.div>

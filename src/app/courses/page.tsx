@@ -393,7 +393,7 @@ export default function CoursesPage() {
             <Button size="md" className="w-full sm:w-auto bg-primary text-white hover:bg-primary/90 shadow-lg border-2 border-primary hover:scale-105 transition-transform text-lg">
               Book a Discovery Call
             </Button>
-            <Button size="md" variant="outline" className="w-full sm:w-auto bg-white border-2 border-muted/20 text-text-dark hover:border-text-dark hover:bg-text-dark/5 shadow-sm hover:scale-105 transition-transform text-lg">
+            <Button href="https://assessment.mindversetutor.com" target="_blank" rel="noopener noreferrer" size="md" variant="outline" className="w-full sm:w-auto bg-white border-2 border-muted/20 text-text-dark hover:border-text-dark hover:bg-text-dark/5 shadow-sm hover:scale-105 transition-transform text-lg">
               Take a Free Assessment
             </Button>
           </FadeUp>
