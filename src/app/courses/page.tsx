@@ -18,20 +18,13 @@ export default function CoursesPage() {
         <div className="absolute top-[5%] left-[5%] w-64 h-64 bg-accent-blue/10 rounded-full blur-[80px] pointer-events-none" />
         <div className="absolute bottom-[5%] right-[5%] w-80 h-80 bg-secondary/10 rounded-full blur-[100px] pointer-events-none" />
 
-        <Container className="relative z-10 text-center max-w-5xl mx-auto flex flex-col items-center">
-          <FadeUp>
-            <div className="inline-block px-5 py-2 rounded-full bg-white shadow-sm border border-muted/5 text-text-dark font-extrabold text-xs md:text-sm uppercase tracking-widest mb-8">
-              <span className="text-secondary text-base mr-2">✦</span>
-              Structured Learning Paths
-            </div>
-          </FadeUp>
-          
+        <Container className="relative z-10 text-center max-w-5xl mx-auto flex flex-col items-center">          
           <FadeUp delay={0.1}>
             <h1 className="text-fluid-h1 font-black text-text-dark mb-6 leading-[1.1] tracking-tight text-balance">
               Learning Pathways That Grow <br className="hidden sm:block" />
               <span className="text-accent-green relative inline-block mt-2">
                 With Every Child.
-                <svg className="absolute w-[105%] h-3 -bottom-1 -left-[2%] text-secondary" viewBox="0 0 100 10" preserveAspectRatio="none">
+                <svg className="absolute w-[105%] h-3 -bottom-1 left-[-2%] text-secondary" viewBox="0 0 100 10" preserveAspectRatio="none">
                   <path d="M0 5 Q 50 10 100 5" stroke="currentColor" strokeWidth="4" fill="transparent" strokeLinecap="round" />
                 </svg>
               </span>
@@ -44,22 +37,6 @@ export default function CoursesPage() {
             </p>
           </FadeUp>
         </Container>
-
-        {/* Hero Interactive Scene */}
-        <FadeIn delay={0.3} className="relative w-full max-w-5xl mx-auto h-[350px] md:h-[450px] lg:h-[550px] z-20">
-          <div className="absolute inset-0 m-auto w-[85%] md:w-[70%] h-fit drop-shadow-xl z-10">
-            <Image src="/characters/Board.png" alt="Learning Board" width={800} height={500} className="object-contain w-full h-auto" priority />
-          </div>
-          <div className="absolute top-[10%] md:top-[15%] left-[0%] md:left-[10%] w-[35%] md:w-[28%] z-20 animate-[float_7s_ease-in-out_infinite]">
-            <Image src="/characters/Blue-Writing.png" alt="Student" width={300} height={300} className="object-contain w-full h-auto" />
-          </div>
-          <div className="absolute bottom-[0%] md:bottom-[5%] right-[0%] md:right-[10%] w-[40%] md:w-[35%] z-20 animate-[float_6s_ease-in-out_infinite_reverse]">
-            <Image src="/characters/Yelllow-Teaching.png" alt="Teacher" width={300} height={300} className="object-contain w-full h-auto" />
-          </div>
-          <div className="absolute top-[20%] right-[5%] md:right-[20%] w-[25%] md:w-[20%] z-0 animate-[float_8s_ease-in-out_infinite] opacity-90">
-            <Image src="/characters/Yellow-Reading-Book.png" alt="Books" width={200} height={200} className="object-contain w-full h-auto" />
-          </div>
-        </FadeIn>
       </section>
 
       {/* SECTION 2: CHOOSE YOUR LEARNING PATH */}
@@ -248,11 +225,6 @@ export default function CoursesPage() {
       <section className="py-24 md:py-32 bg-white relative border-y border-muted/5 overflow-hidden">
         <Container>
           <div className="flex flex-col lg:flex-row gap-12 lg:gap-8 items-end relative">
-            
-            {/* Mascot anchoring the top right of the stairs */}
-            <div className="absolute top-0 right-[5%] w-48 h-48 lg:w-64 lg:h-64 z-20 pointer-events-none hidden md:block">
-               <Image src="/characters/green-showing-note.png" alt="Reading Mascot" fill className="object-contain" />
-            </div>
 
             <div className="w-full lg:w-1/3 mb-10 lg:mb-0 lg:pb-12 text-center lg:text-left z-10">
               <FadeUp>
@@ -267,7 +239,7 @@ export default function CoursesPage() {
               
               {/* Level 1 */}
               <FadeUp delay={0.1} className="md:mt-32">
-                <div className="bg-background-alt border border-muted/10 rounded-[2rem] p-8 shadow-sm h-full flex flex-col">
+                <div className="bg-background-alt border border-muted/10 rounded-4xl p-8 shadow-sm h-full flex flex-col">
                   <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center font-black text-accent-green mb-6 border border-muted/5 shadow-sm">1</div>
                   <h4 className="font-extrabold text-xl mb-2 text-text-dark">Phonics Foundations</h4>
                   <span className="text-xs font-bold uppercase tracking-widest text-muted mb-6">16 Sessions</span>
@@ -283,7 +255,7 @@ export default function CoursesPage() {
 
               {/* Level 2 */}
               <FadeUp delay={0.2} className="md:mt-16">
-                <div className="bg-accent-green/5 border border-accent-green/10 rounded-[2rem] p-8 shadow-sm h-full flex flex-col">
+                <div className="bg-accent-green/5 border border-accent-green/10 rounded-4xl p-8 shadow-sm h-full flex flex-col">
                   <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center font-black text-accent-green mb-6 border border-muted/5 shadow-sm">2</div>
                   <h4 className="font-extrabold text-xl mb-2 text-text-dark">Reading Builders</h4>
                   <span className="text-xs font-bold uppercase tracking-widest text-muted mb-6">16 Sessions</span>
@@ -299,7 +271,7 @@ export default function CoursesPage() {
 
               {/* Level 3 */}
               <FadeUp delay={0.3} className="md:mt-0">
-                <div className="bg-accent-green/10 border border-accent-green/20 rounded-[2rem] p-8 shadow-sm h-full flex flex-col">
+                <div className="bg-accent-green/10 border border-accent-green/20 rounded-4xl p-8 shadow-sm h-full flex flex-col">
                   <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center font-black text-accent-green mb-6 border border-muted/5 shadow-sm">3</div>
                   <h4 className="font-extrabold text-xl mb-2 text-text-dark">Reading Fluency</h4>
                   <span className="text-xs font-bold uppercase tracking-widest text-muted mb-6">16 Sessions</span>
@@ -315,71 +287,6 @@ export default function CoursesPage() {
 
             </div>
           </div>
-        </Container>
-      </section>
-
-      {/* SECTION 5: HOW LEARNING PROGRESSES (Winding Path) */}
-      <section className="py-24 md:py-32 bg-background-alt relative overflow-hidden">
-        <Container>
-          <FadeUp className="text-center mb-16 md:mb-24">
-            <h2 className="text-fluid-h2 font-black text-text-dark">How Learning Progresses</h2>
-          </FadeUp>
-
-          {/* Desktop Winding Path (CSS Flex Magic) */}
-          <div className="hidden lg:flex flex-col max-w-5xl mx-auto relative">
-            
-            {/* Row 1 (Left to Right) */}
-            <div className="flex w-[75%] border-t-[3px] border-r-[3px] border-dashed border-secondary/30 rounded-tr-[4rem] relative min-h-[160px] ml-[12.5%] pr-12 pb-12">
-              {[
-                { title: 'Assessment', color: 'bg-accent-blue' },
-                { title: 'Placement', color: 'bg-secondary' },
-                { title: 'Learning Plan', color: 'bg-accent-green' },
-                { title: 'Live Classes', color: 'bg-accent-red' }
-              ].map((step, i) => (
-                <div key={i} className="flex-1 relative flex justify-center">
-                  <div className={`absolute -top-3 w-6 h-6 rounded-full ${step.color} border-4 border-background-alt shadow-sm`}></div>
-                  <div className="mt-8 text-center font-bold text-text-dark max-w-[100px]">{step.title}</div>
-                </div>
-              ))}
-            </div>
-            
-            {/* Row 2 (Right to Left) */}
-            <div className="flex flex-row-reverse w-[75%] border-b-[3px] border-l-[3px] border-dashed border-secondary/30 rounded-bl-[4rem] relative min-h-[160px] mr-[12.5%] pl-12 pt-12">
-              {[
-                { title: 'Practice', color: 'bg-primary' },
-                { title: 'Parent Feedback', color: 'bg-accent-blue' },
-                { title: 'Course Completion', color: 'bg-secondary' },
-                { title: 'Next Pathway', color: 'bg-accent-green' }
-              ].map((step, i) => (
-                <div key={i} className="flex-1 relative flex justify-center">
-                  <div className={`absolute -bottom-3 w-6 h-6 rounded-full ${step.color} border-4 border-background-alt shadow-sm`}></div>
-                  <div className="mb-8 text-center font-bold text-text-dark max-w-[100px]">{step.title}</div>
-                </div>
-              ))}
-            </div>
-            
-          </div>
-
-          {/* Mobile Vertical Path */}
-          <div className="lg:hidden flex flex-col gap-6 relative max-w-sm mx-auto pl-12">
-             <div className="absolute top-4 bottom-4 left-[21px] border-l-4 border-dashed border-secondary/30"></div>
-             {[
-                { title: 'Assessment', color: 'bg-accent-blue' },
-                { title: 'Placement', color: 'bg-secondary' },
-                { title: 'Personalized Learning Plan', color: 'bg-accent-green' },
-                { title: 'Live Online Classes', color: 'bg-accent-red' },
-                { title: 'Practice', color: 'bg-primary' },
-                { title: 'Parent Feedback', color: 'bg-accent-blue' },
-                { title: 'Course Completion', color: 'bg-secondary' },
-                { title: 'Next Learning Pathway', color: 'bg-accent-green' }
-              ].map((step, i) => (
-                <FadeUp key={i} delay={i*0.05} className="relative bg-white border border-muted/5 rounded-2xl p-5 shadow-sm">
-                  <div className={`absolute top-1/2 -left-[35px] -translate-y-1/2 w-6 h-6 rounded-full ${step.color} border-4 border-background-alt shadow-sm`}></div>
-                  <h4 className="font-extrabold text-text-dark">{step.title}</h4>
-                </FadeUp>
-              ))}
-          </div>
-
         </Container>
       </section>
 
@@ -470,16 +377,7 @@ export default function CoursesPage() {
 
       {/* SECTION 8: READY TO FIND THE RIGHT PATHWAY? (CTA) */}
       <section className="py-32 md:py-40 bg-white border-t border-muted/5 relative overflow-hidden text-center">
-        
-        {/* Full Scene Mascot Integration */}
-        <div className="absolute bottom-0 left-[2%] md:left-[10%] w-48 md:w-64 h-48 md:h-64 z-0 pointer-events-none hidden lg:block opacity-90 origin-bottom animate-[float_6s_ease-in-out_infinite]">
-          <Image src="/characters/yellow-blue-hifi.png" alt="Students High-Five" fill className="object-contain object-bottom" />
-        </div>
-        
-        <div className="absolute top-[10%] right-[5%] md:right-[15%] w-32 md:w-48 h-32 md:h-48 z-0 pointer-events-none opacity-80 animate-[float_7s_ease-in-out_infinite_reverse] hidden lg:block">
-          <Image src="/characters/blue-found-chest.png" alt="Success" fill className="object-contain" />
-        </div>
-
+      
         <Container className="relative z-10 max-w-3xl mx-auto">
           <FadeUp>
             <h2 className="text-3xl md:text-5xl font-black text-text-dark mb-6 tracking-tight leading-tight">
@@ -492,11 +390,11 @@ export default function CoursesPage() {
             </p>
           </FadeUp>
           <FadeUp delay={0.2} className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button size="xl" className="w-full sm:w-auto bg-primary text-white hover:bg-primary/90 shadow-lg border-2 border-primary hover:scale-105 transition-transform text-lg">
-              Start Free Math Assessment
-            </Button>
-            <Button size="xl" variant="outline" className="w-full sm:w-auto bg-white border-2 border-muted/20 text-text-dark hover:border-text-dark hover:bg-text-dark/5 shadow-sm hover:scale-105 transition-transform text-lg">
+            <Button size="md" className="w-full sm:w-auto bg-primary text-white hover:bg-primary/90 shadow-lg border-2 border-primary hover:scale-105 transition-transform text-lg">
               Book a Discovery Call
+            </Button>
+            <Button size="md" variant="outline" className="w-full sm:w-auto bg-white border-2 border-muted/20 text-text-dark hover:border-text-dark hover:bg-text-dark/5 shadow-sm hover:scale-105 transition-transform text-lg">
+              Take a Free Assessment
             </Button>
           </FadeUp>
         </Container>
