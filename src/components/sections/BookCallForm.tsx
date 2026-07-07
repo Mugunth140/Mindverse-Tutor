@@ -10,11 +10,42 @@ import { sendBookingEmail } from "@/app/actions/sendBookingEmail";
 
 // Common timezones for the dropdown
 const TIMEZONES = [
-  "America/New_York", "America/Chicago", "America/Denver", "America/Los_Angeles",
-  "America/Toronto", "America/Vancouver",
-  "Europe/London", "Europe/Paris", "Europe/Berlin",
-  "Asia/Dubai", "Asia/Kolkata", "Asia/Singapore", "Asia/Tokyo",
-  "Australia/Sydney", "Australia/Melbourne", "Pacific/Auckland"
+  // India
+  "Asia/Kolkata",
+  
+  // UAE
+  "Asia/Dubai",
+  
+  // Singapore
+  "Asia/Singapore",
+  
+  // USA
+  "America/New_York",
+  "America/Chicago",
+  "America/Denver",
+  "America/Phoenix",
+  "America/Los_Angeles",
+  "America/Anchorage",
+  "Pacific/Honolulu",
+  
+  // Canada
+  "America/St_Johns",
+  "America/Halifax",
+  "America/Toronto",
+  "America/Winnipeg",
+  "America/Edmonton",
+  "America/Vancouver",
+  
+  // Australia
+  "Australia/Sydney",
+  "Australia/Brisbane",
+  "Australia/Adelaide",
+  "Australia/Darwin",
+  "Australia/Perth",
+
+  // Europe & Oceania
+  "Europe/London",
+  "Pacific/Auckland"
 ];
 
 export function BookCallForm() {
@@ -98,10 +129,9 @@ export function BookCallForm() {
       if (error) throw error;
 
       // Send email via Brevo Server Action
-      const formattedDateTime = formatInTimeZone(selectedSlot, userTimezone, 'MMMM d, yyyy - h:mm a');
       await sendBookingEmail({
         ...formData,
-        date_time_local: formattedDateTime,
+        call_datetime_utc: selectedSlot.toISOString(),
         timezone: userTimezone
       });
       
