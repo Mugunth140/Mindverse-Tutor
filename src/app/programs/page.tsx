@@ -221,12 +221,7 @@ export default function ProgramsPage() {
           <div className="relative w-full max-w-6xl mx-auto bg-white rounded-[3rem] md:rounded-[4rem] shadow-card border border-muted/5 overflow-hidden flex flex-col lg:flex-row items-stretch gap-0 group">
             
             <div className="w-full lg:w-1/2 p-8 md:p-12 lg:p-16 relative z-10">
-              <FadeUp>
-                <div className="inline-flex items-center gap-2 px-5 py-2 rounded-2xl bg-white shadow-sm border border-muted/10 text-accent-blue font-extrabold text-[10px] md:text-xs uppercase tracking-widest mb-6">
-                  <svg className="w-4 h-4 text-accent-blue" fill="currentColor" viewBox="0 0 20 20"><path d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.381z" /></svg>
-                  Master with Confidence
-                </div>
-                
+              <FadeUp>        
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-text-dark mb-6 leading-[1.15]">
                   Multiplication <br className="hidden lg:block"/>Bootcamp
                 </h2>
@@ -262,7 +257,7 @@ export default function ProgramsPage() {
           </div>
 
           {/* Program 5: Reading Studio (Organic Split) */}
-          <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-12 md:gap-20 bg-accent-green/5 rounded-[2rem] md:rounded-[4rem] p-8 md:p-16 lg:p-24 relative overflow-hidden border border-accent-green/10">
+          <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-12 md:gap-20 bg-accent-green/5 rounded-[2rem] md:rounded-[4rem] p-4 md:p-8 lg:p-12 relative overflow-hidden border border-accent-green/10">
             <div className="w-full lg:w-1/2 order-2 lg:order-1 relative min-h-[350px] md:min-h-[500px] flex items-end justify-center group">
               <div className="absolute inset-0 bg-accent-green/20 rounded-[4rem] rounded-tl-[8rem] rounded-br-[8rem] rotate-6 group-hover:rotate-12 transition-transform duration-700 blur-sm scale-90" />
               <div className="absolute bottom-0 left-0 w-full h-[110%] md:h-[120%] z-10 transition-transform duration-700 group-hover:scale-105 origin-bottom">
@@ -270,11 +265,8 @@ export default function ProgramsPage() {
               </div>
             </div>
             
-            <div className="w-full lg:w-1/2 order-1 lg:order-2 lg:pt-10">
+            <div className="w-full lg:w-1/2 order-1 lg:order-2">
               <FadeUp>
-                <div className="inline-block px-4 py-1.5 rounded-full bg-white shadow-sm text-accent-green font-extrabold text-xs uppercase tracking-widest mb-6 border border-accent-green/10">
-                  Building Lifelong Readers
-                </div>
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-text-dark mb-6 leading-tight">
                   Mindverse Reading Studio
                 </h2>
@@ -307,12 +299,12 @@ export default function ProgramsPage() {
       </section>
 
       {/* SECTION 4: LEARNING EXPERIENCE (Timeline) */}
-      <section className="py-24 md:py-32 bg-white relative overflow-hidden">
+      <section className="py-12 md:py-16 bg-white relative overflow-hidden">
         <Container>
           <div className="text-center mb-16 md:mb-24 relative z-10">
             <FadeUp>
-              <span className="inline-block px-4 py-1.5 rounded-full bg-accent-blue/10 text-accent-blue font-extrabold text-xs md:text-sm uppercase tracking-[0.2em] mb-4">
-                Step-by-Step
+              <span className="inline-block px-4 py-1.5 text-blue-400 font-extrabold text-xs md:text-sm uppercase tracking-[0.2em] mb-4">
+                Step by Step
               </span>
             </FadeUp>
             <FadeUp delay={0.1}>
@@ -402,63 +394,6 @@ export default function ProgramsPage() {
 
                 </FadeUp>
               ))}
-            </div>
-          </div>
-        </Container>
-      </section>
-
-      {/* SECTION 5: HOW LEARNING PROGRESSES */}
-      <section className="py-24 md:py-32 bg-background-alt relative overflow-hidden">
-        <div className="absolute inset-0 bg-dot-pattern opacity-30 mix-blend-multiply pointer-events-none"></div>
-        <Container>
-          <FadeUp className="text-center mb-16 md:mb-24 relative z-10">
-            <span className="inline-block px-4 py-1.5 rounded-full bg-white shadow-sm border border-muted/5 text-secondary-700 font-extrabold text-xs uppercase tracking-widest mb-6">
-              Step-by-Step
-            </span>
-            <h2 className="text-fluid-h2 font-black text-text-dark">How Learning Progresses</h2>
-          </FadeUp>
-
-          <div className="max-w-5xl mx-auto relative z-10">
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-8">
-              {[
-                { id: 1, title: 'Assessment', desc: 'Identify baseline skills.', color: 'bg-accent-blue', text: 'text-accent-blue' },
-                { id: 2, title: 'Placement', desc: 'Assign correct level.', color: 'bg-secondary', text: 'text-yellow-600' },
-                { id: 3, title: 'Learning Plan', desc: 'Custom tailored roadmap.', color: 'bg-accent-green', text: 'text-accent-green' },
-                { id: 4, title: 'Live Classes', desc: 'Face-to-face sessions.', color: 'bg-accent-red', text: 'text-accent-red' },
-                { id: 5, title: 'Practice', desc: 'Interactive exercises.', color: 'bg-primary', text: 'text-primary' },
-                { id: 6, title: 'Feedback', desc: 'Regular parent updates.', color: 'bg-accent-blue', text: 'text-accent-blue' },
-                { id: 7, title: 'Completion', desc: 'Celebrate milestones.', color: 'bg-secondary', text: 'text-yellow-600' },
-                { id: 8, title: 'Next Pathway', desc: 'Continue growing.', color: 'bg-accent-green', text: 'text-accent-green' }
-              ].map((step, i) => {
-                let colStart = "";
-                let rowStart = "";
-                
-                if (i === 0) { colStart = "md:col-start-1"; rowStart = "md:row-start-1"; }
-                if (i === 1) { colStart = "md:col-start-2"; rowStart = "md:row-start-1"; }
-                if (i === 2) { colStart = "md:col-start-3"; rowStart = "md:row-start-1"; }
-                if (i === 3) { colStart = "md:col-start-4"; rowStart = "md:row-start-1"; }
-                if (i === 4) { colStart = "md:col-start-4"; rowStart = "md:row-start-2"; }
-                if (i === 5) { colStart = "md:col-start-3"; rowStart = "md:row-start-2"; }
-                if (i === 6) { colStart = "md:col-start-2"; rowStart = "md:row-start-2"; }
-                if (i === 7) { colStart = "md:col-start-1"; rowStart = "md:row-start-2"; }
-
-                return (
-                  <FadeUp key={i} delay={i * 0.1} className={`relative ${colStart} ${rowStart} flex flex-col items-center group`}>
-                    {i < 3 && <div className="hidden md:block absolute top-[44px] left-1/2 w-[calc(100%+32px)] border-t-[3px] border-dashed border-muted/20 -z-10"></div>}
-                    {i === 3 && <div className="hidden md:block absolute top-[44px] left-1/2 h-[calc(100%+32px)] border-l-[3px] border-dashed border-muted/20 -z-10"></div>}
-                    {i >= 4 && i < 7 && <div className="hidden md:block absolute top-[44px] right-1/2 w-[calc(100%+32px)] border-t-[3px] border-dashed border-muted/20 -z-10"></div>}
-                    {i < 7 && <div className="md:hidden absolute top-[44px] left-1/2 h-[calc(100%+24px)] border-l-[3px] border-dashed border-muted/20 -z-10"></div>}
-
-                    <div className="bg-white rounded-[2rem] p-6 shadow-sm border border-muted/10 flex flex-col items-center text-center w-full h-full group-hover:-translate-y-2 group-hover:shadow-float transition-all duration-500 z-10">
-                      <div className={`w-14 h-14 rounded-2xl ${step.color}/10 flex items-center justify-center mb-5 shrink-0 group-hover:scale-110 transition-transform duration-500`}>
-                        <span className={`font-black text-xl ${step.text}`}>0{i + 1}</span>
-                      </div>
-                      <h4 className="font-extrabold text-lg text-text-dark mb-2 leading-tight">{step.title}</h4>
-                      <p className="text-xs text-muted font-medium leading-relaxed">{step.desc}</p>
-                    </div>
-                  </FadeUp>
-                );
-              })}
             </div>
           </div>
         </Container>
