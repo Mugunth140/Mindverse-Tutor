@@ -18,14 +18,7 @@ export default function ProgramsPage() {
         <div className="absolute top-[5%] left-[5%] w-64 h-64 bg-accent-blue/10 rounded-full blur-[80px] pointer-events-none" />
         <div className="absolute bottom-[5%] right-[5%] w-80 h-80 bg-secondary/10 rounded-full blur-[100px] pointer-events-none" />
 
-        <Container className="relative z-10 text-center max-w-5xl mx-auto flex flex-col items-center">
-          <FadeUp>
-            <div className="inline-block px-5 py-2 rounded-full bg-white shadow-sm border border-muted/5 text-text-dark font-extrabold text-xs md:text-sm uppercase tracking-widest mb-8">
-              <span className="text-secondary text-base mr-2">✦</span>
-              Structured Learning Paths
-            </div>
-          </FadeUp>
-          
+        <Container className="relative z-10 text-center max-w-5xl mx-auto flex flex-col items-center">          
           <FadeUp delay={0.1}>
             <h1 className="text-fluid-h1 font-black text-text-dark mb-6 leading-[1.1] tracking-tight text-balance">
               Learning Pathways That Grow <br className="hidden sm:block" />
@@ -44,22 +37,6 @@ export default function ProgramsPage() {
             </p>
           </FadeUp>
         </Container>
-
-        {/* Hero Interactive Scene */}
-        <FadeIn delay={0.3} className="relative w-full max-w-5xl mx-auto h-[350px] md:h-[450px] lg:h-[550px] z-20">
-          <div className="absolute inset-0 m-auto w-[85%] md:w-[70%] h-fit drop-shadow-xl z-10">
-            <Image src="/characters/Board.png" alt="Learning Board" width={800} height={500} className="object-contain w-full h-auto" priority />
-          </div>
-          <div className="absolute top-[10%] md:top-[15%] left-[0%] md:left-[10%] w-[35%] md:w-[28%] z-20 animate-[float_7s_ease-in-out_infinite]">
-            <Image src="/characters/Blue-Writing.png" alt="Student" width={300} height={300} className="object-contain w-full h-auto" />
-          </div>
-          <div className="absolute bottom-[0%] md:bottom-[5%] right-[0%] md:right-[10%] w-[40%] md:w-[35%] z-20 animate-[float_6s_ease-in-out_infinite_reverse]">
-            <Image src="/characters/Yelllow-Teaching.png" alt="Teacher" width={300} height={300} className="object-contain w-full h-auto" />
-          </div>
-          <div className="absolute top-[20%] right-[5%] md:right-[20%] w-[25%] md:w-[20%] z-0 animate-[float_8s_ease-in-out_infinite] opacity-90">
-            <Image src="/characters/Yellow-Reading-Book.png" alt="Books" width={200} height={200} className="object-contain w-full h-auto" />
-          </div>
-        </FadeIn>
       </section>
 
       {/* SECTION 2: CHOOSE YOUR LEARNING PATH */}
@@ -128,19 +105,12 @@ export default function ProgramsPage() {
             
             <div className="w-full md:w-1/2 relative z-10 order-1 md:order-2">
               <FadeUp>
-                <div className="inline-block px-4 py-1.5 rounded-full bg-white text-yellow-700 font-extrabold text-[10px] md:text-xs uppercase tracking-widest mb-6 shadow-sm border border-secondary/20">
-                  Learning Designed Around Your Child
-                </div>
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-text-dark mb-6 leading-[1.15]">
                   Personalized <br className="hidden lg:block"/>One-on-One Tutoring
                 </h2>
                 <p className="text-muted text-base md:text-lg mb-8 leading-relaxed max-w-md">
                   Tailored to your child's exact learning pace and style. We focus on building deep conceptual understanding and unshakeable academic confidence.
                 </p>
-                <div className="flex flex-wrap gap-3 mb-10">
-                  <span className="px-4 py-2 bg-white/80 backdrop-blur-sm border border-secondary/30 text-yellow-700 rounded-xl font-extrabold text-xs shadow-sm">Grades K–10</span>
-                  <span className="px-4 py-2 bg-white/80 backdrop-blur-sm border border-secondary/30 text-yellow-700 rounded-xl font-extrabold text-xs shadow-sm">Math, Science & English</span>
-                </div>
                 <div className="space-y-5">
                   {[
                     { title: 'Personalized Learning Plans', desc: 'Curriculum adapted specifically to their pace.' },
@@ -166,11 +136,8 @@ export default function ProgramsPage() {
           <div className="relative w-full max-w-6xl mx-auto flex flex-col md:flex-row bg-white rounded-[2.5rem] md:rounded-[4rem] shadow-card border border-muted/5 overflow-hidden mt-32 group">
             <div className="w-full md:w-3/5 p-8 md:p-14 lg:p-20 relative z-20">
               <FadeUp>
-                <div className="inline-block px-5 py-2 rounded-2xl bg-accent-blue/10 text-accent-blue font-extrabold text-[10px] md:text-xs uppercase tracking-widest mb-6">
-                  Daily Learning. Daily Confidence.
-                </div>
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-text-dark mb-6 leading-[1.15]">
-                  After-School <br className="hidden lg:block"/>Support Programme
+                  After School <br className="hidden lg:block"/>Support Programme
                 </h2>
                 <p className="text-muted text-base md:text-lg mb-10 leading-relaxed max-w-md font-medium">
                   A structured daily environment where students tackle homework with confidence, build essential study habits, and prepare for exams without the stress.
@@ -198,28 +165,21 @@ export default function ProgramsPage() {
                 </div>
               </FadeUp>
             </div>
-            <div className="w-full md:w-2/5 relative min-h-[400px] md:min-h-full bg-accent-blue/5 flex justify-center items-end border-l border-muted/5 z-10 overflow-visible">
-               <div className="absolute inset-0 opacity-[0.15] bg-[radial-gradient(#60A5FA_2px,transparent_2px)] [background-size:24px_24px] pointer-events-none mix-blend-multiply"></div>
-               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-white rounded-full blur-[60px] group-hover:scale-125 transition-transform duration-700 pointer-events-none"></div>
-               <div className="absolute top-[15%] left-[-10%] md:left-[-20%] bg-white/95 backdrop-blur-md px-5 py-2.5 rounded-2xl shadow-float font-black text-accent-blue text-sm rotate-[-6deg] animate-[wiggle_6s_ease-in-out_infinite] z-30 border border-muted/5 flex items-center gap-2">
-                 <span className="text-lg">🧑‍🏫</span> 1-on-1 Available
-               </div>
-               <div className="absolute top-[45%] right-[5%] bg-white/95 backdrop-blur-md px-5 py-2.5 rounded-2xl shadow-float font-black text-yellow-600 text-sm rotate-[5deg] animate-[wiggle_7s_ease-in-out_infinite_reverse] z-30 border border-muted/5 flex items-center gap-2">
-                 <span className="text-lg">🤝</span> Small Cohorts
-               </div>
-               <div className="absolute inset-10 z-20 transition-transform duration-700 group-hover:scale-105 group-hover:-translate-y-2 origin-bottom">
-                 <Image src="/characters/blue-shows-paper-with-star.png" alt="Blue Student Homework Success" fill className="object-contain object-bottom drop-shadow-2xl" priority />
+            <div className="w-full md:w-2/4 relative flex justify-center items-center z-10 overflow-visible">
+               <div className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 rounded-full blur-[60px] transition-transform duration-700 pointer-events-none"></div>
+               <div className="absolute inset-10 z-20 transition-transform duration-700 flex justify-center items-center">
+                 <Image src="/characters/blue-shows-paper-with-star.png" alt="Blue Student Homework Success" fill className="object-contain object-center drop-shadow-2xl" priority />
                </div>
             </div>
           </div>
 
           {/* Program 3: Middle School Math Readiness */}
-          <div className="w-full max-w-6xl mx-auto bg-accent-red/5 rounded-[2rem] md:rounded-[4rem] pt-12 md:pt-20 px-6 md:px-12 border border-accent-red/10 shadow-sm relative overflow-hidden flex flex-col items-center group">
+          <div className="w-full max-w-6xl mx-auto bg-accent-red/5 rounded-4xl md:rounded-[4rem] pt-6 md:pt-10 md:pb-10 px-6 md:px-12 border border-accent-red/10 shadow-sm relative overflow-hidden flex flex-col items-center group">
             <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-accent-red/10 rounded-full blur-[120px] pointer-events-none" />
             <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-secondary/10 rounded-full blur-[100px] pointer-events-none" />
             
             <FadeUp className="text-center relative z-20 max-w-3xl mx-auto mb-12">
-              <div className="inline-block px-4 py-1.5 rounded-full bg-white shadow-sm text-accent-red font-extrabold text-xs uppercase tracking-widest mb-6">
+              <div className="inline-block px-4 py-1.5 text-accent-red font-extrabold text-xs uppercase tracking-widest mb-6">
                 Preparing Students for the Next Step
               </div>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-text-dark leading-[1.15]">
@@ -227,14 +187,14 @@ export default function ProgramsPage() {
               </h2>
             </FadeUp>
 
-            <div className="relative w-full min-h-[400px] md:min-h-[500px] lg:min-h-[600px] flex justify-center mt-auto z-20">
-               <Image src="/characters/yellow-blue-puzzle.png" alt="Math Puzzle Foundation" fill className="object-contain object-bottom z-10 group-hover:scale-105 transition-transform duration-700 origin-bottom drop-shadow-2xl" />
+            <div className="relative w-full min-h-75 md:min-h-90 lg:min-h-100 flex justify-center mt-auto z-20">
+               <Image src="/characters/yellow-blue-puzzle.png" alt="Math Puzzle Foundation" fill className="object-contain object-bottom z-10 drop-shadow-2xl" />
                
                <div className="hidden md:flex absolute top-[10%] left-[5%] bg-white/95 backdrop-blur-md px-5 py-3 rounded-2xl shadow-float z-20 items-center gap-3 animate-[float_6s_ease-in-out_infinite]">
                  <span className="text-xl">🎓</span>
                  <span className="font-bold text-text-dark text-sm">Transition to Middle School</span>
                </div>
-               <div className="hidden md:flex absolute top-[25%] right-[5%] bg-white/95 backdrop-blur-md px-5 py-3 rounded-2xl shadow-float z-20 items-center gap-3 animate-[float_7s_ease-in-out_infinite_reverse]">
+               <div className="hidden md:flex absolute top-[25%] right-[10%] bg-white/95 backdrop-blur-md px-5 py-3 rounded-2xl shadow-float z-20 items-center gap-3 animate-[float_7s_ease-in-out_infinite_reverse]">
                  <span className="text-xl">💪</span>
                  <span className="font-bold text-text-dark text-sm">Confidence Building</span>
                </div>
