@@ -400,7 +400,7 @@ export default function ProgramsPage() {
       </section>
 
       {/* SECTION 6: WHAT EVERY COURSE INCLUDES (Alternating Blocks) */}
-      <section className="py-24 md:py-32 bg-white relative border-y border-muted/5">
+      <section className="py-12 md:py-16 bg-white relative border-y border-muted/5">
         <Container>
           <FadeUp className="text-center mb-16 md:mb-24">
             <h2 className="text-fluid-h2 font-black text-text-dark">What Every Course Includes</h2>
@@ -430,7 +430,7 @@ export default function ProgramsPage() {
       </section>
 
       {/* SECTION 7: WHO IS EACH PATHWAY FOR? */}
-      <section className="py-24 md:py-32 bg-background-alt relative overflow-hidden">
+      <section className="py-12 md:py-16 bg-background-alt relative overflow-hidden">
         <div className="absolute inset-0 bg-dot-pattern opacity-30 mix-blend-multiply pointer-events-none"></div>
         <Container className="relative z-10">
           <FadeUp className="text-center mb-16 md:mb-24">
@@ -478,15 +478,7 @@ export default function ProgramsPage() {
       </section>
 
       {/* SECTION 8: READY TO FIND THE RIGHT PATHWAY? (CTA) */}
-      <section className="py-32 md:py-40 bg-white border-t border-muted/5 relative overflow-hidden text-center">
-        <div className="absolute bottom-0 left-[2%] md:left-[10%] w-48 md:w-64 h-48 md:h-64 z-0 pointer-events-none hidden lg:block opacity-90 origin-bottom animate-[float_6s_ease-in-out_infinite]">
-          <Image src="/characters/yellow-blue-hifi.png" alt="Students High-Five" fill className="object-contain object-bottom" />
-        </div>
-        
-        <div className="absolute top-[10%] right-[5%] md:right-[15%] w-32 md:w-48 h-32 md:h-48 z-0 pointer-events-none opacity-80 animate-[float_7s_ease-in-out_infinite_reverse] hidden lg:block">
-          <Image src="/characters/blue-found-chest.png" alt="Success" fill className="object-contain" />
-        </div>
-
+      <section className="py-16 md:py-20 bg-white border-t border-muted/5 relative overflow-hidden text-center">
         <Container className="relative z-10 max-w-3xl mx-auto">
           <FadeUp>
             <h2 className="text-3xl md:text-5xl font-black text-text-dark mb-6 tracking-tight leading-tight">
@@ -499,11 +491,11 @@ export default function ProgramsPage() {
             </p>
           </FadeUp>
           <FadeUp delay={0.2} className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button size="xl" className="w-full sm:w-auto bg-primary text-white hover:bg-primary/90 shadow-lg border-2 border-primary hover:scale-105 transition-transform text-lg">
-              Start Free Math Assessment
-            </Button>
-            <Button size="xl" variant="outline" className="w-full sm:w-auto bg-white border-2 border-muted/20 text-text-dark hover:border-text-dark hover:bg-text-dark/5 shadow-sm hover:scale-105 transition-transform text-lg">
+            <Button size="md" className="w-full sm:w-auto bg-primary text-white hover:bg-primary/90 shadow-lg border-2 border-primary hover:scale-105 transition-transform text-lg">
               Book a Discovery Call
+            </Button>
+            <Button size="md" variant="outline" className="w-full sm:w-auto bg-white border-2 border-muted/20 text-text-dark hover:border-text-dark hover:bg-text-dark/5 shadow-sm hover:scale-105 transition-transform text-lg">
+              Take a Free Assessment
             </Button>
           </FadeUp>
         </Container>
