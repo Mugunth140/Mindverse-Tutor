@@ -18,13 +18,14 @@ export default function CoursesPage() {
         <div className="absolute top-[5%] left-[5%] w-64 h-64 bg-accent-blue/10 rounded-full blur-[80px] pointer-events-none" />
         <div className="absolute bottom-[5%] right-[5%] w-80 h-80 bg-secondary/10 rounded-full blur-[100px] pointer-events-none" />
 
-        <Container className="relative z-10 text-center max-w-5xl mx-auto flex flex-col items-center">          
+        <Container className="relative z-10 text-center max-w-5xl mx-auto flex flex-col items-center">
+          
           <FadeUp delay={0.1}>
             <h1 className="text-fluid-h1 font-black text-text-dark mb-6 leading-[1.1] tracking-tight text-balance">
               Learning Pathways That Grow <br className="hidden sm:block" />
               <span className="text-accent-green relative inline-block mt-2">
                 With Every Child.
-                <svg className="absolute w-[105%] h-3 -bottom-1 left-[-2%] text-secondary" viewBox="0 0 100 10" preserveAspectRatio="none">
+                <svg className="absolute w-[105%] h-3 -bottom-1 -left-[2%] text-secondary" viewBox="0 0 100 10" preserveAspectRatio="none">
                   <path d="M0 5 Q 50 10 100 5" stroke="currentColor" strokeWidth="4" fill="transparent" strokeLinecap="round" />
                 </svg>
               </span>
@@ -222,7 +223,7 @@ export default function CoursesPage() {
       </section>
 
       {/* SECTION 4: READING LEARNING PATHWAY (Ascending Staircase) */}
-      <section className="py-24 md:py-32 bg-white relative border-y border-muted/5 overflow-hidden">
+      {/* <section className="py-24 md:py-32 bg-white relative border-y border-muted/5 overflow-hidden">
         <Container>
           <div className="flex flex-col lg:flex-row gap-12 lg:gap-8 items-end relative">
 
@@ -237,7 +238,7 @@ export default function CoursesPage() {
 
             <div className="w-full lg:w-2/3 grid grid-cols-1 md:grid-cols-3 gap-6 relative z-10">
               
-              {/* Level 1 */}
+         
               <FadeUp delay={0.1} className="md:mt-32">
                 <div className="bg-background-alt border border-muted/10 rounded-4xl p-8 shadow-sm h-full flex flex-col">
                   <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center font-black text-accent-green mb-6 border border-muted/5 shadow-sm">1</div>
@@ -253,7 +254,7 @@ export default function CoursesPage() {
                 </div>
               </FadeUp>
 
-              {/* Level 2 */}
+        
               <FadeUp delay={0.2} className="md:mt-16">
                 <div className="bg-accent-green/5 border border-accent-green/10 rounded-4xl p-8 shadow-sm h-full flex flex-col">
                   <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center font-black text-accent-green mb-6 border border-muted/5 shadow-sm">2</div>
@@ -269,7 +270,7 @@ export default function CoursesPage() {
                 </div>
               </FadeUp>
 
-              {/* Level 3 */}
+    
               <FadeUp delay={0.3} className="md:mt-0">
                 <div className="bg-accent-green/10 border border-accent-green/20 rounded-4xl p-8 shadow-sm h-full flex flex-col">
                   <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center font-black text-accent-green mb-6 border border-muted/5 shadow-sm">3</div>
@@ -288,7 +289,45 @@ export default function CoursesPage() {
             </div>
           </div>
         </Container>
-      </section>
+      </section> */}
+
+       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-12 md:gap-20 bg-accent-green/5 rounded-[2rem] md:rounded-[4rem] p-4 md:p-8 lg:p-12 relative overflow-hidden border border-accent-green/10 mt-10 md:mt-20">
+            <div className="w-full lg:w-1/2 order-2 lg:order-1 relative min-h-[350px] md:min-h-[500px] flex items-end justify-center group">
+              <div className="absolute inset-0 bg-accent-green/20 rounded-[4rem] rounded-tl-[8rem] rounded-br-[8rem] rotate-6 group-hover:rotate-12 transition-transform duration-700 blur-sm scale-90" />
+              <div className="absolute bottom-0 left-0 w-full h-[110%] md:h-[120%] z-10 transition-transform duration-700 group-hover:scale-105 origin-bottom">
+                <Image src="/characters/Yellow-Reading-Book.png" alt="Reading Mascot" fill className="object-contain object-bottom drop-shadow-2xl" />
+              </div>
+            </div>
+            
+            <div className="w-full lg:w-1/2 order-1 lg:order-2">
+              <FadeUp>
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-text-dark mb-6 leading-tight">
+                  Mindverse Reading Studio
+                </h2>
+                <p className="text-muted text-base md:text-lg mb-12">
+                  A structured, engaging phonics and reading program designed to take students from learning letters to devouring chapter books with complete confidence.
+                </p>
+                
+                <div className="pl-6 md:pl-8 border-l-[3px] border-dashed border-accent-green/30 space-y-10 relative">
+                  <div className="relative group">
+                    <div className="absolute -left-[35px] md:-left-[43px] top-1 w-6 h-6 bg-white border-4 border-accent-green rounded-full shadow-sm group-hover:scale-125 transition-transform"/>
+                    <h4 className="font-extrabold text-lg md:text-xl text-text-dark mb-1">Level 1: Foundation</h4>
+                    <p className="text-sm md:text-base text-muted">Phonics, letter recognition, and building the core blocks of language.</p>
+                  </div>
+                  <div className="relative group">
+                    <div className="absolute -left-[35px] md:-left-[43px] top-1 w-6 h-6 bg-white border-4 border-secondary rounded-full shadow-sm group-hover:scale-125 transition-transform"/>
+                    <h4 className="font-extrabold text-lg md:text-xl text-text-dark mb-1">Level 2: Fluency</h4>
+                    <p className="text-sm md:text-base text-muted">Blending words, reading simple sentences, and improving reading speed.</p>
+                  </div>
+                  <div className="relative group">
+                    <div className="absolute -left-[35px] md:-left-[43px] top-1 w-6 h-6 bg-white border-4 border-primary rounded-full shadow-sm group-hover:scale-125 transition-transform"/>
+                    <h4 className="font-extrabold text-lg md:text-xl text-text-dark mb-1">Level 3: Comprehension</h4>
+                    <p className="text-sm md:text-base text-muted">Independent reading, understanding narratives, and analytical thinking.</p>
+                  </div>
+                </div>
+              </FadeUp>
+            </div>
+          </div>
 
       {/* SECTION 6: WHAT EVERY COURSE INCLUDES (Alternating Blocks) */}
       <section className="py-24 md:py-32 bg-white relative border-y border-muted/5">

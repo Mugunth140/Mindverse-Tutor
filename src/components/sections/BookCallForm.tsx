@@ -6,6 +6,7 @@ import { formatInTimeZone } from "date-fns-tz";
 import { supabase } from "@/lib/supabase";
 import { generateAvailableSlotsUTC, groupSlotsByTimezone } from "@/lib/scheduler";
 import { Button } from "@/components/ui/Button";
+import { sendBookingEmail } from "@/app/actions/sendBookingEmail";
 
 // Common timezones for the dropdown
 const TIMEZONES = [
@@ -95,6 +96,14 @@ export function BookCallForm() {
       });
       
       if (error) throw error;
+
+      // Send email via Brevo Server Action
+      const formattedDateTime = formatInTimeZone(selectedSlot, userTimezone, 'MMMM d, yyyy - h:mm a');
+      await sendBookingEmail({
+        ...formData,
+        date_time_local: formattedDateTime,
+        timezone: userTimezone
+      });
       
       setIsSuccess(true);
       setStep(3);
@@ -116,8 +125,8 @@ export function BookCallForm() {
           Thank you, {formData.parent_name}! Your clarity call is scheduled for <br/>
           <strong className="text-text-dark">{selectedSlot && formatInTimeZone(selectedSlot, userTimezone, 'MMMM d, yyyy - h:mm a')}</strong> ({userTimezone}).
         </p>
-        <p className="text-muted mb-12">We've sent a calendar invitation to {formData.parent_email}.</p>
-        <Button href="/" size="xl" className="bg-primary text-white">Return to Home</Button>
+        <p className="text-muted mb-12">We've sent a confirmation mail to {formData.parent_email}.</p>
+        <Button href="/" size="lg" className="bg-primary text-white">Return to Home</Button>
       </div>
     );
   }

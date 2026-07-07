@@ -64,7 +64,7 @@ export function Navbar() {
           <Link href="/programs" className="text-text-dark hover:text-primary font-bold transition-colors">Programs</Link>
           <Link href="/courses" className="text-text-dark hover:text-primary font-bold transition-colors">Courses</Link>
           {/* <Link href="/book-call" className="text-text-dark hover:text-primary font-bold transition-colors"></Link> */}
-          <Button href="/book-call" size="md" variant="secondary" className="shadow-sm">Book a Call</Button>
+          <Button href="/book-call" size="md" variant="secondary" className="shadow-sm">Book a Discovery Call</Button>
         </nav>
 
         {/* Mobile Toggle */}

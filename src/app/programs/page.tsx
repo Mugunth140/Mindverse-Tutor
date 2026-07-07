@@ -11,19 +11,18 @@ export default function ProgramsPage() {
       
       {/* SECTION 1: HERO */}
       <section className="relative pt-24 pb-20 md:pt-32 md:pb-24 lg:pt-40 lg:pb-32 min-h-[80vh] flex flex-col justify-center items-center overflow-hidden">
-        {/* Notebook Paper Grid Background */}
         <div className="absolute inset-0 opacity-20 pointer-events-none bg-[radial-gradient(#cbd5e1_1px,transparent_1px)] [background-size:24px_24px] mix-blend-multiply"></div>
         
-        {/* Soft Background Globs */}
         <div className="absolute top-[5%] left-[5%] w-64 h-64 bg-accent-blue/10 rounded-full blur-[80px] pointer-events-none" />
         <div className="absolute bottom-[5%] right-[5%] w-80 h-80 bg-secondary/10 rounded-full blur-[100px] pointer-events-none" />
 
-        <Container className="relative z-10 text-center max-w-5xl mx-auto flex flex-col items-center">          
+        <Container className="relative z-10 text-center max-w-5xl mx-auto flex flex-col items-center">
+          
           <FadeUp delay={0.1}>
             <h1 className="text-fluid-h1 font-black text-text-dark mb-6 leading-[1.1] tracking-tight text-balance">
-              Learning Pathways That Grow <br className="hidden sm:block" />
-              <span className="text-accent-green relative inline-block mt-2">
-                With Every Child.
+              Programs Designed Around <br className="hidden sm:block" />
+              <span className="text-accent-blue relative inline-block mt-2">
+                Every Child.
                 <svg className="absolute w-[105%] h-3 -bottom-1 -left-[2%] text-secondary" viewBox="0 0 100 10" preserveAspectRatio="none">
                   <path d="M0 5 Q 50 10 100 5" stroke="currentColor" strokeWidth="4" fill="transparent" strokeLinecap="round" />
                 </svg>
@@ -33,14 +32,14 @@ export default function ProgramsPage() {
           
           <FadeUp delay={0.2}>
             <p className="text-lg md:text-xl text-muted leading-relaxed max-w-2xl mx-auto text-balance mb-12">
-              Every child learns differently. Our structured learning pathways help students build strong foundations, develop unshakeable confidence, and progress step by step through carefully designed programs.
+              We know that every learner is different. Mindverse offers multiple personalized learning experiences designed to suit different goals, speeds, and natural curiosities.
             </p>
           </FadeUp>
         </Container>
       </section>
 
       {/* SECTION 2: CHOOSE YOUR LEARNING PATH */}
-      <section className="py-24 md:py-32 bg-white relative border-y border-muted/5 overflow-hidden">
+      {/* <section className="py-24 md:py-32 bg-white relative border-y border-muted/5 overflow-hidden">
         <Container>
           <FadeUp className="text-center mb-16 md:mb-20">
             <h2 className="text-fluid-h2 font-black text-text-dark">Choose Your Learning Path</h2>
@@ -48,7 +47,7 @@ export default function ProgramsPage() {
 
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 max-w-6xl mx-auto">
             
-            {/* Math Panel */}
+    
             <FadeUp delay={0.1} className="w-full lg:w-1/2">
               <div className="bg-accent-blue/5 rounded-[3rem] p-8 md:p-12 border border-accent-blue/10 shadow-sm relative overflow-hidden group h-full flex flex-col">
                 <div className="w-12 h-3 bg-accent-blue rounded-full mb-8" />
@@ -67,7 +66,7 @@ export default function ProgramsPage() {
               </div>
             </FadeUp>
 
-            {/* Reading Panel */}
+       
             <FadeUp delay={0.2} className="w-full lg:w-1/2">
               <div className="bg-accent-green/5 rounded-[3rem] p-8 md:p-12 border border-accent-green/10 shadow-sm relative overflow-hidden group h-full flex flex-col">
                 <div className="w-12 h-3 bg-accent-green rounded-full mb-8" />
@@ -88,7 +87,7 @@ export default function ProgramsPage() {
 
           </div>
         </Container>
-      </section>
+      </section> */}
 
       {/* SECTION 3: PROGRAMS (Main Section) */}
       <section className="py-24 md:py-32 bg-background-alt overflow-hidden">
@@ -257,43 +256,7 @@ export default function ProgramsPage() {
           </div>
 
           {/* Program 5: Reading Studio (Organic Split) */}
-          <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-12 md:gap-20 bg-accent-green/5 rounded-[2rem] md:rounded-[4rem] p-4 md:p-8 lg:p-12 relative overflow-hidden border border-accent-green/10">
-            <div className="w-full lg:w-1/2 order-2 lg:order-1 relative min-h-[350px] md:min-h-[500px] flex items-end justify-center group">
-              <div className="absolute inset-0 bg-accent-green/20 rounded-[4rem] rounded-tl-[8rem] rounded-br-[8rem] rotate-6 group-hover:rotate-12 transition-transform duration-700 blur-sm scale-90" />
-              <div className="absolute bottom-0 left-0 w-full h-[110%] md:h-[120%] z-10 transition-transform duration-700 group-hover:scale-105 origin-bottom">
-                <Image src="/characters/Yellow-Reading-Book.png" alt="Reading Mascot" fill className="object-contain object-bottom drop-shadow-2xl" />
-              </div>
-            </div>
-            
-            <div className="w-full lg:w-1/2 order-1 lg:order-2">
-              <FadeUp>
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-text-dark mb-6 leading-tight">
-                  Mindverse Reading Studio
-                </h2>
-                <p className="text-muted text-base md:text-lg mb-12">
-                  A structured, engaging phonics and reading program designed to take students from learning letters to devouring chapter books with complete confidence.
-                </p>
-                
-                <div className="pl-6 md:pl-8 border-l-[3px] border-dashed border-accent-green/30 space-y-10 relative">
-                  <div className="relative group">
-                    <div className="absolute -left-[35px] md:-left-[43px] top-1 w-6 h-6 bg-white border-4 border-accent-green rounded-full shadow-sm group-hover:scale-125 transition-transform"/>
-                    <h4 className="font-extrabold text-lg md:text-xl text-text-dark mb-1">Level 1: Foundation</h4>
-                    <p className="text-sm md:text-base text-muted">Phonics, letter recognition, and building the core blocks of language.</p>
-                  </div>
-                  <div className="relative group">
-                    <div className="absolute -left-[35px] md:-left-[43px] top-1 w-6 h-6 bg-white border-4 border-secondary rounded-full shadow-sm group-hover:scale-125 transition-transform"/>
-                    <h4 className="font-extrabold text-lg md:text-xl text-text-dark mb-1">Level 2: Fluency</h4>
-                    <p className="text-sm md:text-base text-muted">Blending words, reading simple sentences, and improving reading speed.</p>
-                  </div>
-                  <div className="relative group">
-                    <div className="absolute -left-[35px] md:-left-[43px] top-1 w-6 h-6 bg-white border-4 border-primary rounded-full shadow-sm group-hover:scale-125 transition-transform"/>
-                    <h4 className="font-extrabold text-lg md:text-xl text-text-dark mb-1">Level 3: Comprehension</h4>
-                    <p className="text-sm md:text-base text-muted">Independent reading, understanding narratives, and analytical thinking.</p>
-                  </div>
-                </div>
-              </FadeUp>
-            </div>
-          </div>
+         
 
         </Container>
       </section>

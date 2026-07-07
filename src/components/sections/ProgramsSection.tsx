@@ -54,9 +54,6 @@ export function ProgramsSection() {
                 
                 <a href="/programs" className={`inline-flex items-center font-bold ${program.textColor} transition-opacity hover:opacity-70 text-base md:text-lg group/link mt-auto w-fit py-2 min-h-[44px]`}>
                   Explore details 
-                  <span className="ml-2 bg-white shadow-sm w-8 h-8 rounded-full flex items-center justify-center group-hover/link:translate-x-2 transition-transform border border-muted/10">
-                    →
-                  </span>
                 </a>
               </div>
             </FadeUp>
