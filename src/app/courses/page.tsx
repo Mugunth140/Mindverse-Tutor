@@ -298,7 +298,6 @@ export default function CoursesPage() {
           </FadeUp>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-5xl mx-auto">
-            
             {[
               { title: "Live Online Sessions", desc: "Interactive, face-to-face instruction with dedicated expert educators.", color: "bg-accent-blue/10 text-accent-blue" },
               { title: "Structured Curriculum", desc: "Carefully designed lesson plans that ensure steady, measurable progress.", color: "bg-secondary/15 text-yellow-600" },
@@ -307,17 +306,18 @@ export default function CoursesPage() {
               { title: "Interactive Activities", desc: "Gamified learning moments that keep students deeply engaged.", color: "bg-primary/10 text-primary" },
               { title: "Regular Feedback", desc: "Consistent communication to ensure alignment with parents.", color: "bg-accent-blue/10 text-accent-blue" }
             ].map((block, i) => (
-              <FadeUp key={i} delay={i * 0.1} className="bg-background-alt p-8 md:p-10 rounded-[2.5rem] border border-muted/5 flex items-start gap-6 group hover:bg-white hover:shadow-float transition-all duration-500">
-                 <div className={`w-12 h-12 rounded-2xl flex items-center justify-center font-black text-xl shrink-0 ${block.color}`}>
-                   0{i + 1}
-                 </div>
-                 <div>
-                   <h3 className="text-xl font-extrabold text-text-dark mb-2">{block.title}</h3>
-                   <p className="text-muted text-sm md:text-base leading-relaxed">{block.desc}</p>
-                 </div>
-              </FadeUp>
+              <div key={i} className="group h-full">
+                <FadeUp delay={Math.floor(i / 2) * 0.15} className="bg-background-alt p-8 md:p-10 rounded-[2.5rem] border border-muted/5 flex items-start gap-6 hover:bg-white hover:shadow-card hover:-translate-y-1.5 transition-all duration-300 h-full">
+                   <div className={`w-12 h-12 rounded-2xl flex items-center justify-center font-black text-xl shrink-0 ${block.color} group-hover:scale-110 transition-transform duration-300`}>
+                     0{i + 1}
+                   </div>
+                   <div>
+                     <h3 className="text-xl font-extrabold text-text-dark mb-2">{block.title}</h3>
+                     <p className="text-muted text-sm md:text-base leading-relaxed">{block.desc}</p>
+                   </div>
+                </FadeUp>
+              </div>
             ))}
-
           </div>
         </Container>
       </section>
