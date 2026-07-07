@@ -5,7 +5,7 @@ import { homeContent } from "@/content/home";
 
 export function ProgramsSection() {
   return (
-    <section className="py-20 md:py-24 lg:py-32 relative bg-background-alt overflow-visible">
+    <section className="py-10 md:py-12 lg:py-16 relative bg-background-alt overflow-visible">
       {/* Decorative background SVG curve */}
       <div className="absolute top-0 left-0 w-full overflow-hidden leading-none rotate-180 opacity-50">
         <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="relative block w-full h-[30px] md:h-[50px]">
@@ -27,12 +27,17 @@ export function ProgramsSection() {
           </FadeUp>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-8 lg:gap-10">
-          {homeContent.programs.items.map((program, i) => (
+        <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-12 md:gap-8 lg:gap-10">
+          {homeContent.programs.items.map((program, i) => {
+            let offsetClasses = "md:col-span-2 lg:col-span-2";
+            if (i === 4) offsetClasses += " md:col-start-2 lg:col-start-4";
+            if (i === 3) offsetClasses += " lg:col-start-2";
+            
+            return (
             <FadeUp 
               key={i} 
               delay={i * 0.1} 
-              className={`relative ${i === 1 ? 'lg:mt-12' : ''}`} // Staggered only on lg screens
+              className={`relative ${offsetClasses} ${i === 1 ? 'lg:mt-12' : ''}`}
             >
               <div className={`bg-white rounded-[2rem] md:rounded-[2.5rem] p-6 sm:p-8 md:p-10 shadow-card hover:shadow-float transition-all duration-300 h-full border ${program.borderColor} group flex flex-col relative`}>
                 
@@ -52,12 +57,13 @@ export function ProgramsSection() {
                 <h3 className="text-xl md:text-2xl lg:text-3xl font-extrabold text-text-dark mb-3 md:mb-4 pr-10">{program.title}</h3>
                 <p className="text-muted leading-relaxed mb-8 md:mb-10 flex-grow text-sm md:text-base lg:text-lg">{program.description}</p>
                 
-                <a href="/programs" className={`inline-flex items-center font-bold ${program.textColor} transition-opacity hover:opacity-70 text-base md:text-lg group/link mt-auto w-fit py-2 min-h-[44px]`}>
+                <a href="/programs" className={`inline-flex items-center font-semibold ${program.textColor} transition-opacity hover:opacity-70 text-base md:text-md group/link mt-auto w-fit py-2 min-h-[44px]`}>
                   Explore details 
                 </a>
               </div>
             </FadeUp>
-          ))}
+            );
+          })}
         </div>
       </Container>
     </section>
