@@ -43,9 +43,7 @@ export function HeroSection() {
             </FadeUp>
 
             <FadeUp delay={0.4} className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center lg:justify-start items-center w-full sm:w-auto px-4 sm:px-0">
-              <Button size="lg" variant="secondary" className="w-full sm:w-auto text-base md:text-lg">
-                Book a Discovery Call
-              </Button>
+              <Button href="/book-call" size="lg" variant="secondary" className="w-full sm:w-auto text-base md:text-lg">Book a Discovery Call</Button>
               <Button href="https://assessment.mindversetutor.com" target="_blank" rel="noopener noreferrer" size="lg" variant="outline" className="w-full sm:w-auto bg-white border border-muted/20 text-text-dark hover:border-text-dark/50 hover:bg-text-dark/5 transition-transform text-base md:text-lg">
                 Take a Free Assessment
               </Button>

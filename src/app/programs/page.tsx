@@ -491,9 +491,7 @@ export default function ProgramsPage() {
             </p>
           </FadeUp>
           <FadeUp delay={0.2} className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button size="md" className="w-full sm:w-auto bg-primary text-white hover:bg-primary/90 shadow-lg border-2 border-primary hover:scale-105 transition-transform text-lg">
-              Book a Discovery Call
-            </Button>
+            <Button href="/book-call" size="md" className="w-full sm:w-auto bg-primary text-white hover:bg-primary/90 shadow-lg border-2 border-primary hover:scale-105 transition-transform text-lg">Book a Discovery Call</Button>
             <Button href="https://assessment.mindversetutor.com" target="_blank" rel="noopener noreferrer" size="md" variant="outline" className="w-full sm:w-auto bg-white border-2 border-muted/20 text-text-dark hover:border-text-dark hover:bg-text-dark/5 shadow-sm hover:scale-105 transition-transform text-lg">
               Take a Free Assessment
             </Button>

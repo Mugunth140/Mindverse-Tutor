@@ -44,7 +44,7 @@ export function CTASection() {
               </p>
             </FadeUp>
             <FadeUp delay={0.2} className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center items-center w-full">
-              <Button size="xl" className="w-full sm:w-auto bg-primary text-white hover:bg-primary/90 shadow-lg text-base md:text-lg border-2 border-primary">
+              <Button href="/book-call" size="xl" className="w-full sm:w-auto bg-primary text-white hover:bg-primary/90 shadow-lg text-base md:text-lg border-2 border-primary">
                 Book a Call
               </Button>
               <Button href="https://assessment.mindversetutor.com" target="_blank" rel="noopener noreferrer" size="xl" variant="outline" className="w-full sm:w-auto bg-white border-2 border-text-dark/10 text-text-dark hover:border-text-dark/30 shadow-sm text-base md:text-lg">

@@ -63,8 +63,8 @@ export function Navbar() {
           <Link href="/about" className="text-text-dark hover:text-primary font-bold transition-colors">About</Link>
           <Link href="/programs" className="text-text-dark hover:text-primary font-bold transition-colors">Programs</Link>
           <Link href="/courses" className="text-text-dark hover:text-primary font-bold transition-colors">Courses</Link>
-          {/* <Link href="/contact" className="text-text-dark hover:text-primary font-bold transition-colors"></Link> */}
-          <Button size="md" variant="secondary" className="shadow-sm">Book a Call</Button>
+          {/* <Link href="/book-call" className="text-text-dark hover:text-primary font-bold transition-colors"></Link> */}
+          <Button href="/book-call" size="md" variant="secondary" className="shadow-sm">Book a Call</Button>
         </nav>
 
         {/* Mobile Toggle */}
@@ -112,7 +112,7 @@ export function Navbar() {
                 <Link href="/courses" className="block text-2xl font-extrabold text-text-dark hover:text-primary py-2" onClick={() => setIsOpen(false)}>Courses</Link>
               </motion.div>
               <motion.div variants={linkVariants} className="w-full text-center">
-                <Link href="/contact" className="block text-2xl font-extrabold text-text-dark hover:text-primary py-2" onClick={() => setIsOpen(false)}>Book a Call</Link>
+                <Link href="/book-call" className="block text-2xl font-extrabold text-text-dark hover:text-primary py-2" onClick={() => setIsOpen(false)}>Book a Call</Link>
               </motion.div>
               <motion.div variants={linkVariants} className="w-full pt-6 border-t border-muted/10">
                 <Button href="https://assessment.mindversetutor.com" target="_blank" rel="noopener noreferrer" size="xl" variant="secondary" className="w-full shadow-lg" onClick={() => setIsOpen(false)}>Free Assessment</Button>

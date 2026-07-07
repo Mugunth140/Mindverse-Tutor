@@ -1,4 +1,5 @@
 import * as React from "react";
+import Link from "next/link";
 import { cn } from "@/lib/utils/cn";
 
 export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
@@ -36,6 +37,13 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     );
 
     if (href) {
+      if (href.startsWith('/')) {
+        return (
+          <Link href={href} className={combinedClassName} {...(props as any)}>
+            {props.children}
+          </Link>
+        );
+      }
       return (
         <a href={href} className={combinedClassName} {...(props as any)}>
           {props.children}

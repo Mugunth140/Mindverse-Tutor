@@ -272,9 +272,7 @@ export default function AboutPage() {
             </p>
           </FadeUp>
           <FadeUp delay={0.2} className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button size="lg" className="w-full sm:w-auto bg-primary text-white hover:bg-primary/90 shadow-lg border-2 border-primary transition-transform text-base md:text-lg">
-              Book a Discovery Call
-            </Button>
+            <Button href="/book-call" size="lg" className="w-full sm:w-auto bg-primary text-white hover:bg-primary/90 shadow-lg border-2 border-primary transition-transform text-base md:text-lg">Book a Discovery Call</Button>
             <Button href="https://assessment.mindversetutor.com" target="_blank" rel="noopener noreferrer" size="lg" variant="outline" className="w-full sm:w-auto bg-white border-2 border-muted/20 text-text-dark hover:border-text-dark hover:bg-text-dark/5 shadow-sm transition-transform text-base md:text-lg">
               Take a Free Assessment
             </Button>

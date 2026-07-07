@@ -61,7 +61,7 @@ export function Footer() {
             <h4 className="font-extrabold text-text-dark text-base md:text-lg mb-4 md:mb-8">Company</h4>
             <ul className="space-y-3 md:space-y-4 text-sm md:text-base font-medium text-muted">
               <li><Link href="/about" className="hover:text-primary transition-colors block py-1">About Us</Link></li>
-              <li><Link href="/contact" className="hover:text-primary transition-colors block py-1">Book a Call</Link></li>
+              <li><Link href="/book-call" className="hover:text-primary transition-colors block py-1">Book a Call</Link></li>
               <li><Link href="#" className="hover:text-primary transition-colors block py-1">Careers</Link></li>
             </ul>
           </div>

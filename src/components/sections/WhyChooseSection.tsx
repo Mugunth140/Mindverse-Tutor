@@ -53,7 +53,7 @@ export function WhyChooseSection() {
               
               <div className="relative z-10">
                 <div className="w-12 h-2 bg-secondary rounded-full mb-6 md:mb-8" />
-                <h3 className="text-2xl md:text-3xl font-extrabold text-text-dark mb-4">Intimate & Focused Classes</h3>
+                <h3 className="text-2xl md:text-3xl font-extrabold text-text-dark mb-4">Creative & Focused Classes</h3>
                 <p className="text-text-dark/70 text-base leading-relaxed mb-6 font-medium">
                   Choose between dedicated 1-on-1 sessions or small cohorts capped at 4 students. Every child gets the undivided attention they deserve.
                 </p>
