@@ -7,7 +7,6 @@ export async function sendBookingEmail(data: {
   parent_name: string;
   parent_email: string;
   parent_phone: string;
-  street_address: string;
   city: string;
   country: string;
   child_name: string;
@@ -61,7 +60,7 @@ export async function sendBookingEmail(data: {
           <li><strong>Email:</strong> ${data.parent_email}</li>
           <li><strong>Phone:</strong> ${data.parent_phone}</li>
           <li><strong>Child:</strong> ${data.child_name} (Grade: ${data.child_grade})</li>
-          <li><strong>Address:</strong> ${data.street_address}, ${data.city}, ${data.country}</li>
+          <li><strong>Location:</strong> ${data.city}, ${data.country}</li>
         </ul>
       </div>
       

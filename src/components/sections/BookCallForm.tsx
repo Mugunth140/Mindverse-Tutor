@@ -62,7 +62,7 @@ export function BookCallForm() {
   // Form Data State
   const [formData, setFormData] = useState({
     parent_name: "", parent_email: "", parent_phone: "",
-    street_address: "", city: "", country: "",
+    city: "", country: "",
     child_name: "", child_grade: ""
   });
   
@@ -195,13 +195,10 @@ export function BookCallForm() {
               </div>
 
               <div className="p-5 bg-white rounded-2xl border border-muted/10 space-y-4 shadow-sm">
-                <h3 className="font-bold text-sm text-text-dark">Address</h3>
-                <div>
-                  <input required name="street_address" value={formData.street_address} onChange={handleInputChange} className="w-full bg-background-alt border border-muted/10 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 mb-3" placeholder="Street Name" />
-                </div>
-                <div className="grid grid-cols-2 gap-3">
-                  <input required name="city" value={formData.city} onChange={handleInputChange} className="w-full bg-background-alt border border-muted/10 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-primary/50" placeholder="City" />
-                  <input required name="country" value={formData.country} onChange={handleInputChange} className="w-full bg-background-alt border border-muted/10 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-primary/50" placeholder="Country" />
+                <h3 className="font-bold text-sm text-text-dark">Location</h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  <input required name="city" value={formData.city} onChange={handleInputChange} className="w-full bg-background-alt border border-muted/10 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary/50" placeholder="City" />
+                  <input required name="country" value={formData.country} onChange={handleInputChange} className="w-full bg-background-alt border border-muted/10 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary/50" placeholder="Country" />
                 </div>
               </div>
 
@@ -219,7 +216,7 @@ export function BookCallForm() {
               <div className="pt-6 flex justify-center">
                 <Button 
                   onClick={() => {
-                    if(formData.parent_name && formData.parent_email && formData.child_name && formData.street_address) setStep(2);
+                    if(formData.parent_name && formData.parent_email && formData.child_name && formData.city && formData.country) setStep(2);
                     else alert("Please fill in all required fields to continue.");
                   }} 
                   size="md" className="w-sm bg-primary text-white"
