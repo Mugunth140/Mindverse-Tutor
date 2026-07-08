@@ -3,6 +3,8 @@ import { Container } from "@/components/layout/Container";
 import { Button } from "@/components/ui/Button";
 import { FadeUp, FadeIn } from "@/components/shared/Animations";
 
+import { EducatorSection } from "@/components/bootcamp/EducatorSection";
+
 export const metadata = { title: "About Us | Mindverse Tutor" };
 
 export default function AboutPage() {
@@ -97,61 +99,7 @@ export default function AboutPage() {
       </section>
 
       {/* SECTION 3: MEET THE EDUCATOR */}
-      <section className="py-24 md:py-32 bg-background-alt border-y border-muted/5">
-        <Container>
-          <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-center">
-            
-            {/* Photograph Placeholder */}
-            <FadeIn className="w-full lg:w-5/12">
-              <div className="w-full aspect-[4/5] bg-white rounded-[3rem] border border-muted/10 shadow-sm relative overflow-hidden flex flex-col items-center justify-center group p-8">
-                 <div className="absolute inset-0 bg-dot-pattern opacity-10"></div>
-                 {/* <div className="w-24 h-24 rounded-full bg-secondary/10 flex items-center justify-center mb-6 border border-secondary/20">
-                   <span className="text-4xl">📸</span>
-                 </div>
-                 <span className="text-text-dark font-bold text-center">Educator Photograph<br/>Placeholder</span>
-                 <p className="text-xs text-muted mt-4 text-center max-w-xs">A professional, warm, and welcoming portrait of the founder/tutor.</p> */}
-              </div>
-            </FadeIn>
-
-            {/* Details */}
-            <div className="w-full lg:w-7/12">
-              <FadeUp>
-                <h2 className="text-fluid-h2 font-extrabold text-text-dark mb-6">Meet Your Educator</h2>
-                <p className="text-lg text-muted mb-8 leading-relaxed">
-                  With a deep passion for education and years of experience guiding students across the globe, our founder established Mindverse Tutor to provide the personalized attention that traditional schooling often misses.
-                </p>
-              </FadeUp>
-
-              <FadeUp delay={0.1} className="space-y-6">
-                
-                <div>
-                  <h4 className="text-sm font-bold text-text-dark uppercase tracking-wider mb-3 opacity-70">Core Subjects</h4>
-                  <div className="flex flex-wrap gap-2">
-                    <span className="px-4 py-2 bg-accent-blue/10 text-accent-blue font-bold text-xs rounded-full border border-accent-blue/20">Mathematics</span>
-                    <span className="px-4 py-2 bg-accent-green/10 text-accent-green font-bold text-xs rounded-full border border-accent-green/20">Science</span>
-                    <span className="px-4 py-2 bg-accent-red/10 text-accent-red font-bold text-xs rounded-full border border-accent-red/20">English</span>
-                  </div>
-                </div>
-
-                <div>
-                  <h4 className="text-sm font-bold text-text-dark uppercase tracking-wider mb-3 opacity-70">Specializations</h4>
-                  <div className="flex flex-wrap gap-2">
-                    <span className="px-4 py-2 bg-white text-text-dark font-bold text-xs rounded-full border border-muted/10 shadow-sm">Grades 1–10</span>
-                    <span className="px-4 py-2 bg-white text-text-dark font-bold text-xs rounded-full border border-muted/10 shadow-sm">Concept-Based Learning</span>
-                    <span className="px-4 py-2 bg-white text-text-dark font-bold text-xs rounded-full border border-muted/10 shadow-sm">1-on-1 Mentorship</span>
-                  </div>
-                </div>
-
-                <div>
-                  <h4 className="text-sm font-bold text-text-dark uppercase tracking-wider mb-3 opacity-70">Global Reach</h4>
-                  <p className="text-sm font-medium text-muted">Proudly teaching students from the USA, Canada, Australia, Singapore, India, and the UAE.</p>
-                </div>
-
-              </FadeUp>
-            </div>
-          </div>
-        </Container>
-      </section>
+      <EducatorSection />
 
       {/* SECTION 4: TEACHING PHILOSOPHY (Horizontal Process) */}
       <section className="py-24 md:py-32 bg-white overflow-hidden relative">
