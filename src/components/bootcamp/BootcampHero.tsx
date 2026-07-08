@@ -88,7 +88,7 @@ const trustItems = [
 
 export function BootcampHero() {
   return (
-    <section className="pt-8 pb-6 md:pt-12 md:pb-10 bg-background overflow-hidden relative">
+    <section className="pt-16 pb-12 md:pt-24 md:pb-20 bg-background overflow-hidden relative">
       {/* Dot pattern overlay */}
       <div className="absolute inset-0 bg-dot-pattern opacity-30 pointer-events-none" />
 
@@ -105,14 +105,14 @@ export function BootcampHero() {
 
             {/* Headline */}
             <FadeUp delay={0.15}>
-              <h1 className="text-fluid-h1 font-extrabold text-text-dark font-heading leading-tight text-balance">
+              <h1 className="text-fluid-h1 font-extrabold text-text-dark font-heading leading-tight text-balance text-6xl!">
                 Is Your Child Ready for Middle School Math?
               </h1>
             </FadeUp>
 
             {/* Subheading */}
             <FadeUp delay={0.25}>
-              <p className="text-lg text-muted leading-relaxed">
+              <p className="text-md text-muted leading-relaxed">
                 Most students enter Grade 6 carrying hidden learning gaps that
                 quietly hold them back. Our FREE Math Readiness Assessment
                 identifies exactly where your child stands before it
