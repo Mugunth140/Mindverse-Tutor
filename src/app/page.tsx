@@ -2,6 +2,7 @@ import { HeroSection } from "@/components/sections/HeroSection";
 import { GlobalPresenceSection } from "@/components/sections/GlobalPresenceSection";
 import { ProgramsSection } from "@/components/sections/ProgramsSection";
 import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
+import { TestimonialsWall } from "@/components/bootcamp/TestimonialsWall";
 import { CTASection } from "@/components/sections/CTASection";
 
 export default function HomePage() {
@@ -11,6 +12,7 @@ export default function HomePage() {
       <GlobalPresenceSection />
       <ProgramsSection />
       <WhyChooseSection />
+      <TestimonialsWall />
       <CTASection />
     </>
   );
