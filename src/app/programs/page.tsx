@@ -214,6 +214,7 @@ export default function ProgramsPage() {
                  </div>
                ))}
             </div>
+            <Button size="lg" href="/math-bootcamp">Know more</Button>
           </div>
 
           {/* Program 4: Multiplication Bootcamp */}
@@ -406,7 +407,7 @@ export default function ProgramsPage() {
                 <div className="bg-accent-blue/10 text-accent-blue font-extrabold text-xs uppercase tracking-widest px-4 py-1.5 rounded-full inline-block w-fit mb-6">Grades 1–3</div>
                 <h3 className="text-2xl font-black text-text-dark mb-6">Early Explorers</h3>
                 <ul className="space-y-4 mb-8">
-                  {['Visual Learning', 'Educational Games', 'Strong Number Foundations'].map((item, i) => (
+                  {['Early Reading & Phonics', 'Handwriting, Spelling & Sentence Building', 'Number Sense & Foundational Maths', 'Discovering Science Through the World around Them', 'Curiosity, Creativity & Play Based Learning'].map((item, i) => (
                     <li key={i} className="flex items-center gap-3 font-bold text-muted text-sm"><div className="w-2 h-2 rounded-full bg-accent-blue"/> {item}</li>
                   ))}
                 </ul>
@@ -418,7 +419,7 @@ export default function ProgramsPage() {
                 <div className="bg-secondary/20 text-yellow-700 font-extrabold text-xs uppercase tracking-widest px-4 py-1.5 rounded-full inline-block w-fit mb-6">Grades 4–5</div>
                 <h3 className="text-2xl font-black text-text-dark mb-6">Foundational Builders</h3>
                 <ul className="space-y-4 mb-8">
-                  {['Logical Reasoning', 'Complex Problem Solving', 'Mathematical Confidence'].map((item, i) => (
+                  {['Reading Comperhension & Vocabulary Developemnt', 'Writing Grammer & Communication Skills', 'Fractions, Deciamls & Mathematical Problem Solving', 'Scientific Thinking & Inquiry', 'Logical Reasoning, Study Skills & Independant Learning'].map((item, i) => (
                     <li key={i} className="flex items-center gap-3 font-bold text-muted text-sm"><div className="w-2 h-2 rounded-full bg-secondary"/> {item}</li>
                   ))}
                 </ul>
@@ -430,7 +431,7 @@ export default function ProgramsPage() {
                 <div className="bg-accent-red/10 text-accent-red font-extrabold text-xs uppercase tracking-widest px-4 py-1.5 rounded-full inline-block w-fit mb-6">Grades 6–8</div>
                 <h3 className="text-2xl font-black text-text-dark mb-6">Advanced Thinkers</h3>
                 <ul className="space-y-4 mb-8">
-                  {['Pre-Algebra & Algebra', 'Critical Thinking', 'Advanced Conceptual Math'].map((item, i) => (
+                  {['Academic Reading & Text Analysis', 'Persuasive, Discursive & Analytical Writing', 'Pre-Algebra, Algebra & Mathematical Reasoning', 'Scientific Investigation & Inquiry', 'Critical Thinking, Organization & Study Skills'].map((item, i) => (
                     <li key={i} className="flex items-center gap-3 font-bold text-muted text-sm"><div className="w-2 h-2 rounded-full bg-accent-red"/> {item}</li>
                   ))}
                 </ul>

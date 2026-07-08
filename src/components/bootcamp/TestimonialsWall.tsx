@@ -237,7 +237,7 @@ export function TestimonialsWall() {
             Families Who Chose MindVerse Tutor
           </h2>
           <p className="text-muted mt-4 text-base max-w-xl leading-relaxed">
-            Real words from real students and parents — unedited, unscripted, and unafraid to share.
+            Real words from real students and parents unedited, unscripted, and unafraid to share.
           </p>
         </FadeUp>
 
