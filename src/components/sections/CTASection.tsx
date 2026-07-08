@@ -5,7 +5,7 @@ import { FadeUp } from "@/components/shared/Animations";
 
 export function CTASection() {
   return (
-    <section className="py-20 md:py-24 lg:py-32 relative overflow-visible px-4 bg-background">
+    <section className="py-10 md:py-12 lg:py-16 relative overflow-visible px-4 bg-background">
       <Container>
         <div className="bg-secondary rounded-[2rem] md:rounded-[3rem] p-8 md:p-12 lg:p-24 text-center relative shadow-float mt-10 md:mt-16 overflow-visible border-4 border-white">
           
@@ -44,10 +44,10 @@ export function CTASection() {
               </p>
             </FadeUp>
             <FadeUp delay={0.2} className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center items-center w-full">
-              <Button href="/book-call" size="xl" className="w-full sm:w-auto bg-primary text-white hover:bg-primary/90 shadow-lg text-base md:text-lg border-2 border-primary">
+              <Button href="/book-call" size="lg" className="w-full sm:w-auto bg-primary text-white hover:bg-primary/90 shadow-lg text-base md:text-lg border-2 border-primary">
                 Book a Call
               </Button>
-              <Button href="https://assessment.mindversetutor.com" target="_blank" rel="noopener noreferrer" size="xl" variant="outline" className="w-full sm:w-auto bg-white border-2 border-text-dark/10 text-text-dark hover:border-text-dark/30 shadow-sm text-base md:text-lg">
+              <Button href="https://assessment.mindversetutor.com" target="_blank" rel="noopener noreferrer" size="lg" variant="outline" className="w-full sm:w-auto bg-white border-2 border-text-dark/10 text-text-dark hover:border-text-dark/30 shadow-sm text-base md:text-lg">
                 Free Assessment
               </Button>
             </FadeUp>
