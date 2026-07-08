@@ -17,7 +17,7 @@ const educators = [
     accentText: "text-yellow-700",
     tagBg: "bg-yellow-100",
     tagText: "text-yellow-800",
-    bio: "I believe every child can excel in mathematics when concepts are taught with patience, clarity, and personalised attention. My teaching focuses on strengthening fundamentals, developing critical thinking, and helping students become confident, independent learners — rather than relying on rote learning.",
+    bio: "I believe every child can excel in mathematics when concepts are taught with patience, clarity, and personalised attention. My teaching focuses on strengthening fundamentals, developing critical thinking, and helping students become confident, independent learners rather than relying on rote learning.",
     subjects: ["Mathematics", "Science", "English"],
     specialisations: [
       "Learner Mindset Transformation",
@@ -25,7 +25,7 @@ const educators = [
       "Skill Gap Fixing",
     ],
     quote:
-      "Every child already has the ability — my job is to unlock it and show them that math makes sense.",
+      "Every child already has the ability, my job is to unlock it and show them that math makes sense.",
     reach: null,
   },
   {
@@ -38,7 +38,7 @@ const educators = [
     accentText: "text-blue-700",
     tagBg: "bg-blue-100",
     tagText: "text-blue-800",
-    bio: "With deep expertise across Maths, Chemistry, and Physics at the senior secondary level, I specialise in one-to-one classes that build genuine conceptual understanding. I focus on making sure students don't just get the right answer — they know exactly why it's right.",
+    bio: "With deep expertise across Maths, Chemistry, and Physics at the senior secondary level, I specialise in one-to-one classes that build genuine conceptual understanding. I focus on making sure students don't just get the right answer they know exactly why it's right.",
     subjects: ["Mathematics", "Chemistry", "Physics"],
     specialisations: [
       "Grades 9–12",
@@ -46,7 +46,7 @@ const educators = [
       "Concept-Based Understanding",
     ],
     quote:
-      "Understanding the concept is not a shortcut — it is the only path to lasting mastery.",
+      "Understanding the concept is not a shortcut, it is the only path to lasting mastery.",
     reach: ["Japan", "United States", "UAE", "India"],
   },
   {
@@ -59,7 +59,7 @@ const educators = [
     accentText: "text-green-700",
     tagBg: "bg-green-100",
     tagText: "text-green-800",
-    bio: "I believe that true mastery comes from active exploration, not passive listening. In my classes, we break down advanced formulas and abstract theories into plain, everyday language. By stripping away intimidating jargon, I help students see the beautiful logic behind maths and physics — building lasting confidence and sparking genuine curiosity.",
+    bio: "I believe that true mastery comes from active exploration, not passive listening. In my classes, we break down advanced formulas and abstract theories into plain, everyday language. By stripping away intimidating jargon, I help students see the beautiful logic behind maths and physics building lasting confidence and sparking genuine curiosity.",
     subjects: ["Mathematics", "Physics", "Applied Mechanics", "Applied Mathematics"],
     specialisations: [
       "AS Level & A Level",
@@ -67,7 +67,7 @@ const educators = [
       "Advanced Problem Solving",
     ],
     quote:
-      "Once a student sees the logic, the formula becomes obvious — not something to memorise, but something to rediscover.",
+      "Once a student sees the logic, the formula becomes obvious, not something to memorise, but something to rediscover.",
     reach: null,
   },
 ];
