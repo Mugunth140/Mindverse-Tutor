@@ -10,14 +10,14 @@ export default function CoursesPage() {
     <div className="overflow-hidden bg-background">
       
       {/* SECTION 1: HERO */}
-      <section className="relative pt-32 md:pt-40 overflow-hidden bg-background">
+      <section className="relative pt-5 md:pt-10 pb-0 overflow-hidden bg-background flex items-start justify-center">
         <div className="absolute inset-0 opacity-20 pointer-events-none bg-[radial-gradient(#cbd5e1_1px,transparent_1px)] [background-size:24px_24px] mix-blend-multiply"></div>
         
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-64 bg-accent-green/10 rounded-full blur-[100px] pointer-events-none" />
 
-        <Container className="relative z-10 text-center max-w-4xl mx-auto">
+        <Container className="relative z-10 text-center max-w-3xl mx-auto md:max-w-4xl">
           <FadeUp delay={0.1}>
-            <h1 className="text-fluid-h1 font-black text-text-dark mb-6 leading-[1.1] tracking-tight text-balance">
+            <h1 className="text-fluid-h1 font-black text-text-dark mb-6 leading-[1.1] tracking-tight text-start">
               Learning Pathways That Grow <br className="hidden sm:block" />
               <span className="text-accent-green relative inline-block mt-2">
                 With Every Child.
@@ -29,24 +29,21 @@ export default function CoursesPage() {
           </FadeUp>
 
           <FadeUp delay={0.2}>
-            <p className="text-lg md:text-xl text-muted leading-relaxed max-w-2xl mx-auto text-balance">
+            <p className="text-md md:text-lg text-muted leading-relaxed max-w-2xl mx-auto text-start">
               Every child learns differently. Our structured learning pathways help students build strong foundations, develop unshakeable confidence, and progress step by step through carefully designed programs.
             </p>
           </FadeUp>
         </Container>
 
-        {/* Mascot Integration on a visual 'stage' */}
-        <div className="relative w-full mt-12 flex justify-center items-end h-64 md:h-80">
-          {/* Decorative stage floor */}
-          <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-accent-green/5 to-transparent border-t border-accent-green/10" />
-          
-          <FadeIn delay={0.3} className="relative z-20 w-64 h-64 md:w-80 md:h-80 translate-y-4">
-            <Image 
-              src="/characters/yellow-blue-puzzle.png" 
-              alt="Building Knowledge" 
-              fill 
-              className="object-contain object-bottom" 
-              priority 
+        {/* Mascot — explicitly tall so it connects to text but remains huge */}
+        <div className="relative w-full mt-10 pointer-events-none select-none px-4">
+          <FadeIn delay={0.3} className="relative w-full max-w-[800px] h-[350px] sm:h-[450px] md:h-[550px] lg:h-[650px] mx-auto">
+            <Image
+              src="/characters/Blue-climbing.png"
+              alt="Building Knowledge"
+              fill
+              className="object-contain object-bottom"
+              priority
             />
           </FadeIn>
         </div>

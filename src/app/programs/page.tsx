@@ -10,12 +10,12 @@ export default function ProgramsPage() {
     <div className="overflow-hidden bg-background">
       
       {/* SECTION 1: HERO */}
-      <section className="relative pt-32 md:pt-40 overflow-hidden bg-background">
+      <section className="relative pt-12 md:pt-15 pb-0 bg-background">
         <div className="absolute inset-0 opacity-20 pointer-events-none bg-[radial-gradient(#cbd5e1_1px,transparent_1px)] [background-size:24px_24px] mix-blend-multiply"></div>
         
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-64 bg-accent-blue/10 rounded-full blur-[100px] pointer-events-none" />
 
-        <Container className="relative z-10 text-center max-w-4xl mx-auto">
+        <Container className="relative z-10 text-center max-w-3xl mx-auto md:max-w-6xl">
           <FadeUp delay={0.1}>
             <h1 className="text-fluid-h1 font-black text-text-dark mb-6 leading-[1.1] tracking-tight text-balance">
               Programs Designed Around <br className="hidden sm:block" />
@@ -29,24 +29,21 @@ export default function ProgramsPage() {
           </FadeUp>
 
           <FadeUp delay={0.2}>
-            <p className="text-lg md:text-xl text-muted leading-relaxed max-w-2xl mx-auto text-balance">
+            <p className="text-md md:text-lg text-muted leading-relaxed max-w-4xl mx-auto text-balance">
               We know that every learner is different. Mindverse offers multiple personalized learning experiences designed to suit different goals, speeds, and natural curiosities.
             </p>
           </FadeUp>
         </Container>
 
-        {/* Mascot Integration on a visual 'stage' */}
-        <div className="relative w-full mt-12 flex justify-center items-end h-64 md:h-80">
-          {/* Decorative stage floor */}
-          <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-accent-blue/5 to-transparent border-t border-accent-blue/10" />
-          
-          <FadeIn delay={0.3} className="relative z-20 w-64 h-64 md:w-80 md:h-80 translate-y-4">
-            <Image 
-              src="/characters/yellow-blue-hifi.png" 
-              alt="Collaborative Learning" 
-              fill 
-              className="object-contain object-bottom" 
-              priority 
+        {/* Character Table — explicitly tall so it connects to text but remains huge */}
+        <div className="relative w-full pointer-events-none select-none px-4 mt-5">
+          <FadeIn delay={0.3} className="relative w-full max-w-230 h-75 sm:h-80 md:h-100 lg:h-120 mx-auto">
+            <Image
+              src="/characters/All-in-one-table.png"
+              alt="Students at Learning Table"
+              fill
+              className="object-contain object-bottom"
+              priority
             />
           </FadeIn>
         </div>
