@@ -10,14 +10,14 @@ export default function ProgramsPage() {
     <div className="overflow-hidden bg-background">
       
       {/* SECTION 1: HERO */}
-      <section className="relative pt-24 pb-20 md:pt-32 md:pb-24 lg:pt-40 lg:pb-32 min-h-[80vh] flex flex-col justify-center items-center overflow-hidden">
+      <section className="relative pt-24 pb-12 md:pt-32 md:pb-16 lg:pt-32 lg:pb-16 min-h-[60vh] flex flex-col justify-center items-center overflow-hidden">
         <div className="absolute inset-0 opacity-20 pointer-events-none bg-[radial-gradient(#cbd5e1_1px,transparent_1px)] [background-size:24px_24px] mix-blend-multiply"></div>
-        
+
         <div className="absolute top-[5%] left-[5%] w-64 h-64 bg-accent-blue/10 rounded-full blur-[80px] pointer-events-none" />
         <div className="absolute bottom-[5%] right-[5%] w-80 h-80 bg-secondary/10 rounded-full blur-[100px] pointer-events-none" />
 
         <Container className="relative z-10 text-center max-w-5xl mx-auto flex flex-col items-center">
-          
+
           <FadeUp delay={0.1}>
             <h1 className="text-fluid-h1 font-black text-text-dark mb-6 leading-[1.1] tracking-tight text-balance">
               Programs Designed Around <br className="hidden sm:block" />
@@ -29,16 +29,16 @@ export default function ProgramsPage() {
               </span>
             </h1>
           </FadeUp>
-          
+
           <FadeUp delay={0.2}>
-            <p className="text-lg md:text-xl text-muted leading-relaxed max-w-2xl mx-auto text-balance mb-12">
+            <p className="text-lg md:text-xl text-muted leading-relaxed max-w-2xl mx-auto text-balance">
               We know that every learner is different. Mindverse offers multiple personalized learning experiences designed to suit different goals, speeds, and natural curiosities.
             </p>
           </FadeUp>
         </Container>
 
         {/* Mascot Integration */}
-        <FadeIn delay={0.3} className="relative z-20 w-48 h-48 md:w-64 md:h-64 mt-4 animate-[float_6s_ease-in-out_infinite] pointer-events-none">
+        <FadeIn delay={0.3} className="relative z-20 w-56 h-56 md:w-72 md:h-72 mt-12 md:mt-16 animate-[float_6s_ease-in-out_infinite] pointer-events-none">
           <Image src="/characters/yellow-blue-hifi.png" alt="Collaborative Learning" fill className="object-contain" priority />
         </FadeIn>
       </section>
