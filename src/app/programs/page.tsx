@@ -36,6 +36,11 @@ export default function ProgramsPage() {
             </p>
           </FadeUp>
         </Container>
+
+        {/* Mascot Integration */}
+        <FadeIn delay={0.3} className="relative z-20 w-48 h-48 md:w-64 md:h-64 mt-4 animate-[float_6s_ease-in-out_infinite] pointer-events-none">
+          <Image src="/characters/yellow-blue-hifi.png" alt="Collaborative Learning" fill className="object-contain" priority />
+        </FadeIn>
       </section>
 
       {/* SECTION 2: CHOOSE YOUR LEARNING PATH */}

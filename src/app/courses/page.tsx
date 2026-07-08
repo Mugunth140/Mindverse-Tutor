@@ -38,6 +38,11 @@ export default function CoursesPage() {
             </p>
           </FadeUp>
         </Container>
+
+        {/* Mascot Integration */}
+        <FadeIn delay={0.3} className="relative z-20 w-48 h-48 md:w-64 md:h-64 mt-4 animate-[float_6s_ease-in-out_infinite_reverse] pointer-events-none">
+          <Image src="/characters/yellow-blue-puzzle.png" alt="Building Knowledge" fill className="object-contain" priority />
+        </FadeIn>
       </section>
 
       {/* SECTION 2: CHOOSE YOUR LEARNING PATH */}
