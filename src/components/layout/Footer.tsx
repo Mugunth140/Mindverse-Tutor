@@ -30,12 +30,40 @@ export function Footer() {
     }
   };
 
+  const columnContainer: any = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.15,
+      }
+    }
+  };
+
+  const columnItem: any = {
+    hidden: { opacity: 0, x: -20 },
+    show: { 
+      opacity: 1, 
+      x: 0,
+      transition: {
+        duration: 0.6,
+        ease: "easeOut"
+      }
+    }
+  };
+
   return (
     <footer className="relative border-t border-muted/10 pt-8 md:pt-10 overflow-hidden bg-linear-to-b from-background to-secondary/25">
       
       <div className="container mx-auto px-4 sm:px-8 lg:px-18 relative z-10">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-12 md:gap-16 mb-8 md:mb-12">
-          <div className="sm:col-span-2 lg:col-span-2 text-center sm:text-left">
+        <motion.div 
+          variants={columnContainer}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, margin: "-50px" }}
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-12 md:gap-16 mb-8 md:mb-12"
+        >
+          <motion.div variants={columnItem} className="sm:col-span-2 lg:col-span-2 text-center sm:text-left">
             <Link href="/" className="inline-block mb-6 md:mb-8 hover:scale-105 transition-transform">
               <Image 
                 src="/logos/logo-full.png" 
@@ -48,33 +76,45 @@ export function Footer() {
             <p className="text-muted text-sm md:text-base leading-relaxed mb-6 font-medium max-w-sm mx-auto sm:mx-0">
               Making learning a joyful adventure. Premium, personalized tutoring that builds confidence and inspires curiosity.
             </p>
-          </div>
-          <div className="text-center sm:text-left">
-            <h4 className="font-extrabold text-text-dark text-base md:text-lg mb-4 md:mb-8">Programs</h4>
+          </motion.div>
+          <motion.div variants={columnItem} className="text-center sm:text-left">
+            <h4 className="font-extrabold text-text-dark text-base md:text-lg mb-4 md:mb-8">Explore</h4>
             <ul className="space-y-3 md:space-y-4 text-sm md:text-base font-medium text-muted">
-              <li><Link href="/programs" className="hover:text-primary transition-colors block py-1">Mathematics</Link></li>
-              <li><Link href="/programs" className="hover:text-primary transition-colors block py-1">After School</Link></li>
-              <li><Link href="/programs" className="hover:text-primary transition-colors block py-1">Summer Camps</Link></li>
+              <li>
+                <Link href="/programs" className="hover:text-primary transition-colors block py-1">
+                  Programs
+                </Link>
+              </li>
+              <li>
+                <Link href="/courses" className="hover:text-primary transition-colors block py-1">
+                  Courses
+                </Link>
+              </li>
+              <li>
+                <Link href="/math-bootcamp" className="hover:text-primary transition-colors block py-1">
+                  Math Bootcamp
+                </Link>
+              </li>
             </ul>
-          </div>
-          <div className="text-center sm:text-left">
+          </motion.div>
+          <motion.div variants={columnItem} className="text-center sm:text-left">
             <h4 className="font-extrabold text-text-dark text-base md:text-lg mb-4 md:mb-8">Company</h4>
             <ul className="space-y-3 md:space-y-4 text-sm md:text-base font-medium text-muted">
               <li><Link href="/about" className="hover:text-primary transition-colors block py-1">About Us</Link></li>
               <li><Link href="/book-call" className="hover:text-primary transition-colors block py-1">Book a Call</Link></li>
-              <li><Link href="#" className="hover:text-primary transition-colors block py-1">Careers</Link></li>
+              <li><Link href="/contact" className="hover:text-primary transition-colors block py-1">Contact</Link></li>
             </ul>
-          </div>
-          <div className="text-center sm:text-left">
+          </motion.div>
+          <motion.div variants={columnItem} className="text-center sm:text-left">
             <h4 className="font-extrabold text-text-dark text-base md:text-lg mb-4 md:mb-8">Connect</h4>
             <ul className="space-y-3 md:space-y-4 text-sm md:text-base font-medium text-muted">
-              <li><a href="https://www.instagram.com/mindversetutor" className="hover:text-primary transition-colors block py-1">Instagram</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors block py-1">Facebook</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors block py-1">YouTube</a></li>
+              <li><a href="https://www.instagram.com/mindversetutor" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors block py-1">Instagram</a></li>
+              <li><a href="https://www.facebook.com/share/1cPEbbiP33" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors block py-1">Facebook</a></li>
+              <li><a href="https://shwethashri.graphy.com/" className="hover:text-primary transition-colors block py-1">Graphy</a></li>
             </ul>
-          </div>
-        </div>
-        
+          </motion.div>
+        </motion.div>
+        3
         {/* Pushed high up with pb-[20vw] on mobile, pb-[16vw] on desktop */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-4 pb-[22vw] px-4 sm:pb-[18vw] sm:px-8 md:pb-[15vw] md:px-16 z-20 relative text-xs md:text-sm font-medium text-muted/80 text-center">
           <Link href="#" className="hover:text-primary transition-colors py-2">Terms and conditions</Link>
