@@ -10,14 +10,12 @@ export default function ProgramsPage() {
     <div className="overflow-hidden bg-background">
       
       {/* SECTION 1: HERO */}
-      <section className="relative pt-24 pb-12 md:pt-32 md:pb-16 lg:pt-32 lg:pb-16 min-h-[60vh] flex flex-col justify-center items-center overflow-hidden">
+      <section className="relative pt-32 md:pt-40 overflow-hidden bg-background">
         <div className="absolute inset-0 opacity-20 pointer-events-none bg-[radial-gradient(#cbd5e1_1px,transparent_1px)] [background-size:24px_24px] mix-blend-multiply"></div>
+        
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-64 bg-accent-blue/10 rounded-full blur-[100px] pointer-events-none" />
 
-        <div className="absolute top-[5%] left-[5%] w-64 h-64 bg-accent-blue/10 rounded-full blur-[80px] pointer-events-none" />
-        <div className="absolute bottom-[5%] right-[5%] w-80 h-80 bg-secondary/10 rounded-full blur-[100px] pointer-events-none" />
-
-        <Container className="relative z-10 text-center max-w-5xl mx-auto flex flex-col items-center">
-
+        <Container className="relative z-10 text-center max-w-4xl mx-auto">
           <FadeUp delay={0.1}>
             <h1 className="text-fluid-h1 font-black text-text-dark mb-6 leading-[1.1] tracking-tight text-balance">
               Programs Designed Around <br className="hidden sm:block" />
@@ -37,10 +35,21 @@ export default function ProgramsPage() {
           </FadeUp>
         </Container>
 
-        {/* Mascot Integration */}
-        <FadeIn delay={0.3} className="relative z-20 w-56 h-56 md:w-72 md:h-72 mt-12 md:mt-16 animate-[float_6s_ease-in-out_infinite] pointer-events-none">
-          <Image src="/characters/yellow-blue-hifi.png" alt="Collaborative Learning" fill className="object-contain" priority />
-        </FadeIn>
+        {/* Mascot Integration on a visual 'stage' */}
+        <div className="relative w-full mt-12 flex justify-center items-end h-64 md:h-80">
+          {/* Decorative stage floor */}
+          <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-accent-blue/5 to-transparent border-t border-accent-blue/10" />
+          
+          <FadeIn delay={0.3} className="relative z-20 w-64 h-64 md:w-80 md:h-80 translate-y-4">
+            <Image 
+              src="/characters/yellow-blue-hifi.png" 
+              alt="Collaborative Learning" 
+              fill 
+              className="object-contain object-bottom" 
+              priority 
+            />
+          </FadeIn>
+        </div>
       </section>
 
       {/* SECTION 2: CHOOSE YOUR LEARNING PATH */}
