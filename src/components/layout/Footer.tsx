@@ -114,12 +114,12 @@ export function Footer() {
             </ul>
           </motion.div>
         </motion.div>
-        3
+
         {/* Pushed high up with pb-[20vw] on mobile, pb-[16vw] on desktop */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-4 pb-[22vw] px-4 sm:pb-[18vw] sm:px-8 md:pb-[15vw] md:px-16 z-20 relative text-xs md:text-sm font-medium text-muted/80 text-center">
-          <Link href="#" className="hover:text-primary transition-colors py-2">Terms and conditions</Link>
+          <Link href="/terms-conditions" className="hover:text-primary transition-colors py-2">Terms and conditions</Link>
           <p className="order-first md:order-0">&copy; {new Date().getFullYear()} Mindverse Tutor. All Rights Reserved</p>
-          <Link href="#" className="hover:text-primary transition-colors py-2">Privacy Policy</Link>
+          <Link href="/privacy-policy" className="hover:text-primary transition-colors py-2">Privacy Policy</Link>
         </div>
       </div>
 
