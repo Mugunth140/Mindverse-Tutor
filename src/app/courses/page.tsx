@@ -10,43 +10,50 @@ export default function CoursesPage() {
     <div className="overflow-hidden bg-background">
       
       {/* SECTION 1: HERO */}
-      <section className="relative pt-5 md:pt-10 pb-0 overflow-hidden bg-background flex items-start justify-center">
+      <section className="relative pt-10 pb-12 md:pt-15 md:pb-16 overflow-hidden bg-background">
         <div className="absolute inset-0 opacity-20 pointer-events-none bg-[radial-gradient(#cbd5e1_1px,transparent_1px)] [background-size:24px_24px] mix-blend-multiply"></div>
         
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-64 bg-accent-green/10 rounded-full blur-[100px] pointer-events-none" />
 
-        <Container className="relative z-10 text-center max-w-3xl mx-auto md:max-w-4xl">
-          <FadeUp delay={0.1}>
-            <h1 className="text-fluid-h1 font-black text-text-dark mb-6 leading-[1.1] tracking-tight text-start">
-              Learning Pathways That Grow <br className="hidden sm:block" />
-              <span className="text-accent-green relative inline-block mt-2">
-                With Every Child.
-                <svg className="absolute w-[105%] h-3 -bottom-1 -left-[2%] text-secondary" viewBox="0 0 100 10" preserveAspectRatio="none">
-                  <path d="M0 5 Q 50 10 100 5" stroke="currentColor" strokeWidth="4" fill="transparent" strokeLinecap="round" />
-                </svg>
-              </span>
-            </h1>
-          </FadeUp>
+        <Container className="relative z-10">
+          <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+            
+            {/* Left Column: Text */}
+            <div className="w-full lg:w-2/3 flex flex-col justify-center text-center lg:text-left">
+              <FadeUp delay={0.1}>
+                <h1 className="text-fluid-h1 font-black text-text-dark mb-6 leading-[1.1] tracking-tight">
+                  Learning Pathways That Grow <br className="hidden lg:block" />
+                  <span className="text-accent-green relative inline-block mt-2">
+                    With Every Child.
+                    <svg className="absolute w-[105%] h-3 -bottom-2 -left-[2%] text-secondary" viewBox="0 0 100 10" preserveAspectRatio="none">
+                      <path d="M0 5 Q 50 10 100 5" stroke="currentColor" strokeWidth="6" fill="transparent" strokeLinecap="round" />
+                    </svg>
+                  </span>
+                </h1>
+              </FadeUp>
 
-          <FadeUp delay={0.2}>
-            <p className="text-md md:text-lg text-muted leading-relaxed max-w-2xl mx-auto text-start">
-              Every child learns differently. Our structured learning pathways help students build strong foundations, develop unshakeable confidence, and progress step by step through carefully designed programs.
-            </p>
-          </FadeUp>
+              <FadeUp delay={0.2}>
+                <p className="text-md md:text-lg text-muted leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                  Every child learns differently. Our structured learning pathways help students build strong foundations, develop unshakeable confidence, and progress step by step through carefully designed programs.
+                </p>
+              </FadeUp>
+            </div>
+
+            {/* Right Column: Image */}
+            <div className="w-full lg:w-1/2 relative flex justify-center lg:justify-end pointer-events-none select-none">
+              <FadeIn delay={0.3} className="relative w-full max-w-[650px] h-[400px] sm:h-[500px] lg:h-[600px]">
+                <Image
+                  src="/characters/Blue-climbing.png"
+                  alt="Learning Pathways Steps"
+                  fill
+                  className="object-contain object-center lg:object-right"
+                  priority
+                />
+              </FadeIn>
+            </div>
+
+          </div>
         </Container>
-
-        {/* Mascot — explicitly tall so it connects to text but remains huge */}
-        <div className="relative w-full mt-10 pointer-events-none select-none px-4">
-          <FadeIn delay={0.3} className="relative w-full max-w-[800px] h-[350px] sm:h-[450px] md:h-[550px] lg:h-[650px] mx-auto">
-            <Image
-              src="/characters/Blue-climbing.png"
-              alt="Building Knowledge"
-              fill
-              className="object-contain object-bottom"
-              priority
-            />
-          </FadeIn>
-        </div>
       </section>
 
       {/* SECTION 2: CHOOSE YOUR LEARNING PATH */}
