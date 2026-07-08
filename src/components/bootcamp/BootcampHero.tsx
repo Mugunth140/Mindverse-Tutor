@@ -99,7 +99,7 @@ export function BootcampHero() {
             {/* Badge pill */}
             <FadeUp delay={0.05}>
               <span className="inline-block rounded-full bg-yellow-100 border border-yellow-300 text-yellow-800 text-sm font-semibold px-4 py-1.5 w-fit">
-                Summer 2025 &middot; Grades 6 &amp; 7 &middot; Limited Seats
+                Summer 2026 &middot; Grades 6 &amp; 7 &middot; Limited Seats
               </span>
             </FadeUp>
 

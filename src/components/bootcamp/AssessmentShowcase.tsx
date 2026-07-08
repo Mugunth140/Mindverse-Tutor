@@ -61,7 +61,7 @@ export function AssessmentShowcase() {
                     Math Readiness Assessment
                   </div>
                   <div className="text-xl font-extrabold text-text-dark font-heading">
-                    Grade 6 Preparation · Summer 2025
+                    Grade 6 Preparation · Summer 2026
                   </div>
                 </div>
                 <div className="rounded-full bg-green-100 text-green-700 text-sm font-bold px-4 py-1.5">
@@ -133,7 +133,7 @@ export function AssessmentShowcase() {
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="w-2.5 h-2.5 rounded-full bg-accent-red" />
-                  <span className="text-sm font-medium text-muted">Results in 48 Hours</span>
+                  <span className="text-sm font-medium text-muted">Instant Result</span>
                 </div>
               </div>
             </div>
@@ -149,7 +149,7 @@ export function AssessmentShowcase() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Take the FREE Math Readiness Assessment
+            Take the FREE Math Assessment
           </Button>
           <p className="text-sm text-muted mt-4">Free · No commitment · Takes 30 minutes</p>
         </FadeUp>

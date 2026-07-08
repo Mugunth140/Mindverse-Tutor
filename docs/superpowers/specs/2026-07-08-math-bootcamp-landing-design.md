@@ -83,7 +83,7 @@ All animation-only wrappers (FadeUp, motion.div) are already client-side via the
 **Layout:** Full-height-ish hero (min-h `90vh`), two columns on desktop.
 
 **Left column:**
-- Small "pill" trust badge: `Summer 2025 · Grades 6 & 7 · Limited Seats`
+- Small "pill" trust badge: `Summer 2026 · Grades 6 & 7 · Limited Seats`
 - `<h1>` fluid heading: "Is Your Child Ready for Middle School Math?"
 - Subheading paragraph: "Most students enter Grade 6 carrying hidden learning gaps that quietly hold them back. Our FREE Math Readiness Assessment identifies exactly where your child stands — before it becomes a problem."
 - Two CTA buttons stacked on mobile, side-by-side on desktop:

@@ -104,7 +104,7 @@ export function WhySummerSection() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Take the FREE Math Readiness Assessment
+                Take the FREE Math Assessment
               </Button>
             </FadeUp>
           </div>

@@ -3,6 +3,7 @@
 import { motion } from "motion/react";
 import { Container } from "@/components/layout/Container";
 import { FadeUp } from "@/components/shared/Animations";
+import { Button } from "../ui/Button";
 
 // Winding S-curve path across the full SVG width
 const WINDING_PATH =
@@ -314,6 +315,9 @@ export function LearningGapsRoadmap() {
                 can move confidently toward middle school success.
               </p>
             </div>
+          </div>
+          <div className="mt-6 flex justify-center">
+            <Button size="md">Take a Free Math Assessment</Button>
           </div>
         </FadeUp>
       </Container>

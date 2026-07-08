@@ -15,7 +15,7 @@ const faqs = [
   },
   {
     q: "How long does the assessment take?",
-    a: "The assessment takes approximately 30 minutes to complete. It is conducted online and can be taken from home at a time that suits your child. Results and the Skill Gap Report are delivered to you within 48 hours.",
+    a: "The assessment takes approximately 30 minutes to complete. It is conducted online and can be taken from home at a time that suits your child. Results and the Skill Gap Report are delivered to you within few hours.",
   },
   {
     q: "What grade levels is the bootcamp for?",
@@ -23,11 +23,11 @@ const faqs = [
   },
   {
     q: "How many students are in each session?",
-    a: "Sessions are kept to a maximum of 5 students. This small group format ensures every student receives individual attention while also benefiting from the collaborative energy of peer learning.",
+    a: "Sessions are kept to a small cohort. This small group format ensures every student receives individual attention while also benefiting from the collaborative energy of peer learning.",
   },
   {
     q: "Are the sessions live or recorded?",
-    a: "All sessions are live — conducted via video call with the educator in real time. There are no pre-recorded lectures. This interactive format is essential to our concept-based teaching approach.",
+    a: "All sessions are live conducted with the educator in real time. There are no pre recorded lectures. This interactive format is essential to our concept-based teaching approach.",
   },
   {
     q: "What if my child is already doing well in math?",
@@ -35,16 +35,20 @@ const faqs = [
   },
   {
     q: "What timezone are the sessions in?",
-    a: "The educator is based in India (IST). Sessions are available in morning and evening IST slots specifically designed to serve students across Canada, the USA, Australia, UAE, and Singapore. Your timezone will be accommodated during the consultation.",
+    a: "Live sessions are held daily at 9:00 AM PT / 10:00 AM MT / 11:00 AM CT / 12:00 PM ET / 1:00 PM AT, and all calendar links and reminders will automatically convert to your local time zone upon enrollment.",
+  },
+    {
+    q: "What if the scheduled class time doesn't work for my child?",
+    a: "We understand that every family's schedule is different. If our scheduled class time doesn't work for you, please contact us. We'll do our best to accommodate your preferred time. If there is sufficient interest, we may open an additional batch at a different time.",
   },
   {
     q: "How do I receive the skill gap report?",
-    a: "The Skill Gap Report is prepared by the educator and delivered to you via email within 48 hours of the assessment. It includes a section-by-section breakdown of your child's performance and specific recommendations.",
+    a: "The Skill Gap Report is prepared by our AI Agents and delivered to you via email within few hours of the assessment. It includes a section-by-section breakdown of your child's performance and specific recommendations.",
   },
-  {
-    q: "What happens after the bootcamp ends?",
-    a: "At the end of the 4-week bootcamp, you receive a final progress report. Continued support options are available depending on your child's needs. Many families continue with one-to-one or small group sessions through MindVerse Tutor's regular programmes.",
-  },
+  // {
+  //   q: "What happens after the bootcamp ends?",
+  //   a: "At the end of the 4-week bootcamp, you receive a final progress report. Continued support options are available depending on your child's needs. Many families continue with one-to-one or small group sessions through MindVerse Tutor's regular programmes.",
+  // },
 ];
 
 export function FAQSection() {

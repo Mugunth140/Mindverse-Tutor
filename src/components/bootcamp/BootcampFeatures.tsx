@@ -13,7 +13,7 @@ const features = [
     dot: "bg-accent-blue",
   },
   {
-    label: "Small Groups (Max 5 Students)",
+    label: "Small Cohort",
     desc: "Every child gets individual attention in an intimate learning environment.",
     color: "border-accent-green",
     dot: "bg-accent-green",
@@ -30,29 +30,29 @@ const features = [
     color: "border-accent-blue",
     dot: "bg-accent-blue",
   },
-  {
-    label: "Regular Teacher Feedback",
-    desc: "Detailed progress updates after every session so parents stay informed.",
-    color: "border-accent-green",
-    dot: "bg-accent-green",
-  },
+  // {
+  //   label: "Regular Teacher Feedback",
+  //   desc: "Detailed progress updates after every session so parents stay informed.",
+  //   color: "border-accent-green",
+  //   dot: "bg-accent-green",
+  // },
   {
     label: "Confidence Building Activities",
     desc: "Structured opportunities for students to present, explain, and succeed.",
     color: "border-secondary",
     dot: "bg-secondary",
   },
-  {
-    label: "Parent Progress Updates",
-    desc: "Regular communication so you always know exactly how your child is doing.",
-    color: "border-accent-blue",
-    dot: "bg-accent-blue",
-  },
+  // {
+  //   label: "Parent Progress Updates",
+  //   desc: "Regular communication so you always know exactly how your child is doing.",
+  //   color: "border-accent-blue",
+  //   dot: "bg-accent-blue",
+  // },
 ];
 
 export function BootcampFeatures() {
   return (
-    <section className="py-20 md:py-28 bg-background relative overflow-hidden">
+    <section className="py-10 md:py-14 bg-background relative overflow-hidden">
       {/* Decorative blobs */}
       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-blue-100 rounded-full blur-[100px] opacity-40 pointer-events-none" />
 
@@ -72,7 +72,7 @@ export function BootcampFeatures() {
               </span>
               .
             </h2>
-            <p className="text-lg text-muted mt-6 max-w-2xl mx-auto">
+            <p className="text-md text-muted mt-6 max-w-2xl mx-auto">
               The Middle School Math Readiness Bootcamp is a structured, expert-led
               programme designed to close foundational gaps and build genuine
               mathematical confidence before Grade 6 begins.

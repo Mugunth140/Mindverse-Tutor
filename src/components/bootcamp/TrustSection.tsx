@@ -7,7 +7,7 @@ const cards = [
     id: "personalised",
     colSpan: "md:col-span-2",
     content: (
-      <div className="rounded-3xl bg-white border border-yellow-100 shadow-soft p-8 flex gap-6 items-center h-full">
+      <div className="rounded-3xl bg-white border border-yellow-100 shadow-soft p-8 flex flex-col md:flex-row gap-6 items-center h-full">
         <Image
           src="/characters/yellow-blue-puzzle.png"
           width={140}
@@ -19,7 +19,7 @@ const cards = [
           <h3 className="font-extrabold text-text-dark text-xl font-heading mb-2">
             Personalised Learning
           </h3>
-          <p className="text-muted leading-relaxed">
+          <p className="text-muted leading-relaxed text-sm md:text-base">
             No two children have the same gaps. Our approach begins with
             understanding exactly where your child stands then building a path
             designed specifically for them. Every session is purposeful.
@@ -54,11 +54,8 @@ const cards = [
     colSpan: "md:col-span-1",
     content: (
       <div className="rounded-3xl bg-green-50 border border-green-100 shadow-soft p-6 h-full">
-        <div className="text-3xl font-extrabold text-accent-green mb-1">
-          Max 5
-        </div>
         <h3 className="font-bold text-text-dark text-lg font-heading mb-2">
-          Small Groups
+          Small Cohort
         </h3>
         <p className="text-muted text-sm leading-relaxed">
           Every student gets individual attention in an intimate, focused
@@ -119,7 +116,7 @@ const cards = [
           src="/characters/yellow-blue-hifi.png"
           width={130}
           height={130}
-          className="object-contain shrink-0"
+          className="hidden md:block object-contain shrink-0"
           alt="Confidence building"
         />
       </div>
