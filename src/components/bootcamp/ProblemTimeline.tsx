@@ -114,7 +114,7 @@ export function ProblemTimeline() {
         {/* Heading */}
         <FadeUp delay={0.2} className="max-w-3xl mx-auto text-center mb-6">
           <h2 className="text-fluid-h2 font-extrabold text-text-dark font-heading text-center text-balance">
-            Something Quietly Breaks Between Elementary and Middle School.
+            Something Quietly Breaks Between Elementary and Middle School
           </h2>
         </FadeUp>
 
@@ -122,7 +122,7 @@ export function ProblemTimeline() {
         <FadeUp delay={0.3} className="max-w-2xl mx-auto text-center mb-16">
           <p className="text-base md:text-lg text-muted leading-relaxed text-balance">
             The journey from confident elementary student to struggling middle
-            schooler often happens silently — one small gap at a time.
+            schooler often happens silently one small gap at a time
           </p>
         </FadeUp>
 

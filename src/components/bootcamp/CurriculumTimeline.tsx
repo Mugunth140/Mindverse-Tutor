@@ -14,7 +14,7 @@ const weeks = [
     border: "border-yellow-200",
     title: "Number Foundations",
     sessions: [
-      { num: 1, topic: "Number Sense & Place Value", desc: "Understanding how numbers work — not just reading them." },
+      { num: 1, topic: "Number Sense & Place Value", desc: "Understanding how numbers work not just reading them." },
       { num: 2, topic: "Factors, Multiples & Divisibility", desc: "Building the mental toolkit for fraction and algebra work ahead." },
       { num: 3, topic: "Integers & Number Lines", desc: "Positive, negative, and the relationships between them." },
     ],
@@ -29,7 +29,7 @@ const weeks = [
     sessions: [
       { num: 4, topic: "Fractions — Part to Whole", desc: "Deep understanding of what a fraction actually represents." },
       { num: 5, topic: "Decimals & Conversion", desc: "Moving fluently between fractions, decimals, and percentages." },
-      { num: 6, topic: "Percentage Applications", desc: "Real-world percentage problems — discounts, increase, decrease." },
+      { num: 6, topic: "Percentage Applications", desc: "Real-world percentage problems discounts, increase, decrease." },
     ],
   },
   {
@@ -40,7 +40,7 @@ const weeks = [
     border: "border-green-200",
     title: "Ratios, Algebra & Word Problems",
     sessions: [
-      { num: 7, topic: "Ratios & Proportions", desc: "Understanding relationships between quantities — the bridge to algebra." },
+      { num: 7, topic: "Ratios & Proportions", desc: "Understanding relationships between quantities the bridge to algebra." },
       { num: 8, topic: "Introduction to Algebra", desc: "Variables, expressions, and the logic of equations." },
       { num: 9, topic: "Word Problem Strategies", desc: "Translating real-world language into mathematical solutions." },
     ],
@@ -53,7 +53,7 @@ const weeks = [
     border: "border-orange-200",
     title: "Geometry, Measurement & Review",
     sessions: [
-      { num: 10, topic: "Geometry Fundamentals", desc: "Shapes, angles, perimeter, area — building spatial reasoning." },
+      { num: 10, topic: "Geometry Fundamentals", desc: "Shapes, angles, perimeter, area building spatial reasoning." },
       { num: 11, topic: "Measurement & Units", desc: "Practical measurement skills applied to geometry problems." },
       { num: 12, topic: "Reasoning, Review & Celebration", desc: "Full programme review, confidence check, and celebration of progress." },
     ],
@@ -73,10 +73,10 @@ export function CurriculumTimeline() {
               12 Sessions · 4 Weeks
             </div>
             <h2 className="text-fluid-h2 font-bold text-text-dark mb-4">
-              12 Sessions. 4 Weeks. One Complete Transformation.
+              12 Sessions. 4 Weeks. One Complete Transformation
             </h2>
             <p className="text-muted text-lg">
-              Each session is structured, concept-based, and designed to build on the previous one — no wasted time.
+              Each session is structured, concept-based, and designed to build on the previous one no wasted time
             </p>
           </div>
         </FadeUp>

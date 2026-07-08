@@ -18,7 +18,7 @@ const steps = [
     color: "#60A5FA",
     bg: "bg-blue-100",
     border: "border-blue-200",
-    desc: "Students see the concept through diagrams, models, and real-world examples that make abstract ideas concrete.",
+    desc: "Students see the concept through diagrams, models, and real world examples that make abstract ideas concrete.",
     mascot: null,
   },
   {
@@ -27,7 +27,7 @@ const steps = [
     color: "#34D399",
     bg: "bg-green-100",
     border: "border-green-200",
-    desc: "Guided problem-solving with carefully sequenced difficulty — always supported, never overwhelming.",
+    desc: "Guided problem-solving with carefully sequenced difficulty always supported, never overwhelming.",
     mascot: null,
   },
   {
@@ -37,7 +37,7 @@ const steps = [
     bg: "bg-yellow-100",
     border: "border-yellow-200",
     desc: "Students explain their thinking back to the teacher. If you can teach it, you truly understand it.",
-    mascot: "green-showing-note.png",
+    mascot: null,
   },
   {
     num: 5,
@@ -45,7 +45,7 @@ const steps = [
     color: "#60A5FA",
     bg: "bg-blue-100",
     border: "border-blue-200",
-    desc: "Real-world application and word problems — where the concept meets actual life and meaning.",
+    desc: "Real-world application and word problems where the concept meets actual life and meaning.",
     mascot: null,
   },
   {
@@ -54,7 +54,7 @@ const steps = [
     color: "#34D399",
     bg: "bg-green-100",
     border: "border-green-200",
-    desc: "Independent problem-solving with full confidence. The student owns the concept — no teacher needed.",
+    desc: "Independent problem-solving with full confidence. The student owns the concept no teacher needed.",
     mascot: null,
   },
 ];
@@ -75,7 +75,7 @@ export function TeachingPhilosophy() {
               How We Teach
             </h2>
             <p className="text-muted text-lg leading-relaxed">
-              Every session follows the same six-step learning path — proven to
+              Every session follows the same six step learning path proven to
               build deep, lasting understanding.
             </p>
           </FadeUp>

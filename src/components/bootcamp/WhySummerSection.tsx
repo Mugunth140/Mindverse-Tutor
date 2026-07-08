@@ -12,7 +12,7 @@ const steps = [
   },
   {
     label: "Fix Learning Gaps",
-    desc: "We identify every foundational gap and close them systematically — so nothing is left to chance when school starts.",
+    desc: "We identify every foundational gap and close them systematically so nothing is left to chance when school starts.",
     color: "bg-[#FBBF24]",
     borderColor: "border-[#FBBF24]/40",
   },
@@ -53,10 +53,10 @@ export function WhySummerSection() {
               </span>
 
               {/* Yellow accent bar */}
-              <div className="w-12 h-1.5 rounded-full bg-secondary mt-4 mb-6" />
+              {/* <div className="w-12 h-1.5 rounded-full bg-secondary mt-4 mb-6" /> */}
 
               {/* Heading */}
-              <h2 className="text-fluid-h2 font-extrabold text-text-dark font-heading">
+              <h2 className="text-fluid-h2 font-extrabold text-text-dark font-heading mt-8">
                 Fix the Foundation Before It Becomes a Crisis.
               </h2>
             </FadeUp>
@@ -70,7 +70,7 @@ export function WhySummerSection() {
                     <div key={step.label} className="flex gap-4 items-start">
                       <div className="flex flex-col items-center">
                         <div
-                          className={`w-5 h-5 rounded-full ${step.color} flex-shrink-0 mt-0.5`}
+                          className={`w-5 h-5 rounded-full ${step.color} shrink-0 mt-0.5`}
                         />
                         {!isLast && (
                           <div
@@ -94,12 +94,12 @@ export function WhySummerSection() {
             <FadeUp delay={0.4}>
               <p className="text-muted mb-6">
                 The Middle School Math Readiness Bootcamp runs for 4 focused
-                weeks during summer &mdash; the ideal window to build the
+                weeks during summer the ideal window to build the
                 foundation your child needs.
               </p>
               <Button
                 variant="primary"
-                size="lg"
+                size="md"
                 href="https://assessment.mindversetutor.com"
                 target="_blank"
                 rel="noopener noreferrer"

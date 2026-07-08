@@ -12,7 +12,7 @@ const cards = [
           src="/characters/yellow-blue-puzzle.png"
           width={140}
           height={140}
-          className="object-contain flex-shrink-0"
+          className="object-contain shrink-0"
           alt="Personalised learning"
         />
         <div>
@@ -21,7 +21,7 @@ const cards = [
           </h3>
           <p className="text-muted leading-relaxed">
             No two children have the same gaps. Our approach begins with
-            understanding exactly where your child stands — then building a path
+            understanding exactly where your child stands then building a path
             designed specifically for them. Every session is purposeful.
           </p>
         </div>
@@ -30,22 +30,21 @@ const cards = [
   },
   {
     id: "concept",
-    colSpan: "md:col-span-1",
+    colSpan: "md:col-span-1 md:row-span-2",
     content: (
       <div className="rounded-3xl bg-blue-50 border border-blue-100 shadow-soft p-6 h-full">
         <Image
           src="/characters/Board.png"
-          width={60}
-          height={60}
-          className="object-contain mb-4"
+          width={130}
+          height={130}
+          className="object-contain mb-4 mx-auto"
           alt="Concept-based teaching"
         />
         <h3 className="font-bold text-text-dark text-lg font-heading mb-2">
           Concept-Based Teaching
         </h3>
         <p className="text-muted text-sm leading-relaxed">
-          We teach the WHY behind every method. Understanding beats memorisation
-          — always.
+          We teach the WHY behind every method. Understanding beats memorisation always.
         </p>
       </div>
     ),
@@ -89,7 +88,7 @@ const cards = [
           )}
         </div>
         <p className="text-muted text-sm mt-3">
-          Live online learning — time zones covered.
+          Live online learning time zones covered.
         </p>
       </div>
     ),
@@ -112,7 +111,7 @@ const cards = [
             Confidence Building
           </h3>
           <p className="text-muted text-sm">
-            Students don't just learn math — they learn that they CAN do math.
+            Students don't just learn math they learn that they CAN do math.
             That belief changes everything.
           </p>
         </div>
@@ -120,7 +119,7 @@ const cards = [
           src="/characters/yellow-blue-hifi.png"
           width={130}
           height={130}
-          className="object-contain flex-shrink-0"
+          className="object-contain shrink-0"
           alt="Confidence building"
         />
       </div>
@@ -133,8 +132,8 @@ const cards = [
       <div className="rounded-3xl bg-green-50 border border-green-100 shadow-soft p-6 h-full">
         <Image
           src="/characters/green-showing-note.png"
-          width={60}
-          height={60}
+          width={90}
+          height={90}
           className="object-contain mb-4"
           alt="Regular feedback"
         />
@@ -142,7 +141,7 @@ const cards = [
           Regular Feedback
         </h3>
         <p className="text-muted text-sm leading-relaxed">
-          Parents receive detailed progress updates after every session — you
+          Parents receive detailed progress updates after every session you
           always know exactly how your child is doing.
         </p>
       </div>

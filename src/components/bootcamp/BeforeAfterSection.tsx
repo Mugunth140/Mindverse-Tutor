@@ -115,11 +115,11 @@ export function BeforeAfterSection() {
                       "Solves fraction and decimal problems independently",
                       "Attempts problems with confidence and logic",
                       "Approaches tests with preparation and calm",
-                      "Understands concepts deeply — not just procedures",
+                      "Understands concepts deeply not just procedures",
                       "Applies the right method without prompting",
                     ].map((item, i) => (
                       <li key={i} className="flex gap-3 items-start text-text-dark">
-                        <span className="w-2 h-2 rounded-full bg-accent-green flex-shrink-0 mt-1.5" />
+                        <span className="w-2 h-2 rounded-full bg-accent-green shrink-0 mt-1.5" />
                         <span className="text-sm leading-relaxed font-medium">
                           {item}
                         </span>

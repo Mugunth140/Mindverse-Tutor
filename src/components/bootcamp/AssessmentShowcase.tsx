@@ -34,7 +34,7 @@ export function AssessmentShowcase() {
 
         <FadeUp delay={0.2} className="flex justify-center mt-4 mb-0">
           <p className="text-center text-muted max-w-2xl text-lg">
-            Every student starts with a FREE Math Readiness Assessment — so we know exactly where to begin, and where not to waste time.
+            Every student starts with a FREE Math Readiness Assessment so we know exactly where to begin, and where not to waste time.
           </p>
         </FadeUp>
 
@@ -42,24 +42,13 @@ export function AssessmentShowcase() {
         <FadeUp delay={0.3}>
           <div className="relative mt-12 max-w-3xl mx-auto">
             {/* Left mascot */}
-            <div className="absolute bottom-0 left-0 -ml-6 hidden lg:block">
+            <div className="absolute bottom-10 -left-20 -ml-6 hidden lg:block">
               <Image
                 src="/characters/Yelllow-Teaching.png"
                 alt="Mascot teaching"
                 width={176}
                 height={220}
                 className="object-contain w-32 md:w-44"
-              />
-            </div>
-
-            {/* Right mascot */}
-            <div className="absolute bottom-0 right-0 -mr-4 hidden lg:block">
-              <Image
-                src="/characters/blue-shows-paper-with-star.png"
-                alt="Mascot showing starred paper"
-                width={144}
-                height={180}
-                className="object-contain w-28 md:w-36"
               />
             </div>
 
@@ -155,7 +144,7 @@ export function AssessmentShowcase() {
         <FadeUp delay={0.4} className="text-center mt-10">
           <Button
             variant="primary"
-            size="xl"
+            size="md"
             href="https://assessment.mindversetutor.com"
             target="_blank"
             rel="noopener noreferrer"

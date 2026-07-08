@@ -182,7 +182,7 @@ export function LearningGapsRoadmap() {
             </h2>
             <p className="text-base md:text-lg text-muted leading-relaxed text-balance">
               Each concept in math builds on the one before it. A gap at any
-              stage makes every stage after it harder.
+              stage makes every stage after it harder
             </p>
           </FadeUp>
         </div>
@@ -291,7 +291,7 @@ export function LearningGapsRoadmap() {
           <div className="rounded-2xl bg-green-50 border border-green-200 px-6 py-5 flex flex-col sm:flex-row items-start sm:items-center gap-4">
             <div className="flex-shrink-0 w-10 h-10 rounded-full bg-green-200 flex items-center justify-center">
               <svg
-                className="w-5 h-5 text-green-700"
+                className="w-8 h-8 text-green-700"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -310,7 +310,7 @@ export function LearningGapsRoadmap() {
                 Our assessment pinpoints exactly where a gap exists on this path.
               </p>
               <p className="text-muted text-sm leading-relaxed">
-                So your child gets targeted help — not a generic programme — and
+                So your child gets targeted help not a generic programme and
                 can move confidently toward middle school success.
               </p>
             </div>

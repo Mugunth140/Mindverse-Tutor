@@ -88,7 +88,7 @@ const trustItems = [
 
 export function BootcampHero() {
   return (
-    <section className="pt-16 pb-12 md:pt-24 md:pb-20 bg-background overflow-hidden relative">
+    <section className="pt-8 pb-6 md:pt-12 md:pb-10 bg-background overflow-hidden relative">
       {/* Dot pattern overlay */}
       <div className="absolute inset-0 bg-dot-pattern opacity-30 pointer-events-none" />
 
@@ -115,7 +115,7 @@ export function BootcampHero() {
               <p className="text-lg text-muted leading-relaxed">
                 Most students enter Grade 6 carrying hidden learning gaps that
                 quietly hold them back. Our FREE Math Readiness Assessment
-                identifies exactly where your child stands &mdash; before it
+                identifies exactly where your child stands before it
                 becomes a problem.
               </p>
             </FadeUp>
@@ -125,7 +125,7 @@ export function BootcampHero() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button
                   variant="primary"
-                  size="xl"
+                  size="md"
                   href="https://assessment.mindversetutor.com"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -135,7 +135,7 @@ export function BootcampHero() {
                 </Button>
                 <Button
                   variant="outline"
-                  size="xl"
+                  size="md"
                   href="/book-call"
                   className="w-full sm:w-auto"
                 >
@@ -145,7 +145,7 @@ export function BootcampHero() {
             </FadeUp>
 
             {/* Trust indicators */}
-            <FadeUp delay={0.45}>
+            {/* <FadeUp delay={0.45}>
               <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
                 {trustItems.map((item, i) => (
                   <span key={item} className="flex items-center text-sm text-muted font-medium">
@@ -157,7 +157,7 @@ export function BootcampHero() {
                   </span>
                 ))}
               </div>
-            </FadeUp>
+            </FadeUp> */}
           </div>
 
           {/* Right column — illustration cluster */}
@@ -192,32 +192,11 @@ export function BootcampHero() {
               {/* Board — main background illustration */}
               <div className="relative w-full h-full">
                 <Image
-                  src="/characters/Board.png"
-                  alt="Math teaching board"
+                  src="/characters/yellow-teaching-bootcamp.png"
+                  alt="Math teaching to all students through onlineclass"
                   fill
                   className="object-contain"
                   priority
-                />
-              </div>
-
-              {/* Yellow teacher — bottom left */}
-              <div className="absolute bottom-0 left-0 w-2/5 z-10 aspect-square">
-                <Image
-                  src="/characters/Yelllow-Teaching.png"
-                  alt="Yellow teacher character"
-                  fill
-                  className="object-contain object-bottom"
-                  priority
-                />
-              </div>
-
-              {/* Blue student writing — bottom right */}
-              <div className="absolute bottom-0 right-0 w-1/3 z-10 aspect-square">
-                <Image
-                  src="/characters/Blue-Writing.png"
-                  alt="Blue student writing"
-                  fill
-                  className="object-contain object-bottom"
                 />
               </div>
             </div>

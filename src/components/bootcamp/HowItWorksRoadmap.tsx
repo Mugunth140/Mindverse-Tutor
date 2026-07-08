@@ -18,7 +18,7 @@ const steps: RoadmapStep[] = [
     number: "1",
     label: "Take the Assessment",
     description:
-      "Complete the FREE Math Readiness Assessment online — 30 minutes, no pressure.",
+      "Complete the FREE Math Readiness Assessment online 30 minutes, no pressure.",
     circleClass: "bg-secondary",
     textClass: "text-text-dark",
   },
