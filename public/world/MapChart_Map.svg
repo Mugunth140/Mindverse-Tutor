@@ -1,5 +1,22 @@
 <?xml version="1.0" standalone="no"?>
-<svg xmlns="http://www.w3.org/2000/svg" id="wrapper" viewBox="0 0 895.92 471.76" preserveAspectRatio="xMinYMin" height="471.76" width="895.92" style="background-color: rgb(255, 255, 250);"><metadata>
+<svg xmlns="http://www.w3.org/2000/svg" id="wrapper" viewBox="0 0 895.92 471.76" preserveAspectRatio="xMinYMin" height="471.76" width="895.92" style="background-color: rgb(255, 255, 250);">
+<style type="text/css">
+  <![CDATA[
+    .highlighted-country {
+      fill: #FBBF24 !important;
+      stroke: #F59E0B !important;
+      stroke-width: 0.5px !important;
+      animation: pulseCountry 2s infinite alternate ease-in-out;
+      transform-origin: center;
+      transform-box: fill-box;
+    }
+    @keyframes pulseCountry {
+      0% { fill-opacity: 0.6; transform: scale(1); }
+      100% { fill-opacity: 1; transform: scale(1.02); }
+    }
+  ]]>
+</style>
+<metadata>
     <!-- <rdf:rdf xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
       <cc:work rdf:about="">
         <dc:format>image/svg+xml</dc:format>
