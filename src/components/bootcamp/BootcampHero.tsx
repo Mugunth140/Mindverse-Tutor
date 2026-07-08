@@ -162,7 +162,7 @@ export function BootcampHero() {
 
           {/* Right column — illustration cluster */}
           <FadeIn delay={0.3} className="flex justify-center md:justify-end">
-            <div className="relative w-full max-w-xl aspect-[4/3] md:aspect-square">
+            <div className="relative w-full max-w-xl aspect-3/4 md:aspect-square">
               {/* Background blob */}
               <div className="absolute inset-8 bg-yellow-100 rounded-[40%] blur-2xl opacity-50 pointer-events-none" />
 
