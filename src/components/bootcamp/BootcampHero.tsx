@@ -105,7 +105,7 @@ export function BootcampHero() {
 
             {/* Headline */}
             <FadeUp delay={0.15}>
-              <h1 className="text-fluid-h1 font-extrabold text-text-dark font-heading leading-tight text-balance text-6xl!">
+              <h1 className="text-fluid-h1 font-extrabold text-text-dark font-heading leading-tight text-balance text-3xl md:text-6xl!">
                 Is Your Child Ready for Middle School Math?
               </h1>
             </FadeUp>
