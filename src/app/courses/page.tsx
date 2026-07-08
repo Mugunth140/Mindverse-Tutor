@@ -1,9 +1,23 @@
+import { Metadata } from "next";
 import Image from "next/image";
 import { Container } from "@/components/layout/Container";
 import { Button } from "@/components/ui/Button";
 import { FadeUp, FadeIn } from "@/components/shared/Animations";
 
-export const metadata = { title: "Courses | Mindverse Tutor" };
+export const metadata: Metadata = { 
+  title: "Structured Learning Pathways & Courses",
+  description: "Browse our structured learning courses tailored to help students build strong foundations, develop unshakeable confidence, and progress step by step.",
+  keywords: ["Online Courses", "Math Courses", "Structured Learning", "Middle School Math", "Mindverse Tutor Courses"],
+  alternates: {
+    canonical: "https://mindversetutor.com/courses",
+  },
+  openGraph: {
+    title: "Structured Learning Pathways & Courses | Mindverse Tutor",
+    description: "Browse our structured learning courses tailored to help students build strong foundations.",
+    url: "https://mindversetutor.com/courses",
+    type: "website",
+  }
+};
 
 export default function CoursesPage() {
   return (

@@ -64,13 +64,14 @@ export function BootcampFeatures() {
               The Bootcamp
             </div>
             <h2 className="text-fluid-h2 font-extrabold text-text-dark font-heading leading-tight">
-              <span className="text-accent-blue">4 Weeks</span> of focused learning.{" "}
-              <span className="text-accent-green">12 Live Sessions</span>.{" "}
-              Always in{" "}
+              <span className="text-accent-blue">4 Weeks</span> of focused learning
+              <br />
+              <span className="text-accent-green">12 Live Sessions</span>
+              {/* Always in{" "}
               <span className="bg-yellow-200 text-yellow-900 px-2 rounded-lg">
                 Small Groups
-              </span>
-              .
+              </span> */}
+              
             </h2>
             <p className="text-md text-muted mt-6 max-w-2xl mx-auto">
               The Middle School Math Readiness Bootcamp is a structured, expert-led

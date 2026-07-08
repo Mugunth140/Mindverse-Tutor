@@ -1,9 +1,23 @@
+import { Metadata } from "next";
 import Image from "next/image";
 import { Container } from "@/components/layout/Container";
 import { Button } from "@/components/ui/Button";
 import { FadeUp, FadeIn } from "@/components/shared/Animations";
 
-export const metadata = { title: "Programs | Mindverse Tutor" };
+export const metadata: Metadata = { 
+  title: "Personalized Educational Programs",
+  description: "Explore our personalized educational programs designed to suit different goals, speeds, and natural curiosities. Build logical confidence today.",
+  keywords: ["Educational Programs", "Personalized Learning", "Math Programs", "Coding for Kids", "Reading Programs", "Mindverse Tutor"],
+  alternates: {
+    canonical: "https://mindversetutor.com/programs",
+  },
+  openGraph: {
+    title: "Personalized Educational Programs | Mindverse Tutor",
+    description: "Explore our personalized educational programs designed to suit different goals, speeds, and natural curiosities.",
+    url: "https://mindversetutor.com/programs",
+    type: "website",
+  }
+};
 
 export default function ProgramsPage() {
   return (

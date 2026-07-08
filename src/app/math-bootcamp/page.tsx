@@ -57,8 +57,34 @@ export const metadata: Metadata = {
 };
 
 export default function MathBootcampPage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "Middle School Math Readiness Bootcamp",
+    "description": "A 4-week summer math program designed to identify and close hidden learning gaps for students entering Grades 6 and 7.",
+    "provider": {
+      "@type": "EducationalOrganization",
+      "name": "Mindverse Tutor",
+      "sameAs": "https://mindversetutor.com"
+    },
+    "coursePrerequisites": "Entering Grade 6 or Grade 7",
+    "educationalCredentialAwarded": "Readiness for Middle School Mathematics",
+    "hasCourseInstance": {
+      "@type": "CourseInstance",
+      "courseMode": "Online",
+      "instructor": {
+        "@type": "Person",
+        "name": "Mindverse Expert Educators"
+      }
+    }
+  };
+
   return (
     <div className="overflow-hidden bg-background">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* S1: Hero */}
       <BootcampHero />
 

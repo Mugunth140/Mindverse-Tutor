@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import Image from "next/image";
 import { Container } from "@/components/layout/Container";
 import { Button } from "@/components/ui/Button";
@@ -5,7 +6,20 @@ import { FadeUp, FadeIn } from "@/components/shared/Animations";
 
 import { EducatorSection } from "@/components/bootcamp/EducatorSection";
 
-export const metadata = { title: "About Us | Mindverse Tutor" };
+export const metadata: Metadata = { 
+  title: "About Mindverse Tutor | Our Story & Philosophy",
+  description: "Learn about Mindverse Tutor. We replace anxiety with unshakeable confidence, turning math and learning into an engaging, playful adventure.",
+  keywords: ["About Mindverse Tutor", "Education Philosophy", "Math Confidence", "Expert Educators"],
+  alternates: {
+    canonical: "https://mindversetutor.com/about",
+  },
+  openGraph: {
+    title: "About Mindverse Tutor",
+    description: "Learn about our mission to replace anxiety with unshakeable confidence through engaging, playful education.",
+    url: "https://mindversetutor.com/about",
+    type: "website",
+  }
+};
 
 export default function AboutPage() {
   return (

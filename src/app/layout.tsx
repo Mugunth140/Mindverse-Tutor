@@ -15,12 +15,13 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://mindversetutor.com"),
   title: {
     template: "%s | Mindverse Tutor",
-    default: "Mindverse Tutor - Educational Excellence",
+    default: "Mindverse Tutor | Top Educational Programs & Tutoring",
   },
-  description: "Playful, modern, and trustworthy educational programs.",
-  keywords: ["Tutor", "Mathematics", "Education", "Summer Programs"],
+  description: "Playful, modern, and trustworthy educational programs for children. Build strong foundations and unshakeable confidence with Mindverse Tutor.",
+  keywords: ["Mindverse Tutor", "Online Tutoring", "Mathematics", "Education", "Summer Programs", "Learning Pathways"],
   icons: {
     icon: [
       { url: "/favicon/favicon-96x96.png", sizes: "96x96", type: "image/png" },
@@ -29,7 +30,19 @@ export const metadata: Metadata = {
     shortcut: "/favicon/favicon.ico",
     apple: "/favicon/apple-touch-icon.png",
   },
-  manifest: "/favicon/site.webmanifest",
+  openGraph: {
+    title: "Mindverse Tutor | Educational Excellence",
+    description: "Playful, modern, and trustworthy educational programs for children.",
+    url: "https://mindversetutor.com",
+    siteName: "Mindverse Tutor",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mindverse Tutor",
+    description: "Build strong foundations and unshakeable confidence with Mindverse Tutor.",
+  },
 };
 
 import { Navbar } from "@/components/layout/Navbar";

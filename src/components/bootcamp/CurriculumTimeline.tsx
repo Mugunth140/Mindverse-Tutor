@@ -73,10 +73,13 @@ export function CurriculumTimeline() {
               12 Sessions · 4 Weeks
             </div>
             <h2 className="text-fluid-h2 font-bold text-text-dark mb-4">
-              12 Sessions. 4 Weeks. One Complete Transformation
+              Fix skill gaps at <br /> 
+              <span className="bg-yellow-200 text-yellow-900 px-2 rounded-lg mt-1 inline-block">
+                $10 / session
+              </span> 
             </h2>
             <p className="text-muted text-lg">
-              Each session is structured, concept-based, and designed to build on the previous one no wasted time
+              Each session is structured, concept based, and designed to fix skill gaps and build confidence
             </p>
           </div>
         </FadeUp>

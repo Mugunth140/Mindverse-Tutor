@@ -1,7 +1,21 @@
+import { Metadata } from "next";
 import { Container } from "@/components/layout/Container";
 import { BookCallForm } from "@/components/sections/BookCallForm";
 
-export const metadata = { title: "Book a Clarity Call | Mindverse Tutor" };
+export const metadata: Metadata = { 
+  title: "Book a Clarity Call",
+  description: "Schedule a free, no-obligation clarity call with Mindverse Tutor to discuss your child's educational needs and discover the perfect learning pathway.",
+  keywords: ["Book a Call", "Free Clarity Call", "Mindverse Tutor Consultation", "Educational Consultation"],
+  alternates: {
+    canonical: "https://mindversetutor.com/book-call",
+  },
+  openGraph: {
+    title: "Book a Clarity Call | Mindverse Tutor",
+    description: "Schedule a free, no-obligation clarity call with our expert educators.",
+    url: "https://mindversetutor.com/book-call",
+    type: "website",
+  }
+};
 
 export default function BookCallPage() {
   return (
