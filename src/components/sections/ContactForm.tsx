@@ -129,7 +129,7 @@ export function ContactForm() {
         type="submit"
         variant="primary"
         size="md"
-        className="w-sm text-md mt-4 mx-auto block"
+        className="w-full md:w-sm text-md mt-4 mx-auto block"
         disabled={status === "submitting"}
       >
         {status === "submitting" ? "Sending Message..." : "Send Message"}
