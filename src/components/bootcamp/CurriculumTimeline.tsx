@@ -14,9 +14,9 @@ const weeks = [
     border: "border-yellow-200",
     title: "Build Strong Number Foundations",
     sessions: [
-      { num: 1, topic: "Understanding Numbers & Number Sense", desc: "Understanding how numbers work not just reading them." },
-      { num: 2, topic: "Number Relationships Factors, Multiples, Prime Numbers & Divisibility", desc: "Building the mental toolkit for fraction and algebra work ahead." },
-      { num: 3, topic: "Representing Numbers Beyond Whole Numbers", desc: "Positive, negative, and the relationships between them." },
+      { num: 1, topic: "Number Sense & Place Value", desc: "Deepening comprehension of number magnitude, place value, and operations." },
+      { num: 2, topic: "Factors, Multiples & Primes", desc: "Building the mental toolkit essential for working with fractions and algebra." },
+      { num: 3, topic: "Integers & Negative Numbers", desc: "Mastering positive and negative numbers through real-world applications and number lines." },
     ],
   },
   {
@@ -25,11 +25,11 @@ const weeks = [
     textColor: "text-blue-900",
     bgLight: "bg-blue-50",
     border: "border-blue-200",
-    title: "Fractions, Decimals & Proportional Thinking ",
+    title: "Fractions, Decimals & Proportional Thinking",
     sessions: [
-      { num: 4, topic: "Fraction Operations & Problem Solving", desc: "Deep understanding of what a fraction actually represents." },
-      { num: 5, topic: "Decimals, Percentages & Real World Applications", desc: "Moving fluently between fractions, decimals, and percentages." },
-      { num: 6, topic: "Ratios, Rates & Proportional Reasoning", desc: "Real-world percentage problems discounts, increase, decrease." },
+      { num: 4, topic: "Fraction Operations & Equivalence", desc: "Visualizing fractions and confidently adding, subtracting, multiplying, and dividing." },
+      { num: 5, topic: "Decimals & Percentages", desc: "Moving fluently between fractions, decimals, and percentages in practical contexts." },
+      { num: 6, topic: "Ratios & Proportional Reasoning", desc: "Understanding proportional relationships, unit rates, and scaling quantities accurately." },
     ],
   },
   {
@@ -40,9 +40,9 @@ const weeks = [
     border: "border-green-200",
     title: "Thinking Algebraically",
     sessions: [
-      { num: 7, topic: "Algebra Foundations", desc: "Understanding relationships between quantities the bridge to algebra." },
-      { num: 8, topic: "Algebraic Thinking & Equations", desc: "Variables, expressions, and the logic of equations." },
-      { num: 9, topic: "Geometry Foundations", desc: "Translating real-world language into mathematical solutions." },
+      { num: 7, topic: "Introduction to Variables", desc: "Understanding variables and translating real-world language into mathematical expressions." },
+      { num: 8, topic: "Solving Equations & Inequalities", desc: "Learning the logic of balancing equations and solving step-by-step for unknown values." },
+      { num: 9, topic: "Patterns & Linear Relationships", desc: "Identifying mathematical patterns, sequences, and graphing foundational linear functions." },
     ],
   },
   {
@@ -53,9 +53,9 @@ const weeks = [
     border: "border-orange-200",
     title: "Applying Mathematical Thinking",
     sessions: [
-      { num: 10, topic: "Measurement: Area, Perimeter & Volume", desc: "Shapes, angles, perimeter, area building spatial reasoning." },
-      { num: 11, topic: "Data Analysis & Graph Interpretation", desc: "Practical measurement skills applied to geometry problems." },
-      { num: 12, topic: "Mathematical Problem Solving & Reasoning", desc: "Full programme review, confidence check, and celebration of progress." },
+      { num: 10, topic: "Geometry & Spatial Reasoning", desc: "Applying formulas to calculate perimeter, area, and volume for various 2D and 3D shapes." },
+      { num: 11, topic: "Data Analysis & Statistics", desc: "Reading, interpreting, and drawing logical conclusions from various types of data graphs." },
+      { num: 12, topic: "Advanced Problem Solving", desc: "Tackling complex, multi-step word problems and conducting a final confidence check." },
     ],
   },
 ];
