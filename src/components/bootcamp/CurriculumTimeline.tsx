@@ -12,11 +12,11 @@ const weeks = [
     textColor: "text-yellow-900",
     bgLight: "bg-yellow-50",
     border: "border-yellow-200",
-    title: "Number Foundations",
+    title: "Build Strong Number Foundations",
     sessions: [
-      { num: 1, topic: "Number Sense & Place Value", desc: "Understanding how numbers work not just reading them." },
-      { num: 2, topic: "Factors, Multiples & Divisibility", desc: "Building the mental toolkit for fraction and algebra work ahead." },
-      { num: 3, topic: "Integers & Number Lines", desc: "Positive, negative, and the relationships between them." },
+      { num: 1, topic: "Understanding Numbers & Number Sense", desc: "Understanding how numbers work not just reading them." },
+      { num: 2, topic: "Number Relationships Factors, Multiples, Prime Numbers & Divisibility", desc: "Building the mental toolkit for fraction and algebra work ahead." },
+      { num: 3, topic: "Representing Numbers Beyond Whole Numbers", desc: "Positive, negative, and the relationships between them." },
     ],
   },
   {
@@ -25,11 +25,11 @@ const weeks = [
     textColor: "text-blue-900",
     bgLight: "bg-blue-50",
     border: "border-blue-200",
-    title: "Fractions, Decimals & Percentages",
+    title: "Fractions, Decimals & Proportional Thinking ",
     sessions: [
-      { num: 4, topic: "Fractions — Part to Whole", desc: "Deep understanding of what a fraction actually represents." },
-      { num: 5, topic: "Decimals & Conversion", desc: "Moving fluently between fractions, decimals, and percentages." },
-      { num: 6, topic: "Percentage Applications", desc: "Real-world percentage problems discounts, increase, decrease." },
+      { num: 4, topic: "Fraction Operations & Problem Solving", desc: "Deep understanding of what a fraction actually represents." },
+      { num: 5, topic: "Decimals, Percentages & Real World Applications", desc: "Moving fluently between fractions, decimals, and percentages." },
+      { num: 6, topic: "Ratios, Rates & Proportional Reasoning", desc: "Real-world percentage problems discounts, increase, decrease." },
     ],
   },
   {
@@ -38,11 +38,11 @@ const weeks = [
     textColor: "text-green-900",
     bgLight: "bg-green-50",
     border: "border-green-200",
-    title: "Ratios, Algebra & Word Problems",
+    title: "Thinking Algebraically",
     sessions: [
-      { num: 7, topic: "Ratios & Proportions", desc: "Understanding relationships between quantities the bridge to algebra." },
-      { num: 8, topic: "Introduction to Algebra", desc: "Variables, expressions, and the logic of equations." },
-      { num: 9, topic: "Word Problem Strategies", desc: "Translating real-world language into mathematical solutions." },
+      { num: 7, topic: "Algebra Foundations", desc: "Understanding relationships between quantities the bridge to algebra." },
+      { num: 8, topic: "Algebraic Thinking & Equations", desc: "Variables, expressions, and the logic of equations." },
+      { num: 9, topic: "Geometry Foundations", desc: "Translating real-world language into mathematical solutions." },
     ],
   },
   {
@@ -51,11 +51,11 @@ const weeks = [
     textColor: "text-orange-900",
     bgLight: "bg-orange-50",
     border: "border-orange-200",
-    title: "Geometry, Measurement & Review",
+    title: "Applying Mathematical Thinking",
     sessions: [
-      { num: 10, topic: "Geometry Fundamentals", desc: "Shapes, angles, perimeter, area building spatial reasoning." },
-      { num: 11, topic: "Measurement & Units", desc: "Practical measurement skills applied to geometry problems." },
-      { num: 12, topic: "Reasoning, Review & Celebration", desc: "Full programme review, confidence check, and celebration of progress." },
+      { num: 10, topic: "Measurement: Area, Perimeter & Volume", desc: "Shapes, angles, perimeter, area building spatial reasoning." },
+      { num: 11, topic: "Data Analysis & Graph Interpretation", desc: "Practical measurement skills applied to geometry problems." },
+      { num: 12, topic: "Mathematical Problem Solving & Reasoning", desc: "Full programme review, confidence check, and celebration of progress." },
     ],
   },
 ];
