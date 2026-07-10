@@ -110,7 +110,7 @@ export function Footer() {
             <ul className="space-y-3 md:space-y-4 text-sm md:text-base font-medium text-muted">
               <li><a href="https://www.instagram.com/mindversetutor" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors block py-1">Instagram</a></li>
               <li><a href="https://www.facebook.com/share/1cPEbbiP33" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors block py-1">Facebook</a></li>
-              <li><a href="https://shwethashri.graphy.com/" className="hover:text-primary transition-colors block py-1">Graphy</a></li>
+              <li><a href="https://mindversetutor.graphy.com/s/store" className="hover:text-primary transition-colors block py-1">Graphy</a></li>
             </ul>
           </motion.div>
         </motion.div>
