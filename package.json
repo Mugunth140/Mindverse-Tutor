@@ -10,6 +10,7 @@
     "lint:fix": "biome check --write ."
   },
   "dependencies": {
+    "@plausible-analytics/tracker": "^0.4.5",
     "@supabase/supabase-js": "^2.110.1",
     "@vercel/analytics": "^2.0.1",
     "clsx": "^2.1.1",

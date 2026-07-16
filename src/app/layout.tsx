@@ -49,6 +49,7 @@ export const metadata: Metadata = {
 
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import { PlausibleAnalytics } from "@/components/PlausibleAnalytics";
 
 export default function RootLayout({
   children,
@@ -58,14 +59,6 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${plusJakartaSans.variable}`}>
       <head>
-        {/* Privacy-friendly analytics by Plausible */}
-        <script async src="https://plausible.io/js/pa-tkFX4xSniU4PCg3UjHJuP.js"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
-plausible.init()`
-          }}
-        />
         <Script id="meta-pixel" strategy="afterInteractive">
           {`
             !function(f,b,e,v,n,t,s)
@@ -91,6 +84,7 @@ plausible.init()`
         </noscript>
       </head>
       <body className="antialiased flex flex-col min-h-screen">
+        <PlausibleAnalytics />
         <Navbar />
         <main className="grow">{children}</main>
         <Footer />
