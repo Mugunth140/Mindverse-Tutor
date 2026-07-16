@@ -58,17 +58,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${plusJakartaSans.variable}`}>
       <head>
-        <Script
-          defer
-          data-domain="mindversetutor.com"
-          src="https://plausible.io/js/script.js"
-          strategy="afterInteractive"
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)}`
-          }}
-        />
+        {/* Cloudflare Web Analytics */}
+        <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "2b6ad690b7294e7f835358627b42e28b"}'></script>
+        {/* End Cloudflare Web Analytics */}
         <Script id="meta-pixel" strategy="afterInteractive">
           {`
             !function(f,b,e,v,n,t,s)
