@@ -49,6 +49,7 @@ export const metadata: Metadata = {
 
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import { PlausibleAnalytics } from "@/components/shared/PlausibleAnalytics";
 
 export default function RootLayout({
   children,
@@ -88,6 +89,7 @@ export default function RootLayout({
         <Footer />
       </body>
       <Analytics />
+      <PlausibleAnalytics />
     </html>
   );
 }
