@@ -61,12 +61,12 @@ export function HeroSection() {
               
               {/* Teacher Mascot */}
               <div className="absolute right-[-2%] sm:right-0 md:right-[2%] lg:right-[5%] xl:right-[10%] top-[5%] md:top-[10%] lg:top-[15%] w-[40%] sm:w-[35%] lg:w-[32%] drop-shadow-2xl z-20 animate-[float_7s_ease-in-out_infinite]">
-                <Image src="/characters/Yelllow-Teaching.png" alt="Expert Tutor Guidance" width={300} height={300} className="object-contain w-full h-auto" />
+                <Image src="/characters/Yelllow-Teaching.png" alt="Expert Tutor Guidance" width={300} height={300} className="object-contain w-full h-auto" priority />
               </div>
               
               {/* Student Mascot */}
               <div className="absolute left-[-2%] sm:left-0 md:left-[2%] lg:left-[5%] xl:left-[10%] bottom-[0%] sm:bottom-[5%] lg:bottom-[10%] w-[35%] sm:w-[32%] lg:w-[28%] drop-shadow-2xl z-20 animate-[float_6s_ease-in-out_infinite_reverse]">
-                <Image src="/characters/Blue-Writing.png" alt="Active Student Learning" width={300} height={300} className="object-contain w-full h-auto" />
+                <Image src="/characters/Blue-Writing.png" alt="Active Student Learning" width={300} height={300} className="object-contain w-full h-auto" priority />
               </div>
               
               {/* Badges */}

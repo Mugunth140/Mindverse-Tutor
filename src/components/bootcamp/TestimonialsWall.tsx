@@ -135,7 +135,7 @@ function VideoCard({ src, label }: { src: string; label: string }) {
         src={src}
         className="w-full h-full object-cover"
         playsInline
-        preload="metadata"
+        preload="none"
         onEnded={() => setPlaying(false)}
       />
 
